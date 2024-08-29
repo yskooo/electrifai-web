@@ -1,9 +1,5 @@
-// import { button } from "@/components/ui/button"
-// import { Input } from "@/components/ui/input"
-// import { div, div } from "@/components/ui/div"
 import { Zap, Brain, Cpu, BarChart, Users, Briefcase, PieChart } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function Home() {
   return (
