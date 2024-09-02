@@ -3,6 +3,7 @@
 
 // export default function Home() {
 //   return (
+// Header
 //     <div className="flex flex-col min-h-screen">
 //       <header className="px-4 lg:px-6 h-14 flex items-center">
 //         <Link className="flex items-center justify-center" href="#">
@@ -24,6 +25,7 @@
 //           </Link>
 //         </nav>
 //       </header>
+// HeroSection
 //       <main className="flex-1">
 //         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-primary to-primary-foreground">
 //           <div className="container px-4 md:px-6">
@@ -45,6 +47,7 @@
 //             </div>
 //           </div>
 //         </section>
+// FeaturesSection
 //         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
 //           <div className="container px-4 md:px-6">
 //             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Our Innovative Features</h2>
@@ -67,6 +70,7 @@
 //             </div>
 //           </div>
 //         </section>
+// TeamSection
 //         <section className="w-full py-12 md:py-24 lg:py-32">
 //           <div className="container px-4 md:px-6">
 //             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Meet Our Team</h2>
@@ -88,6 +92,7 @@
 //             </div>
 //           </div>
 //         </section>
+// PartnersSection
 //         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
 //           <div className="container px-4 md:px-6">
 //             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Our Partners</h2>
@@ -102,6 +107,7 @@
 //             </div>
 //           </div>
 //         </section>
+// RoadmapSection
 //         <section className="w-full py-12 md:py-24 lg:py-32">
 //           <div className="container px-4 md:px-6">
 //             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Product Roadmap</h2>
@@ -125,6 +131,7 @@
 //             </div>
 //           </div>
 //         </section>
+// Business Section
 //         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
 //           <div className="container px-4 md:px-6">
 //             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Our Business Plan</h2>
@@ -165,6 +172,7 @@
 //             </div>
 //           </div>
 //         </section>
+// CallToActionSection
 //         <section className="w-full py-12 md:py-24 lg:py-32">
 //           <div className="container px-4 md:px-6">
 //             <div className="flex flex-col items-center justify-center space-y-4 text-center">
