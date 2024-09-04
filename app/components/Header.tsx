@@ -32,7 +32,7 @@ export default function Header() {
           <Link
             key={item}
             href={`#${item.replace(/\s+/g, "")}`}
-            className="text-sm font-medium divide-y text-white transition-colors hover:text-[#2F4BE5] p-6 lg:py-0"
+            className=" hover:underline underline-offset-4 text-sm font-medium divide-y text-white transition-colors  p-6 lg:py-0"
           >
             {item}
           </Link>
