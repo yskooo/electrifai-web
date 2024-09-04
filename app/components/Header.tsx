@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <header className="px-6 py-10 h-20 flex items-center bg-black sticky top-0 z-50">
-      <Link href="#" className="flex items-center justify-center">
+      <Link href="/" className="flex items-center justify-center">
         <span className="text-lg text-white hover:text-[#2F4BE5]">Electrif<span className='italic'>AI</span></span>
       </Link>
 
@@ -28,10 +28,10 @@ export default function Header() {
           isOpen ? 'flex' : 'hidden'
         } flex-col lg:flex lg:flex-row lg:ml-auto lg:gap-12 absolute lg:static top-16 left-0 right-0 bg-black lg:p-0 p-4 shadow-lg lg:shadow-none`}
       >
-        {["Features", "About", "Awards", "Our Team", "Contact"].map((item) => (
+        {["Features", "Our Team", "Awards", "Contact"].map((item) => (
           <Link
             key={item}
-            href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
+            href={`#${item.replace(/\s+/g, "")}`}
             className="text-sm font-medium divide-y text-white transition-colors hover:text-[#2F4BE5] p-6 lg:py-0"
           >
             {item}

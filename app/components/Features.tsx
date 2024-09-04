@@ -1,8 +1,8 @@
 import { Brain, Cpu, BarChart } from "lucide-react";
 
-const FeaturesSection = () => {
+const Features = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-[#000000] to-[#242424] flex items-center justify-center">
+    <section id="Features" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-[#000000] to-[#242424] flex items-center justify-center">
       <div className="container px-4 md:px-6">
         <h2 className="text-xl font-semibold text-gray-400 text-center mb-2">How We&apos;re Different</h2>
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-12 text-white">Our Innovative Features</h2>
@@ -40,4 +40,4 @@ const FeaturesSection = () => {
   );
 }
 
-export default FeaturesSection;
+export default Features;

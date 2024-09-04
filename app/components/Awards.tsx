@@ -1,6 +1,6 @@
-const PartnersSection = () => {
+const Awards = () => {
   return (
-    <section className="w-full py-16 md:py-32 lg:py-40 bg-[#000B1B] text-white">
+    <section id="Awards" className="w-full py-16 md:py-32 lg:py-40 bg-[#000B1B] text-white">
       <div className="container px-4 md:px-6 max-w-5xl mx-auto">
         <h3 className="text-center text-gray-400 text-md uppercase tracking-wider mb-6">Continued Pursuit of Growth</h3>
         <h2 className="text-4xl font-bold tracking-tight sm:text-5xl text-center mb-6">Partnerships &amp; Awards</h2>
@@ -34,4 +34,4 @@ const PartnersSection = () => {
   );
 }
 
-export default PartnersSection;
+export default Awards;

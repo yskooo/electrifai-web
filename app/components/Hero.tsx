@@ -1,4 +1,4 @@
-const HeroSection = () => {
+const Hero = () => {
   return (
     <section className="relative w-full h-screen flex items-center justify-start bg-gradient-to-r from-[#0A0A0B] to-[#001F3F]">
       {/* Apply the custom gradient animation */}
@@ -7,7 +7,7 @@ const HeroSection = () => {
         <h1 className="xl:w-2/3 w-full text-4xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight">
           The Smart Choice for Energy Optimization
         </h1>
-        <p className="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl text-gray-300 max-w-3xl leading-relaxed">
+        <p className="mt-4 text-base sm:text-lg md:text-xl lg:text-xl text-gray-300 max-w-3xl leading-relaxed">
           Discover the ultimate tool for energy management—track usage, optimize savings, and secure your resources against theft. 
           Our cutting-edge technology offers you control and efficiency like never before.
         </p>
@@ -24,4 +24,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;
