@@ -33,20 +33,21 @@ const Contact = () => {
               </div>
               <div className="w-full lg:w-6/12 lg:px-6 mt-12 lg:mt-0">
                 <div className="space-y-6">
-                <div className="flex flex-col space-y-4">
-                  <div className="flex items-center text-gray-700">
-                    <Phone className="text-[#2F4BE5] mr-2" />
-                    <span>(123) 456-7890</span>
+                  <div className="flex flex-col space-y-4">
+                    <div className="flex items-center text-gray-700">
+                      <Phone className="text-[#2F4BE5] mr-2" />
+                      <span>(123) 456-7890</span>
+                    </div>
+                    <div className="flex items-center text-gray-700">
+                      <Mail className="text-[#2F4BE5] mr-2" />
+                      <span>contact@example.com</span>
+                    </div>
+                    <div className="flex items-center text-gray-700">
+                      <MapPin className="text-[#2F4BE5] mr-2" />
+                      <span>123 Main Street, City, Country</span>
+                    </div>
                   </div>
-                  <div className="flex items-center text-gray-700">
-                    <Mail className="text-[#2F4BE5] mr-2" />
-                    <span>contact@example.com</span>
-                  </div>
-                  <div className="flex items-center text-gray-700">
-                    <MapPin className="text-[#2F4BE5] mr-2" />
-                    <span>123 Main Street, City, Country</span>
-                  </div>
-                </div>              </div>
+                </div>
               </div>
             </div>
           </div>
