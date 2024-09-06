@@ -13,7 +13,7 @@ const Team = () => {
           <div className="container px-10 mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center">Meet Our Team</h2>
             <p className="mt-4 container lg:px-60 text-center text-base sm:text-lg md:text-xl lg:text-xl text-gray-300">
-              The company is spearheaded by a team of students from the Polytechnic University of the PhilippinesManila, under the team of PENTATRONICS.
+              The company is spearheaded by a team of students from the Polytechnic University of the Philippines Manila, under the team of PENTATRONICS.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
