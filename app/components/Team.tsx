@@ -22,7 +22,7 @@ const Team = () => {
                 <div className="p-4 flex flex-col items-center">
                   <div className="w-24 h-24 rounded-full bg-gray-200 mb-4" />
                   <h3 className="font-bold">{member.name}</h3>
-                  <p className="text-sm text-gray-600">{member.role}</p>
+                  <p className="text-sm text-center text-gray-600">{member.role}</p>
                 </div>
               </div>
             ))}
