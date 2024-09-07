@@ -3,7 +3,6 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section className="relative w-full h-screen flex items-center justify-start bg-gradient-to-r from-[#0A0A0B] to-[#001F3F]">
-      {/* Apply the custom gradient animation */}
       <div className="absolute inset-0 w-1/2 bg-gradient-custom p-6 opacity-20 blur-sm" />
       <div className="relative text-left text-white px-4 md:px-8 lg:px-12 xl:px-16 animate-fade-in">
         <h1 className="xl:w-2/3 w-full text-4xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight">
