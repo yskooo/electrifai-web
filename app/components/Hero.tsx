@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Hero = () => {
   return (
     <section className="relative w-full h-screen flex items-center justify-start bg-gradient-to-r from-[#0A0A0B] to-[#001F3F]">
@@ -12,12 +14,12 @@ const Hero = () => {
           Our cutting-edge technology offers you control and efficiency like never before.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-          <button className="px-10 py-4 bg-[#2F4BE5] text-white font-medium text-lg shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+          <Link href="#Contact"className="px-10 py-4 bg-[#2F4BE5] text-white font-medium text-lg shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
             Get Started
-          </button>
-          <button className="px-10 py-4 border-2 border-white text-white font-medium text-lg shadow-lg hover:bg-white hover:text-[#0A0A0B] transition-all duration-300 transform hover:scale-105">
+          </Link>
+          <Link href="#Features" className="px-10 py-4 border-2 border-white text-white font-medium text-lg shadow-lg hover:bg-white hover:text-[#0A0A0B] transition-all duration-300 transform hover:scale-105">
             Learn More
-          </button>
+          </Link>
         </div>
       </div>
     </section>
