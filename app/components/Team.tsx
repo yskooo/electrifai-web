@@ -1,10 +1,10 @@
 const Team = () => {
     const teamMembers = [
-      { name: "Daniel Caparro", role: "Project Manager, AI Developer" },
-      { name: "Justine Rey Daquis", role: "Lead UI/UX, Frontend Developer" },
-      { name: "Clarence Jay Fetalino", role: "Researcher, IoT Device Developer" },
-      { name: "Mcallen Fradejas", role: "Layout Artist, 3D Model Designer" },
-      { name: "Raeselyn Macorol", role: "Researcher" }
+      { name: "Daniel Caparro", role: "Project Manager, AI Developer", imgSrc: ""},
+      { name: "Justine Rey Daquis", role: "Lead UI/UX, Frontend Developer", imgSrc: "/members/justine.jpg"},
+      { name: "Clarence Jay Fetalino", role: "Researcher, IoT Device Developer", imgSrc: ""},
+      { name: "Mcallen Fradejas", role: "Layout Artist, 3D Model Designer", imgSrc: ""},
+      { name: "Raeselyn Macorol", role: "Researcher", imgSrc: ""}
     ];
   
     return (
@@ -13,14 +13,14 @@ const Team = () => {
           <div className="container px-10 mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center">Meet Our Team</h2>
             <p className="mt-4 container lg:px-60 text-center text-base sm:text-lg md:text-xl lg:text-xl text-gray-300">
-              The company is spearheaded by a team of students from the Polytechnic University of the Philippines Manila, under the team of PENTATRONICS.
+              The company is spearheaded by a team of passionate students from the Polytechnic University of the Philippines Manila, under the team of PENTATRONICS.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {teamMembers.map((member, index) => (
               <div key={index}>
                 <div className="p-4 flex flex-col items-center">
-                  <div className="w-24 h-24 rounded-full bg-gray-200 mb-4" />
+                  <img src={member.imgSrc} className="w-24 h-24 rounded-full bg-gray-200 mb-4 object-cover object-center" />
                   <h3 className="font-bold">{member.name}</h3>
                   <p className="text-sm text-center text-gray-600">{member.role}</p>
                 </div>

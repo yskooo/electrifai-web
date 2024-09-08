@@ -51,7 +51,7 @@ const Features = () => {
               <Brain className="h-12 w-12 text-white" />
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Advanced Machine Learning</h3>
-                <p className="text-gray-400">Leverage state-of-the-art algorithms to solve complex problems.</p>
+                <p className="text-gray-300">Leverage state-of-the-art algorithms to solve complex problems.</p>
               </div>
             </div>
           </motion.div>
@@ -65,7 +65,7 @@ const Features = () => {
               <Cpu className="h-12 w-12 text-white" />
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Real-time Processing</h3>
-                <p className="text-gray-400">Process and analyze data at lightning-fast speeds for instant insights.</p>
+                <p className="text-gray-300">Process and analyze data at lightning-fast speeds for instant insights.</p>
               </div>
             </div>
           </motion.div>
@@ -79,7 +79,7 @@ const Features = () => {
               <BarChart className="h-12 w-12 text-white" />
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Predictive Analytics</h3>
-                <p className="text-gray-400">Forecast trends and make data-driven decisions with our AI models.</p>
+                <p className="text-gray-300">Forecast trends and make data-driven decisions with our AI models.</p>
               </div>
             </div>
           </motion.div>

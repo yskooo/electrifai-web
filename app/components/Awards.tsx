@@ -10,22 +10,20 @@ const Awards = () => {
           <span className="text-gray-400 text-lg">to target rural and semi-urban areas, to reach even more people.</span>
         </p>
         <div className="flex justify-center items-center mb-16">
-          <div className="w-20 h-20 bg-gray-500 rounded-full mx-4"></div>
-          <div className="w-20 h-20 bg-gray-500 rounded-full mx-4"></div>
         </div>
         <div className="bg-[#0C1524] p-8 rounded-lg border border-gray-700 shadow-lg">
           <ul className="space-y-6">
             <li className="text-lg">
-              <span className="font-semibold text-white">1st Runner Up &amp; People&apos;s Choice Award Meralco Idol Hackathon 2023</span><br />
-              <span className="text-gray-400">Won over PHP 130,000 of cash prize</span>
+              <span className="font-semibold text-white">1st Runner Up &amp; People&apos;s Choice Award - Meralco Idol Hackathon 2023</span><br />
+              <span className="text-gray-400">Secured recognition for outstanding innovation and audience appeal.</span>
             </li>
             <li className="text-lg">
-              <span className="font-semibold text-white">Silver Awardee StartupQC Student Competition</span><br />
-              <span className="text-gray-400">Won over PHP 25,000 of cash prize</span>
+              <span className="font-semibold text-white">Silver Awardee - StartupQC Student Competition</span><br />
+              <span className="text-gray-400">Earned distinction for exceptional startup ideas and execution.</span>
             </li>
             <li className="text-lg">
-              <span className="font-semibold text-white">PUP Undergraduate Research Competition</span><br />
-              <span className="text-gray-400">Won over PHP 30,000 of cash prize</span>
+              <span className="font-semibold text-white">1st Runner Up - PUP Undergraduate Research Competition</span><br />
+              <span className="text-gray-400">Achievement for pioneering research and scholarly contribution.</span>
             </li>
           </ul>
         </div>

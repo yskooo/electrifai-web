@@ -44,7 +44,7 @@ const Contact = () => {
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
                   className="text-4xl font-bold mb-4 text-white"
                 >
-                  Ready to take your electricity to the next level?
+                  Ready to take your electricity savings to the next level?
                 </motion.h2>
                 <motion.p
                   initial={{ opacity: 0, y: -20 }}
@@ -52,7 +52,7 @@ const Contact = () => {
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
                   className="text-gray-700 mb-6"
                 >
-                  Schedule a free consulation with us to discuss your needs and how we can help.
+                  Schedule a free consultation with us to discuss your needs and how we can help.
                 </motion.p>
                 <div className="flex justify-start mb-6">
                   <a 
@@ -75,15 +75,15 @@ const Contact = () => {
                   <div className="flex flex-col space-y-4">
                     <div className="flex items-center text-gray-700">
                       <Phone className="text-[#2F4BE5] mr-2" />
-                      <span>(123) 456-7890</span>
+                      <span>+639164137271</span>
                     </div>
                     <div className="flex items-center text-gray-700">
                       <Mail className="text-[#2F4BE5] mr-2" />
-                      <span>contact@example.com</span>
+                      <span>contactelectrifai@gmail.com</span>
                     </div>
                     <div className="flex items-center text-gray-700">
                       <MapPin className="text-[#2F4BE5] mr-2" />
-                      <span>123 Main Street, City, Country</span>
+                      <span>Polytechnic University of the Philippines, Sta. Mesa, Philippines</span>
                     </div>
                   </div>
                 </motion.div>
