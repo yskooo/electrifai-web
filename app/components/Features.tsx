@@ -1,15 +1,15 @@
 'use client'
+import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Brain, Cpu, BarChart } from 'lucide-react';
+import { BarChart, Activity, ShieldCheck } from 'lucide-react'; // Updated Icons
 import React from 'react';
 
 const Features = () => {
   const { ref: sectionRef, inView } = useInView({ triggerOnce: true });
   const controls = useAnimation();
 
-  // Trigger animations when section is in view
-  React.useEffect(() => {
+  useEffect(() => {
     if (inView) {
       controls.start({ opacity: 1, scale: 1 });
     } else {
@@ -21,66 +21,96 @@ const Features = () => {
     <section
       id="Features"
       ref={sectionRef}
-      className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-[#000000] to-[#242424] flex items-center justify-center"
+      className="relative w-full py-10 md:py-16 lg:py-24 bg-gradient-to-b from-[#eef2f3] to-[#ffffff] flex items-center justify-center overflow-hidden"
     >
-      <div className="container px-4 md:px-6">
-        <motion.h2
+      {/* Decorative Elements */}
+      <div className="absolute top-1/3 left-0 w-[250px] h-[250px] bg-[#004aad] opacity-10 rounded-full blur-lg animate-pulse"></div>
+      <div className="absolute bottom-1/4 right-0 w-[350px] h-[350px] bg-[#2F4BE5] opacity-20 rounded-full blur-2xl animate-pulse"></div>
+
+      <div className="container flex flex-col gap-0 px-4 md:px-6 max-w-6xl z-10">
+        {/* Section Heading */}
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={controls}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="text-xl font-semibold text-gray-400 text-center mb-2"
+          className="text-center mb-0"
         >
-          How We&apos;re Different
-        </motion.h2>
-        <motion.h2
-          initial={{ opacity: 0, y: -20 }}
-          animate={controls}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-          className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-12 text-white"
-        >
-          Our Innovative Features
-        </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <h2 className="text-lg font-semibold text-[#004aad] tracking-wider uppercase mb-2">
+            How We&apos;re Different
+          </h2>
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tighter text-[#0A0A0B] mb-4">
+            Innovative Solutions for Real-time Energy Management
+          </h2>
+          <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+            Our platform offers real-time monitoring of power consumption, AI-based anomaly detection to prevent energy theft, and intelligent insights for optimal energy management.
+          </p>
+        </motion.div>
+
+        {/* Feature Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12 max-w-full mx-auto px-4 md:px-0">
+          {/* Card 1: Real-time Power Consumption Tracking */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={controls}
-            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-            className="p-6 rounded-lg border border-gray-700 bg-gradient-to-r from-[#1A1A1A] to-[#242424] h-56 flex items-center"
+            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
+            whileHover={{ scale: 1.05, boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.1)' }}
+            className="p-6 md:p-8 rounded-2xl md:rounded-3xl shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300 transform text-center"
           >
-            <div className="flex items-start space-x-4">
-              <Brain className="h-12 w-12 text-white" />
-              <div>
-                <h3 className="text-xl font-bold text-white mb-2">Advanced Machine Learning</h3>
-                <p className="text-gray-300">Leverage state-of-the-art algorithms to solve complex problems.</p>
-              </div>
+            <img
+              src="/iot-device.png"
+              alt="Real-time Monitoring"
+              className="mx-auto w-32 h-32 md:w-28 md:h-28 mb-2 object-contain rounded-full shadow-sm"
+            />
+            <div className="flex flex-col items-center">
+              <Activity className="h-12 w-12 md:h-16 md:w-16 text-[#2F4BE5] shadow-md p-2 rounded-full bg-gray-50" />
+              <h3 className="text-xl md:text-2xl font-bold text-[#0A0A0B] mt-4 mb-2">Real-time Power Consumption</h3>
+              <p className="text-gray-600 text-sm md:text-base max-w-xs">
+                Monitor your power consumption in real-time using our IoT-enabled devices and gain visibility into your energy usage patterns at any moment.
+              </p>
             </div>
           </motion.div>
+
+          {/* Card 2: AI Anomaly Detection */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={controls}
-            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
-            className="p-6 rounded-lg border border-gray-700 bg-gradient-to-r from-[#1A1A1A] to-[#242424] h-56 flex items-center"
+            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
+            whileHover={{ scale: 1.05, boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.1)' }}
+            className="p-6 md:p-8 rounded-2xl md:rounded-3xl shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300 transform text-center"
           >
-            <div className="flex items-start space-x-4">
-              <Cpu className="h-12 w-12 text-white" />
-              <div>
-                <h3 className="text-xl font-bold text-white mb-2">Real-time Processing</h3>
-                <p className="text-gray-300">Process and analyze data at lightning-fast speeds for instant insights.</p>
-              </div>
+            <img
+              src="app-electrifai.png"
+              alt="AI Anomaly Detection"
+              className="mx-auto w-32 h-32 md:w-28 md:h-28 mb-2 object-contain rounded-full shadow-sm"
+            />
+            <div className="flex flex-col items-center">
+              <ShieldCheck className="h-12 w-12 md:h-16 md:w-16 text-[#2F4BE5] shadow-md p-2 rounded-full bg-gray-50" />
+              <h3 className="text-xl md:text-2xl font-bold text-[#0A0A0B] mt-4 mb-2">AI Anomaly Detection</h3>
+              <p className="text-gray-600 text-sm md:text-base max-w-xs">
+                Leverage our AI algorithms to detect anomalies in power consumption, identify potential power theft, and ensure your energy resources are secure.
+              </p>
             </div>
           </motion.div>
+
+          {/* Card 3: Energy Insights & Optimization */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={controls}
-            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
-            className="p-6 rounded-lg border border-gray-700 bg-gradient-to-r from-[#1A1A1A] to-[#242424] h-56 flex items-center md:col-span-2"
+            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
+            whileHover={{ scale: 1.05, boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.1)' }}
+            className="p-6 md:p-8 rounded-2xl md:rounded-3xl shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300 transform text-center"
           >
-            <div className="flex items-start space-x-4">
-              <BarChart className="h-12 w-12 text-white" />
-              <div>
-                <h3 className="text-xl font-bold text-white mb-2">Predictive Analytics</h3>
-                <p className="text-gray-300">Forecast trends and make data-driven decisions with our AI models.</p>
-              </div>
+            <img
+              src="app-electrifai2.png"
+              alt="Energy Optimization"
+              className="mx-auto w-32 h-32 md:w-28 md:h-28 mb-2 object-contain rounded-full shadow-sm"
+            />
+            <div className="flex flex-col items-center">
+              <BarChart className="h-12 w-12 md:h-16 md:w-16 text-[#2F4BE5] shadow-md p-2 rounded-full bg-gray-50" />
+              <h3 className="text-xl md:text-2xl font-bold text-[#0A0A0B] mt-4 mb-2">Energy Insights & Optimization</h3>
+              <p className="text-gray-600 text-sm md:text-base max-w-xs">
+                Utilize predictive analytics to gain insights into your energy consumption and optimize usage patterns to reduce costs and increase efficiency.
+              </p>
             </div>
           </motion.div>
         </div>

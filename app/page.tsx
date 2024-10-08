@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
+import AboutUs from "./components/AboutUs"; 
 import Team from "./components/Team";
 import Awards from "./components/Awards";
 import Contact from "./components/Contact";
@@ -13,12 +14,12 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Features />
+        <AboutUs /> 
         <Team />
         <Awards />
-        <Contact/>
+        <Contact />
       </main>
       <Footer />
     </div>
   );
 }
-

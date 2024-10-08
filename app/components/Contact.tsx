@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Phone, Mail, MapPin } from 'lucide-react';
@@ -20,29 +20,38 @@ const Contact = () => {
     <section
       id="Contact"
       ref={sectionRef}
-      className="w-full py-12 md:py-24 lg:py-32 bg-black"
+      className="relative w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-[#f7fafd] to-[#eaf1f8] overflow-hidden"
     >
-      <div id="map" className="relative h-[300px] overflow-hidden bg-cover bg-center bg-no-repeat">
+      {/* Decorative Elements */}
+      <div className="absolute top-1/3 left-0 w-[300px] h-[300px] bg-[#2F4BE5] opacity-10 rounded-full blur-[150px] animate-pulse"></div>
+      <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-[#004aad] opacity-20 rounded-full blur-[200px]"></div>
+
+      {/* Google Maps Integration */}
+      <div id="map" className="relative h-[300px] md:h-[400px] overflow-hidden bg-cover bg-center bg-no-repeat">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123551.41006922725!2d120.95316517505074!3d14.600126045944801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9dd976ededf%3A0xbaaa357c5585b8c2!2sPolytechnic%20University%20of%20the%20Philippines!5e0!3m2!1sen!2sph!4v1725697351119!5m2!1sen!2sph"
           width="100%" height="480" style={{ border: '0' }} loading="lazy"
         ></iframe>
       </div>
-      <div className="w-full flex justify-center">
+
+      {/* Contact Information Section */}
+      <div className="w-full flex justify-center mt-[-150px] lg:mt-[-200px]">
         <div className="container px-4 md:px-6 lg:px-12">
+          {/* Contact Form Section */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={controls}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="relative rounded bg-gradient-to-r from-[#0A0A0B] to-[#001F3F] px-6 py-12 shadow-lg md:py-16 md:px-12 -mt-[100px] backdrop-blur-md"
+            className="relative rounded-xl bg-gradient-to-r from-[#2F4BE5] to-[#004aad] px-6 py-12 shadow-lg md:py-16 md:px-12 backdrop-blur-md text-white"
           >
-            <div className="flex flex-wrap">
-              <div className="w-full lg:w-6/12 lg:px-6">
+            <div className="flex flex-wrap lg:flex-nowrap lg:space-x-12 items-start">
+              {/* Left Column: Call to Action */}
+              <div className="w-full lg:w-6/12 mb-12 lg:mb-0">
                 <motion.h2
                   initial={{ opacity: 0, y: -20 }}
                   animate={controls}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-                  className="text-4xl font-bold mb-4 text-white"
+                  className="text-4xl font-extrabold mb-6 leading-tight"
                 >
                   Ready to take your electricity savings to the next level?
                 </motion.h2>
@@ -50,7 +59,7 @@ const Contact = () => {
                   initial={{ opacity: 0, y: -20 }}
                   animate={controls}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-                  className="text-gray-700 mb-6"
+                  className="text-lg text-white/90 mb-6"
                 >
                   Schedule a free consultation with us to discuss your needs and how we can help.
                 </motion.p>
@@ -59,30 +68,32 @@ const Contact = () => {
                     href="https://calendly.com/your-calendly-link" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="bg-[#2F4BE5] text-white px-10 py-4 shadow-md hover:bg-[#1e3a8a] transition duration-300"
+                    className="bg-[#1e3a8a] text-white px-10 py-4 rounded-lg shadow-md hover:bg-[#0d266d] transition duration-300"
                   >
                     Book a Call
                   </a>
                 </div>
               </div>
-              <div className="w-full lg:w-6/12 lg:px-6 mt-12 lg:mt-0">
+
+              {/* Right Column: Contact Information */}
+              <div className="w-full lg:w-6/12">
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   animate={controls}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
                   className="space-y-6"
                 >
-                  <div className="flex flex-col space-y-4">
-                    <div className="flex items-center text-gray-700">
-                      <Phone className="text-[#2F4BE5] mr-2" />
+                  <div className="flex flex-col space-y-6 text-white/80">
+                    <div className="flex items-center text-lg">
+                      <Phone className="text-white mr-4 h-6 w-6" />
                       <span>+639164137271</span>
                     </div>
-                    <div className="flex items-center text-gray-700">
-                      <Mail className="text-[#2F4BE5] mr-2" />
+                    <div className="flex items-center text-lg">
+                      <Mail className="text-white mr-4 h-6 w-6" />
                       <span>contactelectrifai@gmail.com</span>
                     </div>
-                    <div className="flex items-center text-gray-700">
-                      <MapPin className="text-[#2F4BE5] mr-2" />
+                    <div className="flex items-center text-lg">
+                      <MapPin className="text-white mr-4 h-6 w-6" />
                       <span>Polytechnic University of the Philippines, Sta. Mesa, Philippines</span>
                     </div>
                   </div>
