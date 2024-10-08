@@ -1,17 +1,17 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useDarkMode } from '../context/DarkModeContext'; // Import Dark Mode Context
+import { useDarkMode } from '../context/DarkModeContext';
 
 const Hero = () => {
-  const { isDarkMode } = useDarkMode(); // Get the dark mode state
+  const { isDarkMode } = useDarkMode(); 
 
   return (
     <section
       className={`relative w-full h-full lg:h-screen flex flex-col lg:flex-row items-center justify-between ${
         isDarkMode
-          ? 'bg-gradient-to-r from-[#000000] to-[#001027]' // Dark mode gradient background
-          : 'bg-gradient-to-r from-[#eef2f3] to-[#ffffff]' // Light mode gradient background
+          ? 'bg-gradient-to-r from-[#000000] to-[#001027]' 
+          : 'bg-gradient-to-r from-[#eef2f3] to-[#ffffff]'
       } px-6 sm:px-12 md:px-16 py-20 lg:pb-10 overflow-hidden lg:pt-0`}
     >
       {/* Decorative Background Elements */}
@@ -101,12 +101,12 @@ const Hero = () => {
       {/* Image Section */}
       <div className="hidden lg:block lg:w-1/2 z-10">
         <motion.img
-          src="/app-electrifai.png"
+          src="/svgs/2.svg"
           alt="Team collaborating"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="object-contain rounded-lg w-full h-auto max-h-[700px] mt-10"
+          className="object-contain rounded-lg w-full h-auto max-h-[600px] mt-10"
         />
       </div>
     </section>

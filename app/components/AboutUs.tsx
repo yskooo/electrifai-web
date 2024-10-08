@@ -1,10 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
-import { useDarkMode } from "../context/DarkModeContext"; // Import Dark Mode Context
+import { useDarkMode } from "../context/DarkModeContext"; 
 
 export default function AboutUs() {
-  const { isDarkMode } = useDarkMode(); // Get dark mode state
+  const { isDarkMode } = useDarkMode(); 
 
   return (
     <section

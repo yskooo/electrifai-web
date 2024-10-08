@@ -73,7 +73,7 @@ const Features = () => {
             } hover:shadow-2xl transition-shadow duration-300 transform text-center`}
           >
             <img
-              src="/iot-device.png"
+              src="/svgs/3.svg"
               alt="Real-time Monitoring"
               className="mx-auto w-32 h-32 md:w-28 md:h-28 mb-2 object-contain rounded-full shadow-sm"
             />
@@ -105,7 +105,7 @@ const Features = () => {
             } hover:shadow-2xl transition-shadow duration-300 transform text-center`}
           >
             <img
-              src="app-electrifai.png"
+              src="/svgs/2.svg"
               alt="AI Anomaly Detection"
               className="mx-auto w-32 h-32 md:w-28 md:h-28 mb-2 object-contain rounded-full shadow-sm"
             />
@@ -137,7 +137,7 @@ const Features = () => {
             } hover:shadow-2xl transition-shadow duration-300 transform text-center`}
           >
             <img
-              src="app-electrifai2.png"
+              src="/svgs/1.svg"
               alt="Energy Optimization"
               className="mx-auto w-32 h-32 md:w-28 md:h-28 mb-2 object-contain rounded-full shadow-sm"
             />
