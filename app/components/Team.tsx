@@ -47,7 +47,7 @@ const Team = () => {
       imgSrc: '',
     },
     {
-      name: 'Sig',
+      name: 'Sieg',
       role: '',
       description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
       imgSrc: '',
@@ -59,13 +59,13 @@ const Team = () => {
       imgSrc: '',
     },
     {
-      name: 'Arjay',
+      name: 'David Bato-bato',
       role: '',
       description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
       imgSrc: '',
     },
     {
-      name: 'Denis',
+      name: 'Engr. Hard',
       role: '',
       description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
       imgSrc: '',
