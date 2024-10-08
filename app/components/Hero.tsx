@@ -31,7 +31,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-          className="mt-4 text-lg sm:text-xl md:text-2xl lg:text-xl text-gray-700 max-w-xl lg:max-w-2xl leading-relaxed"
+          className="mt-4 text-md sm:text-xl md:text-2xl lg:text-xl text-gray-700 max-w-xl lg:max-w-2xl leading-relaxed"
         >
           Empowering households with intelligent energy management solutions. Our cutting-edge IoT devices and advanced AI algorithms enable real-time monitoring, anomaly detection, and predictive analytics to optimize power consumption, reduce costs, and ensure energy efficiency
         </motion.p>

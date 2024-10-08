@@ -21,7 +21,7 @@ const Features = () => {
     <section
       id="Features"
       ref={sectionRef}
-      className="relative w-full py-10 md:py-16 lg:py-24 bg-gradient-to-b from-[#eef2f3] to-[#ffffff] flex items-center justify-center overflow-hidden"
+      className="relative w-full py-16 md:py-16 lg:py-24 bg-gradient-to-b from-[#eef2f3] to-[#ffffff] flex items-center justify-center overflow-hidden"
     >
       {/* Decorative Elements */}
       <div className="absolute top-1/3 left-0 w-[250px] h-[250px] bg-[#004aad] opacity-10 rounded-full blur-lg animate-pulse"></div>
