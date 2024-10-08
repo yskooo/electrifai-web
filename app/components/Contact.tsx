@@ -3,10 +3,12 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import React from 'react';
+import { useDarkMode } from '../context/DarkModeContext'; 
 
 const Contact = () => {
   const { ref: sectionRef, inView } = useInView({ triggerOnce: true });
   const controls = useAnimation();
+  const { isDarkMode } = useDarkMode(); 
 
   React.useEffect(() => {
     if (inView) {
@@ -20,17 +22,35 @@ const Contact = () => {
     <section
       id="Contact"
       ref={sectionRef}
-      className="relative w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-[#f7fafd] to-[#eaf1f8] overflow-hidden"
+      className={`relative w-full py-12 md:py-24 lg:py-32 ${
+        isDarkMode ? 'bg-gradient-to-b from-[#000000] to-[#001027]' : 'bg-gradient-to-b from-[#f7fafd] to-[#eaf1f8]'
+      } overflow-hidden`}
     >
       {/* Decorative Elements */}
-      <div className="absolute top-1/3 left-0 w-[300px] h-[300px] bg-[#2F4BE5] opacity-10 rounded-full blur-[150px] animate-pulse"></div>
-      <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-[#004aad] opacity-20 rounded-full blur-[200px]"></div>
+      <div
+        className={`absolute top-1/3 left-0 w-[300px] h-[300px] ${
+          isDarkMode ? 'bg-[#001027] opacity-40' : 'bg-[#2F4BE5] opacity-20'
+        } rounded-full blur-[150px] animate-pulse`}
+      ></div>
+      <div
+        className={`absolute bottom-1/4 right-0 w-[400px] h-[400px] ${
+          isDarkMode ? 'bg-[#000000] opacity-40' : 'bg-[#004aad] opacity-20'
+        } rounded-full blur-[200px]`}
+      ></div>
 
       {/* Google Maps Integration */}
-      <div id="map" className="relative h-[300px] md:h-[400px] overflow-hidden bg-cover bg-center bg-no-repeat">
+      <div
+        id="map"
+        className={`relative h-[300px] md:h-[400px] overflow-hidden bg-cover bg-center bg-no-repeat ${
+          isDarkMode ? 'filter brightness-75' : ''
+        }`}
+      >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123551.41006922725!2d120.95316517505074!3d14.600126045944801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9dd976ededf%3A0xbaaa357c5585b8c2!2sPolytechnic%20University%20of%20the%20Philippines!5e0!3m2!1sen!2sph!4v1725697351119!5m2!1sen!2sph"
-          width="100%" height="480" style={{ border: '0' }} loading="lazy"
+          width="100%"
+          height="480"
+          style={{ border: '0' }}
+          loading="lazy"
         ></iframe>
       </div>
 
@@ -42,7 +62,9 @@ const Contact = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={controls}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="relative rounded-xl bg-gradient-to-r from-[#2F4BE5] to-[#004aad] px-6 py-12 shadow-lg md:py-16 md:px-12 backdrop-blur-md text-white"
+            className={`relative rounded-xl ${
+              isDarkMode ? 'bg-gradient-to-r from-[#2A2A2E] to-[#1B1B1D]' : 'bg-gradient-to-r from-[#2F4BE5] to-[#004aad]'
+            } px-6 py-12 shadow-lg md:py-16 md:px-12 backdrop-blur-md text-white`}
           >
             <div className="flex flex-wrap lg:flex-nowrap lg:space-x-12 items-start">
               {/* Left Column: Call to Action */}
@@ -64,11 +86,13 @@ const Contact = () => {
                   Schedule a free consultation with us to discuss your needs and how we can help.
                 </motion.p>
                 <div className="flex justify-start mb-6">
-                  <a 
-                    href="https://calendly.com/your-calendly-link" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="bg-[#1e3a8a] text-white px-10 py-4 rounded-lg shadow-md hover:bg-[#0d266d] transition duration-300"
+                  <a
+                    href="https://calendly.com/your-calendly-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${
+                      isDarkMode ? 'bg-[#3b82f6] hover:bg-[#2563eb]' : 'bg-[#1e3a8a] hover:bg-[#0d266d]'
+                    } text-white px-10 py-4 rounded-lg shadow-md transition duration-300`}
                   >
                     Book a Call
                   </a>
