@@ -28,14 +28,14 @@ export default function RootLayout({
         <meta property="og:url" content="https://www.electrifai.tech" />
         <meta property="og:title" content="ElectrifAI | The Smart Choice for Energy Optimization" />
         <meta property="og:description" content="ElectrifAI is an AI-driven platform focused on enhancing electricity efficiency and security that is aligned to the UN Sustainable Development Goals. The company is spearheaded by a team of students from the Polytechnic University of the Philippines (PUP) Manila, under the team of PENTATRONICS." />
-        <meta property="og:image" content="https://www.electrifai.tech/svgs/elec_logo.svg" />
+        <meta property="og:image" content="https://www.electrifai.tech/svgs/metatag.png" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.electrifai.tech" />
         <meta property="twitter:title" content="ElectrifAI | The Smart Choice for Energy Optimization" />
         <meta property="twitter:description" content="ElectrifAI is an AI-driven platform focused on enhancing electricity efficiency and security that is aligned to the UN Sustainable Development Goals. The company is spearheaded by a team of students from the Polytechnic University of the Philippines (PUP) Manila, under the team of PENTATRONICS." />
-        <meta property="twitter:image" content="https://www.electrifai.tech/svgs/elec_logo.svg" />
+        <meta property="twitter:image" content="https://www.electrifai.tech/svgs/metatag.png" />
       </Head>
       <DarkModeProvider>
         <body className={poppins.className}>
