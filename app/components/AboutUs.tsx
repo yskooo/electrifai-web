@@ -16,12 +16,12 @@ export default function AboutUs() {
       {/* Decorative Elements */}
       <div
         className={`absolute top-1/4 left-0 w-[250px] h-[250px] ${
-          isDarkMode ? "bg-[#001027] opacity-40" : "bg-[#004aad] opacity-20"
+          isDarkMode ? "bg-[#001027] opacity-40" : "bg-[#00A5FF] opacity-20"
         } rounded-full blur-lg animate-pulse`}
       ></div>
       <div
         className={`absolute bottom-1/4 right-0 w-[350px] h-[350px] ${
-          isDarkMode ? "bg-[#000000] opacity-40" : "bg-[#2F4BE5] opacity-30"
+          isDarkMode ? "bg-[#000000] opacity-40" : "bg-[#00A5FF] opacity-30"
         } rounded-full blur-2xl animate-pulse`}
       ></div>
 

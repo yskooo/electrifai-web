@@ -110,7 +110,7 @@ const Team = () => {
               {/* Profile Image with Decorative Elements */}
               <div className="relative mb-4">
                 <div className={`w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-2 md:border-4 ${
-                  isDarkMode ? 'border-[#2F4BE5]' : 'border-[#004aad]'
+                  isDarkMode ? 'border-[#00A5FF]' : 'border-[#00A5FF]'
                 } relative bg-[#eef2f3]`}>
                   <Image
                     src={member.imgSrc || defaultProfile}
@@ -123,10 +123,10 @@ const Team = () => {
 
                 {/* Decorative Elements around the Image */}
                 <div className={`absolute -bottom-2 -right-2 h-4 w-4 ${
-                  isDarkMode ? 'bg-[#2F4BE5]' : 'bg-[#004aad]'
+                  isDarkMode ? 'bg-[#00A5FF]' : 'bg-[#00A5FF]'
                 } rounded-full`}></div>
                 <div className={`absolute -bottom-2 -left-2 h-4 w-4 ${
-                  isDarkMode ? 'bg-[#2F4BE5]' : 'bg-[#004aad]'
+                  isDarkMode ? 'bg-[#00A5FF]' : 'bg-[#00A5FF]'
                 } rounded-full`}></div>
               </div>
 
@@ -137,7 +137,7 @@ const Team = () => {
                 {member.name}
               </h3>
               <h4 className={`text-xs md:text-sm lg:text-xs font-medium ${
-                isDarkMode ? 'text-[#2F4BE5]' : 'text-[#004aad]'
+                isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FFA]'
               } mb-2`}>
                 {member.role}
               </h4>
