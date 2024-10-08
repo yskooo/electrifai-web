@@ -29,10 +29,10 @@ const Features = () => {
     >
       {/* Decorative Elements */}
       <div className={`absolute top-1/3 left-0 w-[250px] h-[250px] ${
-        isDarkMode ? 'bg-[#001027] opacity-40' : 'bg-[#004aad] opacity-30'
+        isDarkMode ? 'bg-[#001027] opacity-40' : 'bg-[#00A5FF] opacity-30'
       } rounded-full blur-lg animate-pulse`}></div>
       <div className={`absolute bottom-1/4 right-0 w-[350px] h-[350px] ${
-        isDarkMode ? 'bg-[#000000] opacity-40' : 'bg-[#2F4BE5] opacity-30'
+        isDarkMode ? 'bg-[#000000] opacity-40' : 'bg-[#00A5FF] opacity-30'
       } rounded-full blur-2xl animate-pulse`}></div>
 
       <div className="container flex flex-col gap-0 px-4 md:px-6 max-w-6xl z-10">
@@ -44,7 +44,7 @@ const Features = () => {
           className="text-center mb-0"
         >
           <h2 className={`text-lg font-semibold ${
-            isDarkMode ? 'text-[#2F4BE5]' : 'text-[#004aad]'
+            isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FF]'
           } tracking-wider uppercase mb-2`}>
             How We&apos;re Different
           </h2>
@@ -79,7 +79,7 @@ const Features = () => {
             />
             <div className="flex flex-col items-center">
               <Activity className={`h-12 w-12 md:h-16 md:w-16 ${
-                isDarkMode ? 'text-[#2F4BE5]' : 'text-[#2F4BE5]'
+                isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FF]'
               } shadow-md p-2 rounded-full bg-gray-50`} />
               <h3 className={`text-xl md:text-2xl font-bold ${
                 isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
@@ -111,7 +111,7 @@ const Features = () => {
             />
             <div className="flex flex-col items-center">
               <ShieldCheck className={`h-12 w-12 md:h-16 md:w-16 ${
-                isDarkMode ? 'text-[#2F4BE5]' : 'text-[#2F4BE5]'
+                isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FF]'
               } shadow-md p-2 rounded-full bg-gray-50`} />
               <h3 className={`text-xl md:text-2xl font-bold ${
                 isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
@@ -143,7 +143,7 @@ const Features = () => {
             />
             <div className="flex flex-col items-center">
               <BarChart className={`h-12 w-12 md:h-16 md:w-16 ${
-                isDarkMode ? 'text-[#2F4BE5]' : 'text-[#2F4BE5]'
+                isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FF]'
               } shadow-md p-2 rounded-full bg-gray-50`} />
               <h3 className={`text-xl md:text-2xl font-bold ${
                 isDarkMode ? 'text-white' : 'text-[#0A0A0B]'

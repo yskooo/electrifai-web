@@ -19,24 +19,24 @@ const Hero = () => {
         {/* Large Circle */}
         <div
           className={`absolute top-1/4 left-0 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] lg:w-[500px] lg:h-[500px] ${
-            isDarkMode ? 'bg-[#001027] opacity-40' : 'bg-[#2F4BE5] opacity-20'
+            isDarkMode ? 'bg-[#001027] opacity-40' : 'bg-[#00A5FF] opacity-20'
           } rounded-full mix-blend-multiply blur-3xl`}
         ></div>
         {/* Small Circle */}
         <div
           className={`absolute bottom-1/4 right-0 w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] lg:w-[300px] lg:h-[300px] ${
-            isDarkMode ? 'bg-[#000000] opacity-30' : 'bg-[#004aad] opacity-20'
+            isDarkMode ? 'bg-[#000000] opacity-30' : 'bg-[#00A5FF] opacity-20'
           } rounded-full mix-blend-multiply blur-2xl`}
         ></div>
         {/* Floating Rectangles */}
         <div
           className={`absolute top-1/3 right-1/4 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] lg:w-[200px] lg:h-[200px] ${
-            isDarkMode ? 'bg-[#000000] opacity-20' : 'bg-[#2F4BE5] opacity-10'
+            isDarkMode ? 'bg-[#000000] opacity-20' : 'bg-[#00A5FF] opacity-10'
           } rounded-lg rotate-45 mix-blend-multiply blur-xl`}
         ></div>
         <div
           className={`absolute bottom-1/3 left-1/4 w-[75px] h-[75px] sm:w-[125px] sm:h-[125px] lg:w-[150px] lg:h-[150px] ${
-            isDarkMode ? 'bg-[#001027] opacity-20' : 'bg-[#004aad] opacity-10'
+            isDarkMode ? 'bg-[#001027] opacity-20' : 'bg-[#00A5FFC] opacity-10'
           } rounded-lg -rotate-45 mix-blend-multiply blur-lg`}
         ></div>
       </div>
@@ -51,7 +51,7 @@ const Hero = () => {
             isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
           } leading-tight`}
         >
-          The <span className="text-[#004aad] underline">ElectrifAI</span>, The Smart Choice for Energy Optimization
+          The <span className="text-[#00A5FF] underline">ElectrifAI</span>, The Smart Choice for Energy Optimization
         </motion.h1>
 
         <motion.p
@@ -75,7 +75,7 @@ const Hero = () => {
             <Link
               href="#Contact"
               className={`px-8 py-4 sm:px-10 sm:py-4 ${
-                isDarkMode ? 'bg-[#004aad]' : 'bg-[#004aad]'
+                isDarkMode ? 'bg-[#004aad]' : 'bg-[#00A5FF]'
               } text-white font-medium text-base sm:text-lg shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105`}
             >
               Get Started
@@ -88,8 +88,8 @@ const Hero = () => {
           >
             <Link
               href="#Features"
-              className={`px-8 py-4 sm:px-10 sm:py-4 border-2 border-[#2F4BE5] ${
-                isDarkMode ? 'text-white' : 'text-[#2F4BE5]'
+              className={`px-8 py-4 sm:px-10 sm:py-4 border-2 border-[#00A5FF] ${
+                isDarkMode ? 'text-white' : 'text-[#00A5FF]'
               } font-medium text-base sm:text-lg shadow-lg hover:bg-[#2F4BE5] hover:text-white transition-all duration-300 transform hover:scale-105`}
             >
               Learn More

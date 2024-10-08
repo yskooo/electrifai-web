@@ -29,12 +29,12 @@ const Contact = () => {
       {/* Decorative Elements */}
       <div
         className={`absolute top-1/3 left-0 w-[300px] h-[300px] ${
-          isDarkMode ? 'bg-[#001027] opacity-40' : 'bg-[#2F4BE5] opacity-20'
+          isDarkMode ? 'bg-[#001027] opacity-40' : 'bg-[#00A5FF] opacity-20'
         } rounded-full blur-[150px] animate-pulse`}
       ></div>
       <div
         className={`absolute bottom-1/4 right-0 w-[400px] h-[400px] ${
-          isDarkMode ? 'bg-[#000000] opacity-40' : 'bg-[#004aad] opacity-20'
+          isDarkMode ? 'bg-[#000000] opacity-40' : 'bg-[#00A5FF] opacity-20'
         } rounded-full blur-[200px]`}
       ></div>
 
@@ -63,7 +63,7 @@ const Contact = () => {
             animate={controls}
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className={`relative rounded-xl ${
-              isDarkMode ? 'bg-gradient-to-r from-[#2A2A2E] to-[#1B1B1D]' : 'bg-gradient-to-r from-[#2F4BE5] to-[#004aad]'
+              isDarkMode ? 'bg-gradient-to-r from-[#2A2A2E] to-[#1B1B1D]' : 'bg-gradient-to-r from-[#2F4BE5] to-[#00A5FF]'
             } px-6 py-12 shadow-lg md:py-16 md:px-12 backdrop-blur-md text-white`}
           >
             <div className="flex flex-wrap lg:flex-nowrap lg:space-x-12 items-start">
