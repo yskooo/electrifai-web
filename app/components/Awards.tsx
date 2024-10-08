@@ -16,12 +16,12 @@ const Awards = () => {
       {/* Decorative Background Elements */}
       <div
         className={`absolute top-1/4 left-0 w-[200px] h-[200px] ${
-          isDarkMode ? 'bg-[#001027] opacity-40' : 'bg-[#004aad] opacity-20'
+          isDarkMode ? 'bg-[#001027] opacity-40' : 'bg-[#00A5FF] opacity-20'
         } rounded-full blur-2xl animate-pulse`}
       ></div>
       <div
         className={`absolute bottom-1/4 right-0 w-[350px] h-[350px] ${
-          isDarkMode ? 'bg-[#000000] opacity-40' : 'bg-[#2F4BE5] opacity-20'
+          isDarkMode ? 'bg-[#000000] opacity-40' : 'bg-[#00A5FF] opacity-20'
         } rounded-full blur-[100px]`}
       ></div>
 
@@ -30,7 +30,7 @@ const Awards = () => {
         <div className="lg:w-2/3">
           <h3
             className={`text-center lg:text-left ${
-              isDarkMode ? 'text-[#2F4BE5]' : 'text-[#004aad]'
+              isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FF]'
             } text-md uppercase tracking-wider mb-4`}
           >
             Continued Pursuit of Growth
@@ -49,7 +49,7 @@ const Awards = () => {
           >
             Looking to partner with over 120 electric cooperatives across the Philippines
             <br />
-            <span className={isDarkMode ? 'text-[#2F4BE5]' : 'text-[#2F4BE5]'}>
+            <span className={isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FF]'}>
               to target rural and semi-urban areas, to reach even more people.
             </span>
           </p>
@@ -57,7 +57,7 @@ const Awards = () => {
           {/* Awards List */}
           <div
             className={`p-6 rounded-lg border shadow-lg lg:max-w-lg mx-auto lg:mx-0 transition-all hover:shadow-2xl ${
-              isDarkMode ? 'bg-[#1B1B1D] border-[#2F4BE5]' : 'bg-white border-gray-300'
+              isDarkMode ? 'bg-[#1B1B1D] border-[#00A5FF]' : 'bg-white border-gray-300'
             }`}
           >
             <ul className="space-y-6">
@@ -109,21 +109,21 @@ const Awards = () => {
           {/* Placeholder Images with increased width */}
           <div
             className={`w-80 h-52 rounded-lg overflow-hidden shadow-lg ${
-              isDarkMode ? 'bg-[#2F4BE5] border-[#2F4BE5]' : 'bg-gray-100 border-gray-200'
+              isDarkMode ? 'bg-[#00A5FF] border-[#00A5FF]' : 'bg-gray-100 border-gray-200'
             } border flex items-center justify-center`}
           >
             <img src="/members/justine.jpg" alt="Award Image 1" />
           </div>
           <div
             className={`w-80 h-52 rounded-lg overflow-hidden shadow-lg ${
-              isDarkMode ? 'bg-[#2F4BE5] border-[#2F4BE5]' : 'bg-gray-100 border-gray-200'
+              isDarkMode ? 'bg-[#00A5FF] border-[#00A5FF]' : 'bg-gray-100 border-gray-200'
             } border flex items-center justify-center`}
           >
             <img src="/members/justine.jpg" alt="Award Image 2" />
           </div>
           <div
             className={`w-80 h-52 rounded-lg overflow-hidden shadow-lg ${
-              isDarkMode ? 'bg-[#2F4BE5] border-[#2F4BE5]' : 'bg-gray-100 border-gray-200'
+              isDarkMode ? 'bg-[#00A5FF] border-[#00A5FFA]' : 'bg-gray-100 border-gray-200'
             } border flex items-center justify-center`}
           >
             <img src="/members/justine.jpg" alt="Award Image 3" />
