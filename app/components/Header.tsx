@@ -117,7 +117,7 @@ export default function Header() {
       <button
         onClick={toggleDarkMode}
         aria-label="Toggle Dark Mode"
-        className={`p-2 rounded-md transition-all duration-300 ease-in-out ${
+        className={`ml-4 p-2 rounded-md transition-[color] duration-300 ease-in-out ${
           isDarkMode ? "bg-[#00000]" : "bg-white"
         }`}
       >
