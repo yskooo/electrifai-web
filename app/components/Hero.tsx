@@ -101,12 +101,12 @@ const Hero = () => {
       {/* Image Section */}
       <div className="hidden lg:block lg:w-1/2 z-10">
         <motion.img
-          src="/svgs/2.svg"
+          src="/svgs/hero.svg"
           alt="Team collaborating"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="object-contain rounded-lg w-full h-auto max-h-[600px] mt-10"
+          className="object-contain rounded-lg w-full h-auto max-h-[600px] mt-20"
         />
       </div>
     </section>
