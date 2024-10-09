@@ -28,7 +28,6 @@ const Footer = () => {
           <span>Polytechnic University of the Philippines, Sta. Mesa, Philippines</span>
         </div>
       </div>
-
     </footer>
   );
 };
