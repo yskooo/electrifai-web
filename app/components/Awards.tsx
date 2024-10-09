@@ -112,21 +112,21 @@ const Awards = () => {
               isDarkMode ? 'bg-[#00A5FF] border-[#00A5FF]' : 'bg-gray-100 border-gray-200'
             } border flex items-center justify-center`}
           >
-            <img src="/members/justine.jpg" alt="Award Image 1" />
+            <img src="awards-1.png" alt="Award Image 1" />
           </div>
           <div
             className={`w-80 h-52 rounded-lg overflow-hidden shadow-lg ${
               isDarkMode ? 'bg-[#00A5FF] border-[#00A5FF]' : 'bg-gray-100 border-gray-200'
             } border flex items-center justify-center`}
           >
-            <img src="/members/justine.jpg" alt="Award Image 2" />
+            <img src="awards-2.png" alt="Award Image 2" />
           </div>
           <div
             className={`w-80 h-52 rounded-lg overflow-hidden shadow-lg ${
               isDarkMode ? 'bg-[#00A5FF] border-[#00A5FFA]' : 'bg-gray-100 border-gray-200'
             } border flex items-center justify-center`}
           >
-            <img src="/members/justine.jpg" alt="Award Image 3" />
+            <img src="awards-3.png" alt="Award Image 3" />
           </div>
         </div>
       </div>
