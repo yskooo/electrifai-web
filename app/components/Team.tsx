@@ -104,12 +104,12 @@ const Team = () => {
           <p className={`text-sm md:text-md lg:text-lg ${
             isDarkMode ? 'text-gray-300' : 'text-gray-600'
           } max-w-2xl mx-auto`}>
-            The company is spearheaded by a team of passionate students from the Polytechnic University of the Philippines Manila, under the team of PENTATRONICS.
+            The company is spearheaded by a team of passionate students from the Polytechnic University of the Philippines Manila.
           </p>
         </div>
 
         {/* Team Members Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-4 md:px-0">
+        <div className="px-4 flex flex-wrap justify-center gap-6">
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
@@ -117,7 +117,7 @@ const Team = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 + index * 0.1 }}
               whileHover={{ scale: 1.05, boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.1)' }}
-              className={`p-4 md:p-6 lg:p-4 rounded-xl md:rounded-2xl shadow-lg ${
+              className={`p-4 md:p-6 lg:p-4 w-full lg:w-1/5 md:w-1/3 rounded-xl md:rounded-2xl shadow-lg ${
                 isDarkMode ? 'bg-[#1B1B1D] text-gray-300' : 'bg-white text-[#0A0A0B]'
               } hover:shadow-2xl transition-shadow duration-300 transform text-center flex flex-col items-center`}
             >
