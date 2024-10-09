@@ -10,12 +10,14 @@ type DarkModeContextType = {
 const DarkModeContext = createContext<DarkModeContextType | undefined>(undefined);
 
 export const DarkModeProvider = ({ children }: { children: ReactNode }) => {
+  const [isDarkMode, setIsDarkMode] = useState<boolean | null>(null);
+
   const setInitialDarkModePreference = (): boolean => {
+    if (typeof window === "undefined") return false;
+
     // Check local storage for saved preference
-    if (typeof window !== "undefined") {
-      const savedMode = localStorage.getItem("darkMode");
-      if (savedMode !== null) return savedMode === "true";
-    }
+    const savedMode = localStorage.getItem("darkMode");
+    if (savedMode !== null) return savedMode === "true";
 
     // Check preference from system/browser
     if (typeof window !== "undefined") {
@@ -23,22 +25,27 @@ export const DarkModeProvider = ({ children }: { children: ReactNode }) => {
       return mediaQuery.matches;
     }
     return false;
-  }
+  };
 
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(setInitialDarkModePreference());
-
+  // Sets initial dark mode
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    const initialMode = setInitialDarkModePreference();
+    setIsDarkMode(initialMode);
+  }, []);
+  
+  useEffect(() => {
+    if (typeof window !== "undefined" && isDarkMode !== null) {
       localStorage.setItem("darkMode", isDarkMode.toString());
     }
   }, [isDarkMode])
+
 
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => !prevMode);
   };
 
   return (
-    <DarkModeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
+    <DarkModeContext.Provider value={{ isDarkMode: isDarkMode ?? false, toggleDarkMode }}>
       {children}
     </DarkModeContext.Provider>
   );
