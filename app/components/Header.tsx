@@ -126,7 +126,7 @@ export default function Header() {
 
       {/* Mobile Menu Toggle */}
       <button
-        className={`ml-4 lg:hidden ${
+        className={`ml-4 lg:hidden transition-all duration-300 ease-in-out ${
           isDarkMode ? "text-white" : "text-[#0A0A0B]"
         } focus:outline-none`}
         onClick={toggleMenu}
