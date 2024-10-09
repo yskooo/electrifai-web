@@ -14,7 +14,7 @@ const Footer = () => {
       }`}
     >
       <div className="mb-4 sm:mb-0 text-center sm:text-left">
-        <p className="text-sm font-semibold">&copy; 2024 ElectricAI Sol'n PH. All rights reserved.</p>
+        <p className="text-sm font-semibold">&copy; 2024 ElectricAI Sol&#39;n PH. All rights reserved.</p>
         <p className="text-xs text-white/60">Empowering energy solutions for a brighter tomorrow.</p>
       </div>
       <div className="flex flex-col gap-3 text-center sm:text-left text-white/70">
