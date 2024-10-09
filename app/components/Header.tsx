@@ -129,7 +129,7 @@ export default function Header() {
         onClick={toggleDarkMode}
         aria-label="Toggle Dark Mode"
         className={`ml-4 p-2 rounded-md transition-all duration-300 ease-in-out ${
-          isDarkMode ? "bg-[#00000]" : "bg-[#F9FAFB]"
+          isDarkMode ? "bg-[#00000]" : "bg-white"
         }`}
       >
         {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
