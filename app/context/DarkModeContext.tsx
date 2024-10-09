@@ -10,7 +10,14 @@ type DarkModeContextType = {
 const DarkModeContext = createContext<DarkModeContextType | undefined>(undefined);
 
 export const DarkModeProvider = ({ children }: { children: ReactNode }) => {
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+  const setInitialDarkModePreference = () => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const isDarkModePreferred = mediaQuery.matches;
+    return isDarkModePreferred;
+  }
+
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(setInitialDarkModePreference());
+
 
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => !prevMode);
