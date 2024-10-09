@@ -96,7 +96,7 @@ export default function Header() {
         className={`${
           isOpen ? "flex" : "hidden"
         } flex-col lg:flex lg:flex-row lg:ml-auto lg:gap-12 absolute lg:static top-16 left-0 right-0 ${
-          isDarkMode ? "bg-[#001F3F]" : "bg-white"
+          isDarkMode ? "bg-[#00060F]" : "bg-white"
         } lg:bg-transparent lg:p-0 p-4 shadow-lg lg:shadow-none transition-all duration-300 ease-in-out`}
       >
         {["Features", "AboutUs", "OurTeam", "Awards", "Contact"].map((item) => (
