@@ -80,7 +80,7 @@ export default function Header() {
       } shadow-lg flex items-center justify-between px-6 py-6 h-20`}
     >
       {/* Logo */}
-      <Link href="/" className="flex items-center">
+      <Link href="/" className="flex items-center mr-auto">
         <img src="/svgs/elec_logo.svg" alt="logo" className="w-20 h-20" />
         <span
           className={`text-xl font-bold ${
@@ -91,23 +91,12 @@ export default function Header() {
         </span>
       </Link>
 
-      {/* Mobile Menu Toggle */}
-      <button
-        className={`ml-auto lg:hidden ${
-          isDarkMode ? "text-white" : "text-[#0A0A0B]"
-        } focus:outline-none`}
-        onClick={toggleMenu}
-        aria-label="Toggle menu"
-      >
-        {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-      </button>
-
       {/* Navigation Links */}
       <nav
         className={`${
           isOpen ? "flex" : "hidden"
         } flex-col lg:flex lg:flex-row lg:ml-auto lg:gap-12 absolute lg:static top-16 left-0 right-0 ${
-          isDarkMode ? "bg-[#001F3F]" : "bg-white"
+          isDarkMode ? "bg-[#00060F]" : "bg-white"
         } lg:bg-transparent lg:p-0 p-4 shadow-lg lg:shadow-none transition-all duration-300 ease-in-out`}
       >
         {["Features", "AboutUs", "OurTeam", "Awards", "Contact"].map((item) => (
@@ -128,11 +117,22 @@ export default function Header() {
       <button
         onClick={toggleDarkMode}
         aria-label="Toggle Dark Mode"
-        className={`ml-4 p-2 rounded-md transition-all duration-300 ease-in-out ${
-          isDarkMode ? "bg-[#00000]" : "bg-[#F9FAFB]"
+        className={`ml-4 p-2 rounded-md transition-[color] duration-300 ease-in-out ${
+          isDarkMode ? "bg-[#00000]" : "bg-white"
         }`}
       >
         {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+      </button>
+
+      {/* Mobile Menu Toggle */}
+      <button
+        className={`ml-4 lg:hidden transition-all duration-300 ease-in-out ${
+          isDarkMode ? "text-white" : "text-[#0A0A0B]"
+        } focus:outline-none`}
+        onClick={toggleMenu}
+        aria-label="Toggle menu"
+      >
+        {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
       </button>
     </header>
   );

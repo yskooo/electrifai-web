@@ -12,37 +12,37 @@ const Team = () => {
   const teamMembers = [
     {
       name: 'Daniel Caparro',
-      role: 'CEO, AI Developer',
-      description: 'Leads project management and AI development, bringing technical expertise and strategic planning to ensure successful delivery of AI-based solutions.',
+      role: 'CEO, Co-founder',
+      description: 'Leads strategic vision and growth, and drives innovation to scale the company while fostering partnerships and investor relations.',
       imgSrc: '/members/caparro.jpeg',
     },
     {
       name: 'Engr. Hard',
-      role: '',
-      description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
+      role: 'COO, Co-founder, Consultant',
+      description: ' Oversees daily operations, streamlines processes, and advises on strategic decisions for growth.',
       imgSrc: '/members/hard.jpg',
     },
     {
       name: 'Harold Patacsil',
-      role: 'CTO, Developer',
+      role: 'CTO, Lead Developer',
       description: 'Leads the development of the app infrastructure, ensuring that the platform is secure, scalable, and efficient.',
       imgSrc: '/members/harold.jpg',
     },
     {
       name: 'Raeselyn Macorol',
-      role: 'Researcher',
-      description: 'Conducts research and provides insights that drive innovation and informed decision-making across various projects.',
+      role: 'Marketing & Operations Manager',
+      description: 'Drives marketing strategies and manages daily operations to ensure business growth and efficiency.',
       imgSrc: '/members/raeselyn.png',
     },
     {
       name: 'Justine Rey Daquis',
-      role: 'Lead UI/UX, Frontend Developer',
-      description: 'Designs intuitive interfaces and crafts seamless user experiences, making sure that users interact effortlessly with the product.',
+      role: 'Software Developer',
+      description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/justine.jpg',
     },
     {
       name: 'Clarence Jay Fetalino',
-      role: 'Researcher, IoT Device Developer',
+      role: 'IoT Device Developer',
       description: 'Specializes in IoT devices and research, ensuring that the hardware components are robust, efficient, and well-integrated with the software.',
       imgSrc: '/members/clarence.png',
     },
@@ -53,34 +53,34 @@ const Team = () => {
       imgSrc: '/members/Mcallen.png',
     },
     {
-      name: 'Sieg',
-      role: '',
-      description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
+      name: 'Sieg Lorelle Mina',
+      role: 'Software Developer',
+      description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/sieg.jpg',
     },
     {
-      name: 'Gaeus',
-      role: '',
-      description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
+      name: 'Gaeus Fabro',
+      role: 'Software Developer',
+      description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/gaeus.jpg',
     },
     {
       name: 'David Bato-bato',
-      role: '',
-      description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
+      role: 'Software Developer',
+      description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/david.jpg',
     },
     {
-      name: 'Denis',
-      role: '',
-      description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
-      imgSrc: '',
+      name: 'Dennesse Condat',
+      role: 'Market Research Analyst',
+      description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
+      imgSrc: '/members/dennesse.jpg',
     },
     {
-      name: 'Arjay',
-      role: '',
-      description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
-      imgSrc: '',
+      name: 'Arjay Rosel',
+      role: 'Market Research Analyst',
+      description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
+      imgSrc: '/members/arjay.jpg',
     },
 
 
@@ -104,12 +104,12 @@ const Team = () => {
           <p className={`text-sm md:text-md lg:text-lg ${
             isDarkMode ? 'text-gray-300' : 'text-gray-600'
           } max-w-2xl mx-auto`}>
-            The company is spearheaded by a team of passionate students from the Polytechnic University of the Philippines Manila, under the team of PENTATRONICS.
+            The company is spearheaded by a team of passionate students from the Polytechnic University of the Philippines Manila.
           </p>
         </div>
 
         {/* Team Members Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-4 md:px-0">
+        <div className="px-4 flex flex-wrap justify-center gap-6">
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
@@ -117,7 +117,7 @@ const Team = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 + index * 0.1 }}
               whileHover={{ scale: 1.05, boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.1)' }}
-              className={`p-4 md:p-6 lg:p-4 rounded-xl md:rounded-2xl shadow-lg ${
+              className={`p-4 md:p-6 lg:p-4 w-full lg:w-1/5 md:w-1/3 rounded-xl md:rounded-2xl shadow-lg ${
                 isDarkMode ? 'bg-[#1B1B1D] text-gray-300' : 'bg-white text-[#0A0A0B]'
               } hover:shadow-2xl transition-shadow duration-300 transform text-center flex flex-col items-center`}
             >
