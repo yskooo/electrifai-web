@@ -14,19 +14,25 @@ const Team = () => {
       name: 'Daniel Caparro',
       role: 'CEO, AI Developer',
       description: 'Leads project management and AI development, bringing technical expertise and strategic planning to ensure successful delivery of AI-based solutions.',
-      imgSrc: '',
+      imgSrc: '/members/caparro.jpeg',
+    },
+    {
+      name: 'Engr. Hard',
+      role: '',
+      description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
+      imgSrc: '/members/hard.jpg',
     },
     {
       name: 'Harold Patacsil',
       role: 'CTO, Developer',
       description: 'Leads the development of the app infrastructure, ensuring that the platform is secure, scalable, and efficient.',
-      imgSrc: '',
+      imgSrc: '/members/harold.jpg',
     },
     {
       name: 'Raeselyn Macorol',
       role: 'Researcher',
       description: 'Conducts research and provides insights that drive innovation and informed decision-making across various projects.',
-      imgSrc: '',
+      imgSrc: '/members/raeselyn.png',
     },
     {
       name: 'Justine Rey Daquis',
@@ -38,38 +44,46 @@ const Team = () => {
       name: 'Clarence Jay Fetalino',
       role: 'Researcher, IoT Device Developer',
       description: 'Specializes in IoT devices and research, ensuring that the hardware components are robust, efficient, and well-integrated with the software.',
-      imgSrc: '',
+      imgSrc: '/members/clarence.png',
     },
     {
       name: 'Mcallen Fradejas',
       role: 'Layout Artist, 3D Model Designer',
       description: 'Creates engaging 3D models and layouts, visualizing complex concepts with clarity and creativity.',
-      imgSrc: '',
+      imgSrc: '/members/Mcallen.png',
     },
     {
       name: 'Sieg',
       role: '',
       description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
-      imgSrc: '',
+      imgSrc: '/members/sieg.jpg',
     },
     {
       name: 'Gaeus',
       role: '',
       description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
-      imgSrc: '',
+      imgSrc: '/members/gaeus.jpg',
     },
     {
       name: 'David Bato-bato',
       role: '',
       description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
-      imgSrc: '',
+      imgSrc: '/members/david.jpg',
     },
     {
-      name: 'Engr. Hard',
+      name: 'Denis',
       role: '',
       description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
       imgSrc: '',
     },
+    {
+      name: 'Arjay',
+      role: '',
+      description: 'Conducts research on IoT devices and contributes to the development of hardware components that power the platform.',
+      imgSrc: '',
+    },
+
+
   ];
 
   return (
@@ -137,7 +151,7 @@ const Team = () => {
                 {member.name}
               </h3>
               <h4 className={`text-xs md:text-sm lg:text-xs font-medium ${
-                isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FFA]'
+                isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FFAd]'
               } mb-2`}>
                 {member.role}
               </h4>
