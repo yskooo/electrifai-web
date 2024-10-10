@@ -87,7 +87,7 @@ export default function Header() {
             isDarkMode ? "text-white" : "text-[#0A0A0B]"
           } hover:text-[#2F4BE5]`}
         >
-          Electrif<span className="italic">AI</span>
+          {/* Electrif<span className="italic">AI</span> */}
         </span>
       </Link>
 
