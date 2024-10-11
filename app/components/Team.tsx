@@ -155,11 +155,11 @@ const Team = () => {
               } mb-2`}>
                 {member.role}
               </h4>
-              <p className={`text-xs md:text-sm ${
+              {/* <p className={`text-xs md:text-sm ${
                 isDarkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
                 {member.description}
-              </p>
+              </p> */}
             </motion.div>
           ))}
         </div>
