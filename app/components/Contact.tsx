@@ -87,7 +87,7 @@ const Contact = () => {
                 </motion.p>
                 <div className="flex justify-start mb-6">
                   <a
-                    href="https://calendly.com/your-calendly-link"
+                    href="https://calendly.com/electrifaiphsolutionscorp/30min"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`${
@@ -114,7 +114,7 @@ const Contact = () => {
                     </div>
                     <div className="flex items-center text-lg">
                       <Mail className="text-white mr-4 h-6 w-6" />
-                      <span>contactelectrifai@gmail.com</span>
+                      <span>electrifaiphsolutionscorp@gmail.com</span>
                     </div>
                     <div className="flex items-center text-lg">
                       <MapPin className="text-white mr-4 h-6 w-6" />

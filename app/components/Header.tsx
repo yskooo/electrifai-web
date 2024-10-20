@@ -19,17 +19,22 @@ export default function Header() {
   // Handle scroll behavior with delay
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
-
-    if (currentScrollY < lastScrollY) {
+  
+    if (currentScrollY === 0) {
+      // If at the top, ensure the navbar is visible
+      setIsVisible(true);
+      setHideDelay(false);
+    } else if (currentScrollY < lastScrollY) {
+      // Scrolling up, show the navbar
       setIsVisible(true);
       setHideDelay(false);
     } else {
+      // Scrolling down, hide the navbar after a delay
       setHideDelay(true);
     }
-
+  
     setLastScrollY(currentScrollY);
   };
-
   // Effect to apply delay for header hiding
   useEffect(() => {
     if (hideDelay) {
