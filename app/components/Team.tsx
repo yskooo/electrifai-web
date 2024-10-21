@@ -208,9 +208,9 @@ const Team = () => {
               }`}>
                 {member.description}
               </p> */}
-              <div className="flex justify-end gap-1 w-full">
+              <div className="mt-auto flex justify-end gap-1 w-full">
                 <a 
-                  className={`flex justify-center items-center rounded-full transition-all duration-300 w-3 h-3 p-4 ${
+                  className={`mt-2 flex justify-center items-center rounded-full transition-all duration-300 w-3 h-3 p-4 ${
                     isDarkMode ? " hover:bg-[#2e2e2e]": "hover:bg-[#eef2f3]"}`}
                   href={`https://linkedin.com/in/${member.contacts.linkedIn}`}
                   target="__blank"
@@ -219,8 +219,8 @@ const Team = () => {
                   <FontAwesomeIcon className="d-solid" icon={faLinkedinIn} />
                 </a>
                 {/* <a 
-                 className={`flex justify-center items-center rounded-full transition-all duration-300 w-3 h-3 p-4 ${
-                  isDarkMode ? " hover:bg-[#2e2e2e]": "hover:bg-[#eef2f3]"}`}
+                  className={`mt-2 flex justify-center items-center rounded-full transition-all duration-300 w-3 h-3 p-4 ${
+                    isDarkMode ? " hover:bg-[#2e2e2e]": "hover:bg-[#eef2f3]"}`}
                   href={`https://www.facebook.com/${member.contacts.facebook}`}
                   target="__blank"
                   rel="noopener noreferrer"
