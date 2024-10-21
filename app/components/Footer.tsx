@@ -15,7 +15,7 @@ const Footer = () => {
         isDarkMode ? "bg-gradient-to-r from-[#000000] to-[#001027]" : "bg-gray-800"
       }`}
     >
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-4">
         <div className="mb-2 lg:mb-0 text-center lg:text-left">
           <p className="text-sm font-semibold">&copy; 2024 ElectricAI Sol&#39;n PH. All rights reserved.</p>
           <p className="text-xs text-white/60">Empowering energy solutions for a brighter tomorrow.</p>
