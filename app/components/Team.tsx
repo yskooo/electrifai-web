@@ -2,6 +2,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn, faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+// import { Phone } from 'lucide-react';
 import { useDarkMode } from '../context/DarkModeContext'; 
 
 const defaultProfile = '/members/default-image.jpg';
@@ -15,6 +19,11 @@ const Team = () => {
       role: 'CEO, Co-founder',
       description: 'Leads strategic vision and growth, and drives innovation to scale the company while fostering partnerships and investor relations.',
       imgSrc: '/members/caparro.jpeg',
+      contacts: {
+        linkedIn: "https://linkedin.com/in/daniel-caparro-805682224",
+        facebook: "https://www.facebook.com/nam.joo.7399?mibextid=LQQJ4d",
+        number: "09361092653",
+      }
     },
     {
       name: 'Engr. Hard',
@@ -160,6 +169,15 @@ const Team = () => {
               }`}>
                 {member.description}
               </p> */}
+              <div className="flex gap-1">
+                <button className="flex justify-center items-center rounded-full bg-white w-3 h-3 p-4">
+                  <FontAwesomeIcon className="d-solid" icon={faLinkedinIn} />
+                </button>
+                <button className="flex justify-center items-center rounded-full bg-white w-3 h-3 p-4">
+                  <FontAwesomeIcon icon={faFacebookF} />
+                </button>
+              </div>
+
             </motion.div>
           ))}
         </div>
