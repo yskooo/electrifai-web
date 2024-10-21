@@ -22,74 +22,117 @@ const Team = () => {
       contacts: {
         linkedIn: "https://linkedin.com/in/daniel-caparro-805682224",
         facebook: "https://www.facebook.com/nam.joo.7399?mibextid=LQQJ4d",
-        number: "09361092653",
-      }
+      },
     },
     {
       name: 'Engr. Hard',
       role: 'COO, Co-founder, Consultant',
       description: ' Oversees daily operations, streamlines processes, and advises on strategic decisions for growth.',
       imgSrc: '/members/hard.jpg',
+      contacts: {
+        linkedIn: "https://www.linkedin.com/in/gerhard-tan-1a5160104/",
+        facebook: "https://www.facebook.com/gerhardian19",
+      },
     },
     {
       name: 'Harold Patacsil',
       role: 'CTO, Lead Developer',
       description: 'Leads the development of the app infrastructure, ensuring that the platform is secure, scalable, and efficient.',
       imgSrc: '/members/harold.jpg',
+      contacts: {
+        linkedIn: "https://www.linkedin.com/in/haroldmartinpatacsil/",
+        facebook: "https://www.facebook.com/harold.martinpatacsil.3",
+      },
     },
     {
       name: 'Raeselyn Macorol',
       role: 'Marketing & Operations Manager',
       description: 'Drives marketing strategies and manages daily operations to ensure business growth and efficiency.',
       imgSrc: '/members/raeselyn.png',
+      contacts: {
+        linkedIn: "https://www.linkedin.com/in/raeselynmacorol",
+        facebook: "https://www.facebook.com/raeselynmacorol",
+      },
     },
     {
       name: 'Justine Rey Daquis',
       role: 'Software Developer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/justine.jpg',
+      contacts: {
+        linkedIn: "https://www.linkedin.com/in/justine-rey-daquis-855b07297/",
+        facebook: "https://www.facebook.com/Justinedaquis28",
+      },
     },
     {
       name: 'Clarence Jay Fetalino',
       role: 'IoT Device Developer',
       description: 'Specializes in IoT devices and research, ensuring that the hardware components are robust, efficient, and well-integrated with the software.',
       imgSrc: '/members/clarence.png',
+      contacts: {
+        linkedIn: "https:linkedin.com/in/clarence-fetalino-45b313223/",
+        facebook: "https://www.facebook.com/clarencejay.fetalino/",
+      },
     },
     {
       name: 'Mcallen Fradejas',
       role: 'Layout Artist, 3D Model Designer',
       description: 'Creates engaging 3D models and layouts, visualizing complex concepts with clarity and creativity.',
       imgSrc: '/members/Mcallen.png',
+      contacts: {
+        linkedIn: "https://linkedin.com/in/mcallen-fradejas",
+        facebook: "https://www.facebook.com/macalien.fradejas",
+      },
     },
     {
-      name: 'Sieg Lorelle Mina',
+      name: 'Siegfred Lorelle Mina',
       role: 'Software Developer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/sieg.jpg',
+      contacts: {
+        linkedIn: "https://www.linkedin.com/in/siegfred-lorelle-mina",
+        facebook: "https://www.facebook.com/profile.php?id=1718881634",
+      },
     },
     {
-      name: 'Gaeus Fabro',
+      name: 'Gaeus Caskie Fabro',
       role: 'Software Developer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/gaeus.jpg',
+      contacts: {
+        linkedIn: "https://www.linkedin.com/in/gaeus-caskie-fabro-319981234",
+        facebook: "https://facebook.com/caskieee/",
+      },
     },
     {
       name: 'David Bato-bato',
       role: 'Software Developer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/david.jpg',
+      contacts: {
+        linkedIn: "https://www.facebook.com/dream.achiever46",
+        facebook: "https://www.linkedin.com/in/david-bato-bato-1b6a8b288/",
+      },
     },
     {
       name: 'Dennesse Condat',
       role: 'Market Research Analyst',
       description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
       imgSrc: '/members/dennesse.jpg',
+      contacts: {
+        linkedIn: "https://linkedin.com/in/dennesse-loura-condat-2747a1299",
+        facebook: "https://www.facebook.com/profile.php?id=100021986423905",
+      },
     },
     {
       name: 'Arjay Rosel',
       role: 'Market Research Analyst',
       description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
       imgSrc: '/members/arjay.jpg',
+      contacts: {
+        linkedIn: "https://www.linkedin.com/in/arjay-rosel-5b4a0b252",
+        facebook: "https://www.facebook.com/roselarjayyy?mibextid=ZbWKwL",
+      },
     },
 
 
