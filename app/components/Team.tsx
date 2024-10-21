@@ -218,7 +218,7 @@ const Team = () => {
                   target="__blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon className="d-solid" icon={faLinkedinIn} />
+                  <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
                 {/* <a 
                   className={`mt-2 flex justify-center items-center rounded-full transition-all duration-300 w-3 h-3 p-4 ${
