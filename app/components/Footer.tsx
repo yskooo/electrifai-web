@@ -19,9 +19,9 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col text-center gap-2 sm:text-left text-white/70">
-        <a href="mailto:contactelectrifai@gmail.com" className="flex justify-center lg:justify-start items-center">
+        <a href="mailto:celectrifaiphsolutionscorp@gmail.com" className="flex justify-center lg:justify-start items-center">
           <Mail className="mr-4 w-4 h-4 hidden lg:block" />
-          <span className="text-sm lg:text-base">contactelectrifai@gmail.com</span>
+          <span className="text-sm lg:text-base">electrifaiphsolutionscorp@gmail.com</span>
         </a>
         <div className="flex justify-center lg:justify-start items-center">
           <MapPin className="mr-4 w-4 h-4 hidden lg:block" />
