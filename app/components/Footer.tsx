@@ -1,7 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
-import { Facebook, Mail, MapPin } from "lucide-react"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { useDarkMode } from "../context/DarkModeContext"; 
@@ -11,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer
-      className={`gap-4 p-4 lg:p-8 w-full text-white transition-all duration-500 ease-in-out ${
+      className={`gap-4 p-4 lg:p-6 w-full text-white transition-all duration-500 ease-in-out ${
         isDarkMode ? "bg-gradient-to-r from-[#000000] to-[#001027]" : "bg-gray-800"
       }`}
     >
