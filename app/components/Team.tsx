@@ -21,7 +21,7 @@ const Team = () => {
       imgSrc: '/members/caparro.jpeg',
       contacts: {
         linkedIn: "https://linkedin.com/in/daniel-caparro-805682224",
-        facebook: "https://www.facebook.com/nam.joo.7399?mibextid=LQQJ4d",
+        facebook: "https://www.facebook.com/nam.joo.7399",
       },
     },
     {
@@ -30,7 +30,7 @@ const Team = () => {
       description: ' Oversees daily operations, streamlines processes, and advises on strategic decisions for growth.',
       imgSrc: '/members/hard.jpg',
       contacts: {
-        linkedIn: "https://www.linkedin.com/in/gerhard-tan-1a5160104/",
+        linkedIn: "https://www.linkedin.com/in/gerhard-tan-1a5160104",
         facebook: "https://www.facebook.com/gerhardian19",
       },
     },
@@ -40,7 +40,7 @@ const Team = () => {
       description: 'Leads the development of the app infrastructure, ensuring that the platform is secure, scalable, and efficient.',
       imgSrc: '/members/harold.jpg',
       contacts: {
-        linkedIn: "https://www.linkedin.com/in/haroldmartinpatacsil/",
+        linkedIn: "https://www.linkedin.com/in/haroldmartinpatacsil",
         facebook: "https://www.facebook.com/harold.martinpatacsil.3",
       },
     },
@@ -60,7 +60,7 @@ const Team = () => {
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/justine.jpg',
       contacts: {
-        linkedIn: "https://www.linkedin.com/in/justine-rey-daquis-855b07297/",
+        linkedIn: "https://www.linkedin.com/in/justine-rey-daquis-855b07297",
         facebook: "https://www.facebook.com/Justinedaquis28",
       },
     },
@@ -70,8 +70,8 @@ const Team = () => {
       description: 'Specializes in IoT devices and research, ensuring that the hardware components are robust, efficient, and well-integrated with the software.',
       imgSrc: '/members/clarence.png',
       contacts: {
-        linkedIn: "https:linkedin.com/in/clarence-fetalino-45b313223/",
-        facebook: "https://www.facebook.com/clarencejay.fetalino/",
+        linkedIn: "https:linkedin.com/in/clarence-fetalino-45b313223",
+        facebook: "https://www.facebook.com/clarencejay.fetalino",
       },
     },
     {
@@ -101,7 +101,7 @@ const Team = () => {
       imgSrc: '/members/gaeus.jpg',
       contacts: {
         linkedIn: "https://www.linkedin.com/in/gaeus-caskie-fabro-319981234",
-        facebook: "https://facebook.com/caskieee/",
+        facebook: "https://facebook.com/caskieee",
       },
     },
     {
@@ -110,8 +110,8 @@ const Team = () => {
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/david.jpg',
       contacts: {
-        linkedIn: "https://www.facebook.com/dream.achiever46",
-        facebook: "https://www.linkedin.com/in/david-bato-bato-1b6a8b288/",
+        linkedIn: "https://www.linkedin.com/in/david-bato-bato-1b6a8b288",
+        facebook: "https://www.facebook.com/dream.achiever46",
       },
     },
     {
@@ -131,7 +131,7 @@ const Team = () => {
       imgSrc: '/members/arjay.jpg',
       contacts: {
         linkedIn: "https://www.linkedin.com/in/arjay-rosel-5b4a0b252",
-        facebook: "https://www.facebook.com/roselarjayyy?mibextid=ZbWKwL",
+        facebook: "https://www.facebook.com/roselarjayyy",
       },
     },
 
@@ -213,12 +213,22 @@ const Team = () => {
                 {member.description}
               </p> */}
               <div className="flex gap-1">
-                <button className="flex justify-center items-center rounded-full bg-white w-3 h-3 p-4">
+                <a 
+                  className="flex justify-center items-center rounded-full bg-white w-3 h-3 p-4"
+                  href={`${member.contacts.linkedIn}`}
+                  target="__blank"
+                  rel="noopener noreferrer"
+                >
                   <FontAwesomeIcon className="d-solid" icon={faLinkedinIn} />
-                </button>
-                <button className="flex justify-center items-center rounded-full bg-white w-3 h-3 p-4">
-                  <FontAwesomeIcon icon={faFacebookF} />
-                </button>
+                </a>
+                <a 
+                  className="flex justify-center items-center rounded-full bg-white w-3 h-3 p-4"
+                  href={`${member.contacts.facebook}`}
+                  target="__blank"
+                  rel="noopener noreferrer"
+                > 
+                <FontAwesomeIcon icon={faFacebookF} />
+                </a>
               </div>
 
             </motion.div>
