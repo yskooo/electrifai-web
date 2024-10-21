@@ -165,9 +165,9 @@ const Team = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 + index * 0.1 }}
               whileHover={{ scale: 1.05, boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.1)' }}
-              className={`p-4 md:p-6 lg:p-4 w-full lg:w-1/5 md:w-1/3 rounded-xl md:rounded-2xl shadow-lg ${
+              className={`p-4 md:p-6 lg:p-4 md:w-1/3 w-full lg:w-1/5 rounded-xl md:rounded-2xl shadow-lg ${
                 isDarkMode ? 'bg-[#1B1B1D] text-gray-300' : 'bg-white text-[#0A0A0B]'
-              } hover:shadow-2xl transition-shadow duration-300 transform text-center flex flex-col items-center`}
+              } hover:shadow-2xl transition-shadow duration-300 transform text-center flex flex-row max-[320px]:flex-col md:flex-col gap-5 md:gap-0 items-center`}
             >
               {/* Profile Image with Decorative Elements */}
               <div className="relative mb-4">
@@ -193,22 +193,24 @@ const Team = () => {
               </div>
 
               {/* Member Info */}
-              <h3 className={`text-sm md:text-lg lg:text-md font-bold ${
-                isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
-              } mb-1`}>
-                {member.name}
-              </h3>
-              <h4 className={`text-xs md:text-sm lg:text-xs font-medium ${
-                isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FFAd]'
-              } mb-2`}>
-                {member.role}
-              </h4>
+              <div className="w-full md:ms-0">
+                <h3 className={`text-start max-[320px]:text-center md:text-center w-text-sm md:text-lg lg:text-md font-bold ${
+                  isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
+                } mb-1`}>
+                  {member.name}
+                </h3>
+                <h4 className={`text-start max-[320px]:text-center md:text-center text-xs md:text-sm lg:text-xs font-medium ${
+                  isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FFAd]'
+                } mb-2`}>
+                  {member.role}
+                </h4>
+              </div>
               {/* <p className={`text-xs md:text-sm ${
                 isDarkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
                 {member.description}
               </p> */}
-              <div className="mt-auto flex justify-end gap-1 w-full">
+              <div className="mt-auto flex justify-end gap-1 w-1/12 max-[320px]:w-full md:w-full">
                 <a 
                   className={`mt-2 flex justify-center items-center rounded-full transition-all duration-300 w-3 h-3 p-4 ${
                     isDarkMode ? " hover:bg-[#2e2e2e]": "hover:bg-[#eef2f3]"}`}
