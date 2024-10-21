@@ -108,14 +108,14 @@ const Contact = () => {
                   className="space-y-6"
                 >
                   <div className="flex flex-col space-y-6 text-white/80">
-                    <div className="flex items-center text-lg">
+                    <a href="tel:+639059648098" className="flex items-center text-lg">
                       <Phone className="text-white mr-4 h-6 w-6" />
-                      <span>+639164137271</span>
-                    </div>
-                    <div className="flex items-center text-lg">
+                      <span>+63 905 964 8098</span>
+                    </a>
+                    <a href="mailto:electrifaiphsolutionscorp@gmail.com" className="flex items-center text-lg">
                       <Mail className="text-white mr-4 h-6 w-6" />
                       <span>electrifaiphsolutionscorp@gmail.com</span>
-                    </div>
+                    </a>
                     <div className="flex items-center text-lg">
                       <MapPin className="text-white mr-4 h-6 w-6" />
                       <span>Polytechnic University of the Philippines, Sta. Mesa, Philippines</span>
