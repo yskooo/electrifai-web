@@ -4,8 +4,6 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-// import { Phone } from 'lucide-react';
 import { useDarkMode } from '../context/DarkModeContext'; 
 
 const defaultProfile = '/members/default-image.jpg';
@@ -20,8 +18,8 @@ const Team = () => {
       description: 'Leads strategic vision and growth, and drives innovation to scale the company while fostering partnerships and investor relations.',
       imgSrc: '/members/caparro.jpeg',
       contacts: {
-        linkedIn: "https://linkedin.com/in/daniel-caparro-805682224",
-        facebook: "https://www.facebook.com/nam.joo.7399",
+        linkedIn: "daniel-caparro-805682224",
+        facebook: "nam.joo.7399",
       },
     },
     {
@@ -30,8 +28,8 @@ const Team = () => {
       description: ' Oversees daily operations, streamlines processes, and advises on strategic decisions for growth.',
       imgSrc: '/members/hard.jpg',
       contacts: {
-        linkedIn: "https://www.linkedin.com/in/gerhard-tan-1a5160104",
-        facebook: "https://www.facebook.com/gerhardian19",
+        linkedIn: "gerhard-tan-1a5160104",
+        facebook: "gerhardian19",
       },
     },
     {
@@ -40,8 +38,8 @@ const Team = () => {
       description: 'Leads the development of the app infrastructure, ensuring that the platform is secure, scalable, and efficient.',
       imgSrc: '/members/harold.jpg',
       contacts: {
-        linkedIn: "https://www.linkedin.com/in/haroldmartinpatacsil",
-        facebook: "https://www.facebook.com/harold.martinpatacsil.3",
+        linkedIn: "haroldmartinpatacsil",
+        facebook: "harold.martinpatacsil.3",
       },
     },
     {
@@ -50,8 +48,8 @@ const Team = () => {
       description: 'Drives marketing strategies and manages daily operations to ensure business growth and efficiency.',
       imgSrc: '/members/raeselyn.png',
       contacts: {
-        linkedIn: "https://www.linkedin.com/in/raeselynmacorol",
-        facebook: "https://www.facebook.com/raeselynmacorol",
+        linkedIn: "raeselynmacorol",
+        facebook: "raeselynmacorol",
       },
     },
     {
@@ -60,8 +58,8 @@ const Team = () => {
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/justine.jpg',
       contacts: {
-        linkedIn: "https://www.linkedin.com/in/justine-rey-daquis-855b07297",
-        facebook: "https://www.facebook.com/Justinedaquis28",
+        linkedIn: "justine-rey-daquis-855b07297",
+        facebook: "Justinedaquis28",
       },
     },
     {
@@ -70,8 +68,8 @@ const Team = () => {
       description: 'Specializes in IoT devices and research, ensuring that the hardware components are robust, efficient, and well-integrated with the software.',
       imgSrc: '/members/clarence.png',
       contacts: {
-        linkedIn: "https:linkedin.com/in/clarence-fetalino-45b313223",
-        facebook: "https://www.facebook.com/clarencejay.fetalino",
+        linkedIn: "clarence-fetalino-45b313223",
+        facebook: "clarencejay.fetalino",
       },
     },
     {
@@ -80,8 +78,8 @@ const Team = () => {
       description: 'Creates engaging 3D models and layouts, visualizing complex concepts with clarity and creativity.',
       imgSrc: '/members/Mcallen.png',
       contacts: {
-        linkedIn: "https://linkedin.com/in/mcallen-fradejas",
-        facebook: "https://www.facebook.com/macalien.fradejas",
+        linkedIn: "mcallen-fradejas",
+        facebook: "macalien.fradejas",
       },
     },
     {
@@ -90,8 +88,8 @@ const Team = () => {
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/sieg.jpg',
       contacts: {
-        linkedIn: "https://www.linkedin.com/in/siegfred-lorelle-mina",
-        facebook: "https://www.facebook.com/profile.php?id=1718881634",
+        linkedIn: "siegfred-lorelle-mina",
+        facebook: "profile.php?id=1718881634",
       },
     },
     {
@@ -100,8 +98,8 @@ const Team = () => {
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/gaeus.jpg',
       contacts: {
-        linkedIn: "https://www.linkedin.com/in/gaeus-caskie-fabro-319981234",
-        facebook: "https://facebook.com/caskieee",
+        linkedIn: "gaeus-caskie-fabro-319981234",
+        facebook: "caskieee",
       },
     },
     {
@@ -110,8 +108,8 @@ const Team = () => {
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/david.jpg',
       contacts: {
-        linkedIn: "https://www.linkedin.com/in/david-bato-bato-1b6a8b288",
-        facebook: "https://www.facebook.com/dream.achiever46",
+        linkedIn: "david-bato-bato-1b6a8b288",
+        facebook: "dream.achiever46",
       },
     },
     {
@@ -120,8 +118,8 @@ const Team = () => {
       description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
       imgSrc: '/members/dennesse.jpg',
       contacts: {
-        linkedIn: "https://linkedin.com/in/dennesse-loura-condat-2747a1299",
-        facebook: "https://www.facebook.com/profile.php?id=100021986423905",
+        linkedIn: "dennesse-loura-condat-2747a1299",
+        facebook: "profile.php?id=100021986423905",
       },
     },
     {
@@ -130,12 +128,10 @@ const Team = () => {
       description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
       imgSrc: '/members/arjay.jpg',
       contacts: {
-        linkedIn: "https://www.linkedin.com/in/arjay-rosel-5b4a0b252",
-        facebook: "https://www.facebook.com/roselarjayyy",
+        linkedIn: "arjay-rosel-5b4a0b252",
+        facebook: "roselarjayyy",
       },
     },
-
-
   ];
 
   return (
@@ -215,7 +211,7 @@ const Team = () => {
               <div className="flex gap-1">
                 <a 
                   className="flex justify-center items-center rounded-full bg-white w-3 h-3 p-4"
-                  href={`${member.contacts.linkedIn}`}
+                  href={`https://linkedin.com/in/${member.contacts.linkedIn}`}
                   target="__blank"
                   rel="noopener noreferrer"
                 >
@@ -223,14 +219,13 @@ const Team = () => {
                 </a>
                 <a 
                   className="flex justify-center items-center rounded-full bg-white w-3 h-3 p-4"
-                  href={`${member.contacts.facebook}`}
+                  href={`https://www.facebook.com/${member.contacts.facebook}`}
                   target="__blank"
                   rel="noopener noreferrer"
                 > 
                 <FontAwesomeIcon icon={faFacebookF} />
                 </a>
               </div>
-
             </motion.div>
           ))}
         </div>
