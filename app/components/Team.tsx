@@ -165,7 +165,7 @@ const Team = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 + index * 0.1 }}
               whileHover={{ scale: 1.05, boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.1)' }}
-              className={`p-4 md:p-6 lg:p-4 md:w-1/3 w-full lg:w-1/5 rounded-xl md:rounded-2xl shadow-lg ${
+              className={`p-4 md:p-6 lg:p-4 md:w-1/3 w-full lg:w-1/5 rounded-xl md:rounded-2xl shadow-sm ${
                 isDarkMode ? 'bg-[#1B1B1D] text-gray-300' : 'bg-white text-[#0A0A0B]'
               } hover:shadow-2xl transition-shadow duration-300 transform text-center flex flex-row max-[320px]:flex-col md:flex-col gap-5 md:gap-0 items-center`}
             >
