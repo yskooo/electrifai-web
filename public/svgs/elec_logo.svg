@@ -5,6 +5,8 @@
    version="1.1"
    id="svg248"
    width="3200"
+   stroke="white"
+   stroke-width="10"
    height="3200"
    viewBox="0 0 3200 3200"
    xmlns:xlink="http://www.w3.org/1999/xlink"
