@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react"; 
@@ -81,8 +83,8 @@ export default function Header() {
       className={`${
         isVisible ? "translate-y-0" : "-translate-y-full"
       } transform transition-transform duration-500 ease-in-out fixed top-0 left-0 right-0 z-50 ${
-        isDarkMode ? "bg-[#00060F] text-white" : "bg-white text-[#0A0A0B]"
-      } shadow-lg flex items-center justify-between px-6 py-6 h-20`}
+        isDarkMode ? "bg-[#00060F] text-white" : "bg-white opacity-95 text-[#0A0A0B]"
+      } shadow-sm flex items-center justify-between px-6 py-6 h-20`}
     >
       {/* Logo */}
       <Link href="/" className="flex items-center mr-auto">
@@ -100,7 +102,7 @@ export default function Header() {
       <nav
         className={`${
           isOpen ? "flex" : "hidden"
-        } flex-col lg:flex lg:flex-row lg:ml-auto lg:gap-12 absolute lg:static top-16 left-0 right-0 ${
+        } flex-col lg:flex lg:flex-row lg:ml-auto lg:gap-6 absolute lg:static top-16 left-0 right-0 ${
           isDarkMode ? "bg-[#00060F]" : "bg-white"
         } lg:bg-transparent lg:p-0 p-4 shadow-lg lg:shadow-none transition-all duration-300 ease-in-out`}
       >
@@ -108,7 +110,7 @@ export default function Header() {
           <a
             key={item}
             href={`#${item}`}
-            className={`text-lg font-medium ${
+            className={`text-sm lg:text-lg font-medium ${
               isDarkMode ? "text-white" : "text-[#0A0A0B]"
             } hover:underline underline-offset-4 transition-colors p-4 lg:py-0`}
             onClick={(e) => handleSmoothScroll(e, item)}
