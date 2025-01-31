@@ -83,7 +83,7 @@ export default function Header() {
       className={`${
         isVisible ? "translate-y-0" : "-translate-y-full"
       } transform transition-transform duration-500 ease-in-out fixed top-0 left-0 right-0 z-50 ${
-        isDarkMode ? "bg-[#00060F] text-white" : "bg-white opacity-95 text-[#0A0A0B]"
+        isDarkMode ? "bg-[#00060f2f] text-white" : "bg-white opacity-95 text-[#0A0A0B]"
       } shadow-sm flex items-center justify-between px-6 py-6 h-20`}
     >
       {/* Logo */}
