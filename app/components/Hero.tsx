@@ -38,7 +38,7 @@ const Hero = () => {
 
   return (
     <section
-      className={`relative w-full h-full lg:h-screen flex flex-col lg:flex-row items-center justify-between ${bgClass} px-6 sm:px-12 md:px-16 md:py-32 py-20 lg:pb-10 overflow-hidden lg:pt-0`}
+      className={`relative w-full h-full lg:h-screen max-w-screen mx-auto flex flex-col lg:flex-row items-center justify-between ${bgClass} px-6 sm:px-12 md:px-16 md:py-32 py-20 lg:pb-10 overflow-hidden lg:pt-0`}
     >
       {/* Decorative Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
@@ -53,7 +53,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className={`text-2xl md:text-4xl lg:text-5xl font-bold ${textColor} leading-tight`}
+          className={`text-2xl md:text-5xl lg:text-6xl xl:text-10xl font-bold ${textColor} leading-tight`}
         >
           {/* The <span className="text-[#00A5FF] underline">ElectrifAI</span>, */}
            The Smart Choice for Energy Optimization
