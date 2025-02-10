@@ -3,8 +3,7 @@ name: Sync to yskooo/electrifai-web
 on:
   push:
     branches:
-      - main  # Adjust if using a different branch
-
+      - main 
 jobs:
   sync:
     runs-on: ubuntu-latest
