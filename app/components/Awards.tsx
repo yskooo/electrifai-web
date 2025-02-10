@@ -1,133 +1,109 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useDarkMode } from '../context/DarkModeContext';
+import clsx from 'clsx';
+
+const awards = [
+  {
+    title: '1st Runner Up & People’s Choice Award - Meralco Idol Hackathon 2023',
+    description: 'Secured recognition for outstanding innovation and audience appeal.',
+  },
+  {
+    title: 'Silver Awardee - StartupQC Student Competition',
+    description: 'Earned distinction for exceptional startup ideas and execution.',
+  },
+  {
+    title: '1st Runner Up - PUP Undergraduate Research Competition',
+    description: 'Achievement for pioneering research and scholarly contribution.',
+  },
+  {
+    title: 'Incubatee Cohort 1 - DOST PUP TBI',
+    description: 'PYLON Hub fosters innovation and entrepreneurship by supporting technology-based startups and empowering students and faculty to optimize systems in business and logistics ecosystems.',
+  },
+  {
+    title: 'Exhibitor - NCR TBI Summit 2024',
+    description: 'ElectrfAI exhibited at the NCR TBI Summit 2024, connecting with industry leaders, investors, and innovators to drive sustainable and scalable impact in the energy sector.',
+  },
+  {
+    title: '1st Runner Up - ExoAsia Innovation Challenge',
+    description: 'Recognized for groundbreaking advancements in AI-powered energy solutions showcasing the potential of ElectrifAI to revolutionize the energy sector in emerging markets.',
+  },
+  {
+    title: 'IEEE TENCON Singapore 2024',
+    description: 'ElectrifAI showcased its AI-driven energy innovations at IEEE TENCON Singapore 2024, fostering global collaboration on sustainable technology.',
+  },
+  {
+    title: 'Participant - SEC Roadshow on Capital Formation for MSME’s and Startups',
+    description: 'Engaged in the SEC Roadshow on Capital Formation, exploring investment opportunities and funding strategies to scale ElectrifAI’s impact in the energy sector.',
+  },
+  {
+    title: 'Incubatee - REVV-EVODINE Venture Studio',
+    description: 'Selected as a pioneering incubatee at REVV-EVODINE Venture Studio, accelerating ElectrifAI to be launched and tested in the market in Q3 2025.',
+  },
+];
+
+const AwardItem = ({ title, description, isDarkMode }: { title: string; description: string; isDarkMode: boolean }) => (
+  <div
+    className={clsx(
+      'p-5 rounded-lg shadow-md border transition-all hover:shadow-xl',
+      isDarkMode ? 'bg-[#1B1B1D] border-[#00A5FF] text-white' : 'bg-white border-gray-300 text-black'
+    )}
+  >
+    <h4 className="font-semibold">{title}</h4>
+    <p className={clsx('text-sm mt-1', isDarkMode ? 'text-gray-400' : 'text-gray-600')}>{description}</p>
+  </div>
+);
+
+const AwardImage = ({ src, alt, isDarkMode }: { src: string; alt: string; isDarkMode: boolean }) => (
+  <div
+    className={clsx(
+      'w-full rounded-lg overflow-hidden shadow-lg border transition-transform duration-300 hover:scale-105',
+      isDarkMode ? 'border-[#00A5FF]' : 'border-gray-200'
+    )}
+  >
+    <img src={src} alt={alt} className="w-full h-auto object-cover" />
+  </div>
+);
 
 const Awards = () => {
-  const { isDarkMode } = useDarkMode()
+  const { isDarkMode } = useDarkMode();
 
   return (
     <section
       id="Awards"
-      className={`w-full py-16 md:py-32 lg:py-40 ${
-        isDarkMode ? 'bg-gradient-to-b from-[#000000] to-[#001027]' : 'bg-gradient-to-b from-[#eef2f3] to-[#ffffff]'
-      } text-${isDarkMode ? 'white' : '#0A0A0B'} relative overflow-hidden`}
+      className={clsx(
+        'w-full py-20 relative overflow-hidden',
+        isDarkMode ? 'bg-[#000000] text-white' : 'bg-gradient-to-b from-[#eef2f3] to-[#ffffff] text-black'
+      )}
     >
       {/* Decorative Background Elements */}
-      <div
-        className={`absolute top-1/4 left-0 w-[200px] h-[200px] ${
-          isDarkMode ? 'bg-[#001027] opacity-40' : 'bg-[#00A5FF] opacity-20'
-        } rounded-full blur-2xl animate-pulse`}
-      ></div>
-      <div
-        className={`absolute bottom-1/4 right-0 w-[350px] h-[350px] ${
-          isDarkMode ? 'bg-[#000000] opacity-40' : 'bg-[#00A5FF] opacity-20'
-        } rounded-full blur-[100px]`}
-      ></div>
+      <div className="absolute top-1/4 left-0 w-[200px] h-[200px] rounded-full blur-2xl bg-[#00A5FF] opacity-20"></div>
+      <div className="absolute bottom-1/4 right-0 w-[350px] h-[350px] rounded-full blur-[100px] bg-[#00A5FF] opacity-20"></div>
 
-      <div className="container px-4 md:px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0">
-        {/* Left Column: Text Content */}
-        <div className="lg:w-2/3">
-          <h3
-            className={`text-center lg:text-left ${
-              isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FF]'
-            } text-md uppercase tracking-wider mb-4`}
-          >
-            Continued Pursuit of Growth
-          </h3>
-          <h2
-            className={`text-4xl font-bold tracking-tight sm:text-5xl text-center lg:text-left mb-6 ${
-              isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
-            }`}
-          >
-            Partnerships &amp; Awards
-          </h2>
-          <p
-            className={`text-center lg:text-left text-lg sm:text-xl mb-8 lg:mb-12 ${
-              isDarkMode ? 'text-gray-300' : 'text-gray-700'
-            }`}
-          >
-            Looking to partner with over 120 electric cooperatives across the Philippines
-            <br />
-            <span className={isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FF]'}>
-              to target rural and semi-urban areas, to reach even more people.
-            </span>
+      <div className="container px-6 md:px-12 max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h3 className="text-[#00A5FF] text-md uppercase tracking-wider">Continued Pursuit of Growth</h3>
+          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">Partnerships & Awards</h2>
+          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+            Looking to partner with over <span className="text-[#00A5FF]">120 electric cooperatives</span> across the Philippines, 
+            targeting rural and semi-urban areas to reach even more people.
           </p>
-
-          {/* Awards List */}
-          <div
-            className={`p-6 rounded-lg border shadow-lg lg:max-w-lg mx-auto lg:mx-0 transition-all hover:shadow-2xl ${
-              isDarkMode ? 'bg-[#1B1B1D] border-[#00A5FF]' : 'bg-white border-gray-300'
-            }`}
-          >
-            <ul className="space-y-6">
-              <li className="text-lg">
-                <span
-                  className={`font-semibold ${
-                    isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
-                  }`}
-                >
-                  1st Runner Up &amp; People&apos;s Choice Award - Meralco Idol Hackathon 2023
-                </span>
-                <br />
-                <span className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>
-                  Secured recognition for outstanding innovation and audience appeal.
-                </span>
-              </li>
-              <li className="text-lg">
-                <span
-                  className={`font-semibold ${
-                    isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
-                  }`}
-                >
-                  Silver Awardee - StartupQC Student Competition
-                </span>
-                <br />
-                <span className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>
-                  Earned distinction for exceptional startup ideas and execution.
-                </span>
-              </li>
-              <li className="text-lg">
-                <span
-                  className={`font-semibold ${
-                    isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
-                  }`}
-                >
-                  1st Runner Up - PUP Undergraduate Research Competition
-                </span>
-                <br />
-                <span className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>
-                  Achievement for pioneering research and scholarly contribution.
-                </span>
-              </li>
-            </ul>
-          </div>
         </div>
 
-        {/* Right Column: Images */}
-        <div className="lg:w-1/3 flex flex-col items-center space-y-8">
-          {/* Placeholder Images with increased width */}
-          <div
-            className={`w-80 h-52 rounded-lg overflow-hidden shadow-lg ${
-              isDarkMode ? 'bg-[#00A5FF] border-[#00A5FF]' : 'bg-gray-100 border-gray-200'
-            } border flex items-center justify-center`}
-          >
-            <img src="awards-1.png" alt="Award Image 1" />
-          </div>
-          <div
-            className={`w-80 h-52 rounded-lg overflow-hidden shadow-lg ${
-              isDarkMode ? 'bg-[#00A5FF] border-[#00A5FF]' : 'bg-gray-100 border-gray-200'
-            } border flex items-center justify-center`}
-          >
-            <img src="awards-2.png" alt="Award Image 2" />
-          </div>
-          <div
-            className={`w-80 h-52 rounded-lg overflow-hidden shadow-lg ${
-              isDarkMode ? 'bg-[#00A5FF] border-[#00A5FFA]' : 'bg-gray-100 border-gray-200'
-            } border flex items-center justify-center`}
-          >
-            <img src="awards-3.png" alt="Award Image 3" />
-          </div>
+        {/* Awards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {awards.map((award, index) => (
+            <AwardItem key={index} title={award.title} description={award.description} isDarkMode={isDarkMode} />
+          ))}
+        </div>
+
+        {/* Images Section */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <AwardImage src="awards-1.png" alt="Award Image 1" isDarkMode={isDarkMode} />
+          <AwardImage src="awards-2.png" alt="Award Image 2" isDarkMode={isDarkMode} />
+          <AwardImage src="awards-3.png" alt="Award Image 3" isDarkMode={isDarkMode} />
         </div>
       </div>
     </section>

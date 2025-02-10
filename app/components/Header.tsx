@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react"; 
 import Link from "next/link";
 import { useDarkMode } from "../context/DarkModeContext"; 
+import { span } from "framer-motion/client";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,23 +84,21 @@ export default function Header() {
       className={`${
         isVisible ? "translate-y-0" : "-translate-y-full"
       } transform transition-transform duration-500 ease-in-out fixed top-0 left-0 right-0 z-50 ${
-        isDarkMode ? "bg-[#00060f2f] text-white" : "bg-white opacity-95 text-[#0A0A0B]"
+        isDarkMode ? "bg-[#000] text-white" : "bg-white text-[#0A0A0B]"
       } shadow-sm flex items-center justify-between px-6 py-6 h-20`}
     >
       {/* Logo */}
       <Link href="/" className="flex items-center mr-auto">
-      <img 
-  src="/svgs/elec_logo.svg" 
-  alt="logo" 
-  className="w-20 h-20 drop-shadow-[0_0_2px_rgba(255,255,255,0.8)]" 
-/>
-
+        <img 
+          src="/svgs/elec_logo.svg" 
+          alt="logo" 
+          className="w-20 h-20 drop-shadow-[0_0_2px_rgba(255,255,255,0.8)]" 
+        />
         <span
           className={`text-xl font-bold ${
             isDarkMode ? "text-white" : "text-[#0A0A0B]"
           } hover:text-[#2F4BE5]`}
         >
-          {/* Electrif<span className="italic">AI</span> */}
         </span>
       </Link>
 
