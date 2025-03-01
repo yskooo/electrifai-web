@@ -72,11 +72,11 @@ const Features = () => {
               isDarkMode ? 'bg-[#1B1B1D] text-gray-300' : 'bg-white text-[#0A0A0B]'
             } hover:shadow-2xl transition-shadow duration-300 transform text-center`}
           >
-            <img
+            {/* <img
               src="/svgs/3.svg"
               alt="Real-time Monitoring"
               className="mx-auto w-32 h-32 md:w-28 md:h-28 mb-2 object-contain rounded-full shadow-sm"
-            />
+            /> */}
             <div className="flex flex-col items-center">
               <Activity className={`h-12 w-12 md:h-16 md:w-16 ${
                 isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FF]'
@@ -104,11 +104,11 @@ const Features = () => {
               isDarkMode ? 'bg-[#1B1B1D] text-gray-300' : 'bg-white text-[#0A0A0B]'
             } hover:shadow-2xl transition-shadow duration-300 transform text-center`}
           >
-            <img
+            {/* <img
               src="/svgs/2.svg"
               alt="AI Anomaly Detection"
               className="mx-auto w-32 h-32 md:w-28 md:h-28 mb-2 object-contain rounded-full shadow-sm"
-            />
+            /> */}
             <div className="flex flex-col items-center">
               <ShieldCheck className={`h-12 w-12 md:h-16 md:w-16 ${
                 isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FF]'
@@ -136,11 +136,11 @@ const Features = () => {
               isDarkMode ? 'bg-[#1B1B1D] text-gray-300' : 'bg-white text-[#0A0A0B]'
             } hover:shadow-2xl transition-shadow duration-300 transform text-center`}
           >
-            <img
+            {/* <img
               src="/svgs/1.svg"
               alt="Energy Optimization"
               className="mx-auto w-32 h-32 md:w-28 md:h-28 mb-2 object-contain rounded-full shadow-sm"
-            />
+            /> */}
             <div className="flex flex-col items-center">
               <BarChart className={`h-12 w-12 md:h-16 md:w-16 ${
                 isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FF]'
