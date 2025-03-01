@@ -14,7 +14,7 @@ const Team = () => {
   const teamMembers = [
     {
       name: 'Daniel Caparro',
-      role: 'CEO, Co-founder',
+      role: 'CEO, Co-founder, AI Engineer',
       description: 'Leads strategic vision and growth, and drives innovation to scale the company while fostering partnerships and investor relations.',
       imgSrc: '/members/caparro.jpeg',
       contacts: {
@@ -23,7 +23,7 @@ const Team = () => {
       },
     },
     {
-      name: 'Engr. Hard',
+      name: 'Gerhard P. Tan',
       role: 'COO, Co-founder, Consultant',
       description: ' Oversees daily operations, streamlines processes, and advises on strategic decisions for growth.',
       imgSrc: '/members/hard.jpg',
@@ -44,7 +44,7 @@ const Team = () => {
     },
     {
       name: 'Raeselyn Macorol',
-      role: 'Marketing & Operations Manager',
+      role: 'Chief Research Officer, Marketing & Operations Manager',
       description: 'Drives marketing strategies and manages daily operations to ensure business growth and efficiency.',
       imgSrc: '/members/raeselyn.png',
       contacts: {
@@ -54,7 +54,7 @@ const Team = () => {
     },
     {
       name: 'Justine Rey Daquis',
-      role: 'Software Developer',
+      role: 'Frontend Developer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/justine.jpg',
       contacts: {
@@ -64,7 +64,7 @@ const Team = () => {
     },
     {
       name: 'Clarence Jay Fetalino',
-      role: 'IoT Device Developer',
+      role: 'Chief Network Technology Officer, IoT Device Developer',
       description: 'Specializes in IoT devices and research, ensuring that the hardware components are robust, efficient, and well-integrated with the software.',
       imgSrc: '/members/clarence.png',
       contacts: {
@@ -74,7 +74,7 @@ const Team = () => {
     },
     {
       name: 'Mcallen Fradejas',
-      role: 'Layout Artist, 3D Model Designer',
+      role: 'Chief Business Development Officer, Layout Artist, 3D Model Designer',
       description: 'Creates engaging 3D models and layouts, visualizing complex concepts with clarity and creativity.',
       imgSrc: '/members/Mcallen.png',
       contacts: {
@@ -84,7 +84,7 @@ const Team = () => {
     },
     {
       name: 'Siegfred Lorelle Mina',
-      role: 'Software Developer',
+      role: 'Machine Learning Engineer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/sieg.jpg',
       contacts: {
@@ -94,7 +94,7 @@ const Team = () => {
     },
     {
       name: 'Gaeus Caskie Fabro',
-      role: 'Software Developer',
+      role: 'Frontend Developer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/gaeus.jpg',
       contacts: {
@@ -104,7 +104,7 @@ const Team = () => {
     },
     {
       name: 'David Bato-bato',
-      role: 'Software Developer',
+      role: 'Full Stack Developer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/david.jpg',
       contacts: {
@@ -132,6 +132,16 @@ const Team = () => {
         facebook: "roselarjayyy",
       },
     },
+    {
+      name: 'Christian Joel Lazo ',
+      role: 'Production Engineer',
+      description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
+      imgSrc: '/members/christian.jpg',
+      contacts: {
+        linkedIn: "laxseuss",
+        facebook: "",
+      },
+    },
   ];
 
   return (
@@ -141,7 +151,7 @@ const Team = () => {
         isDarkMode ? 'bg-gradient-to-b from-[#000000] to-[#001027]' : 'bg-gradient-to-b from-[#eef2f3] to-[#ffffff]'
       } flex items-center justify-center overflow-hidden`}
     >
-      <div className="container px-4 md:px-6 max-w-[1300px]">
+      <div className="container px-4 md:px-6 max-w-screen=2xl">
         {/* Section Header */}
         <div className="text-center mb-8 md:mb-12 lg:mb-16">
           <h2 className={`text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tighter ${
@@ -157,7 +167,7 @@ const Team = () => {
         </div>
 
         {/* Team Members Grid */}
-        <div className="px-4 flex flex-wrap justify-center gap-6">
+        <div className="px-4 flex flex-wrap justify-center gap-4">
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
