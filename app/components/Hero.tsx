@@ -39,13 +39,13 @@ const Hero = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
           className={`mt-4 text-lg md:text-xl ${styles.description} max-w-xl lg:max-w-2xl leading-relaxed`}
         >
-          <span className="text-[#00A5FF]">ElectrifAI</span> utilizes AI algorithms for predictive maintenance, energy optimization, and theft detection, while IoT devices enable real-time monitoring and data collection across the grid.
+          <span className="text-[#00A5FF]">ElectrifAI</span> utilizes AI algorithms for predictive maintenance, energy optimization, and anomaly detection, while IoT devices enable real-time monitoring and data collection across the grid.
         </motion.p>
 
         {/* Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
           {[{ href: '#Contact', text: 'Get Started', bg: styles.button, textColor: 'text-white' },
-            { href: '#Features', text: 'Learn More', bg: 'border-2 border-[#00A5FF]', textColor: styles.learnMore }].map((btn, index) => (
+            { href: '#Solutions', text: 'Learn More', bg: 'border-2 border-[#00A5FF]', textColor: styles.learnMore }].map((btn, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
@@ -66,7 +66,7 @@ const Hero = () => {
       {/* Image Section */}
       <div className="hidden lg:block lg:w-1/2 z-10">
         <motion.img
-          src="/svgs/hero.svg"
+          src="/eli.png"
           alt="Energy Optimization Illustration"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}

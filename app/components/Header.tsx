@@ -110,7 +110,7 @@ export default function Header() {
           isDarkMode ? "bg-[#00060F]" : "bg-white"
         } lg:bg-transparent lg:p-0 p-4 shadow-lg lg:shadow-none transition-all duration-300 ease-in-out`}
       >
-        {["Features", "AboutUs", "OurTeam", "Awards", "Contact"].map((item) => (
+        {["Solutions", "AboutUs", "OurTeam", "Awards", "Contact"].map((item) => (
           <a
             key={item}
             href={`#${item}`}
