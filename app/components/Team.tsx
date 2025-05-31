@@ -16,7 +16,7 @@ const Team = () => {
       name: 'Engr. Gerhard P. Tan',
       role: 'President',
       description: ' Oversees daily operations, streamlines processes, and advises on strategic decisions for growth.',
-      imgSrc: '/members/hard.jpg',
+      imgSrc: '/members/hard.png',
       contacts: {
         linkedIn: "gerhard-tan-1a5160104",
         facebook: "gerhardian19",
@@ -26,7 +26,7 @@ const Team = () => {
       name: 'Daniel Caparro',
       role: 'Chief Executive Officer',
       description: 'Leads strategic vision and growth, and drives innovation to scale the company while fostering partnerships and investor relations.',
-      imgSrc: '/members/caparro.jpeg',
+      imgSrc: '/members/daniel.png',
       contacts: {
         linkedIn: "daniel-caparro-805682224",
         facebook: "nam.joo.7399",
@@ -36,7 +36,7 @@ const Team = () => {
       name: 'Harold Patacsil',
       role: 'Chief Technology Officer',
       description: 'Leads the development of the app infrastructure, ensuring that the platform is secure, scalable, and efficient.',
-      imgSrc: '/members/harold.jpg',
+      imgSrc: '/members/harold.png',
       contacts: {
         linkedIn: "haroldmartinpatacsil",
         facebook: "harold.martinpatacsil.3",
@@ -66,7 +66,7 @@ const Team = () => {
       name: 'Mcallen Fradejas',
       role: 'Prototype Design Development Head',
       description: 'Creates engaging 3D models and layouts, visualizing complex concepts with clarity and creativity.',
-      imgSrc: '/members/Mcallen.png',
+      imgSrc: '/members/mcallen.png',
       contacts: {
         linkedIn: "mcallen-fradejas",
         facebook: "macalien.fradejas",
@@ -76,7 +76,7 @@ const Team = () => {
       name: 'Siegfred Lorelle Mina',
       role: 'Lead AI Engineer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-      imgSrc: '/members/sieg.jpg',
+      imgSrc: '/members/siegfred.png',
       contacts: {
         linkedIn: "siegfred-lorelle-mina",
         facebook: "profile.php?id=1718881634",
@@ -86,7 +86,7 @@ const Team = () => {
       name: 'David Bato-bato',
       role: 'Lead Software Engineer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-      imgSrc: '/members/david.jpg',
+      imgSrc: '/members/david.png',
       contacts: {
         linkedIn: "david-bato-bato-1b6a8b288",
         facebook: "dream.achiever46",
@@ -96,7 +96,7 @@ const Team = () => {
       name: 'Arjay Rosel',
       role: 'Marketing Department Head',
       description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
-      imgSrc: '/members/arjay.jpg',
+      imgSrc: '/members/arjay.png',
       contacts: {
         linkedIn: "arjay-rosel-5b4a0b252",
         facebook: "roselarjayyy",
@@ -106,7 +106,7 @@ const Team = () => {
       name: 'Dennesse Condat',
       role: 'Research Specialist 1',
       description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
-      imgSrc: '/members/dennesse.jpg',
+      imgSrc: '/members/denesse.png',
       contacts: {
         linkedIn: "dennesse-loura-condat-2747a1299",
         facebook: "profile.php?id=100021986423905",
@@ -116,7 +116,7 @@ const Team = () => {
       name: 'Gaeus Caskie Fabro',
       role: 'AI Engineer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-      imgSrc: '/members/gaeus.jpg',
+      imgSrc: '/members/gaeus.png',
       contacts: {
         linkedIn: "gaeus-caskie-fabro-319981234",
         facebook: "caskieee",
@@ -126,7 +126,7 @@ const Team = () => {
       name: 'Justine Rey Daquis',
       role: 'Software Engineer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-      imgSrc: '/members/justine.jpg',
+      imgSrc: '/members/justine.png',
       contacts: {
         linkedIn: "justine-rey-daquis-855b07297",
         facebook: "Justinedaquis28",
@@ -136,7 +136,7 @@ const Team = () => {
       name: 'Christian Joel Lazo ',
       role: 'Production Engineer',
       description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
-      imgSrc: '/members/christian.jpg',
+      imgSrc: '/members/christian.png',
       contacts: {
         linkedIn: "laxseuss",
         facebook: "",
