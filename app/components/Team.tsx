@@ -66,7 +66,7 @@ const Team = () => {
       name: 'Mcallen Fradejas',
       role: 'Prototype Design Development Head',
       description: 'Creates engaging 3D models and layouts, visualizing complex concepts with clarity and creativity.',
-      imgSrc: '/members/mcallen.png',
+      imgSrc: '/members/fmcallen.png',
       contacts: {
         linkedIn: "mcallen-fradejas",
         facebook: "macalien.fradejas",
