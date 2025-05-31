@@ -9,9 +9,9 @@ const Hero = () => {
 
   // Styles based on dark mode state
   const styles = {
-    bg: isDarkMode
-      ? 'bg-gradient-to-r from-[#000000] to-[#001027]'
-      : 'bg-gradient-to-r from-[#eef2f3] to-[#ffffff]',
+    // bg: isDarkMode
+    //   ? 'bg-gradient-to-r from-[#000000] to-[#001027]'
+    //   : 'bg-gradient-to-r from-[#eef2f3] to-[#ffffff]',
     text: isDarkMode ? 'text-white' : 'text-[#0A0A0B]',
     description: isDarkMode ? 'text-gray-300' : 'text-gray-700',
     button: isDarkMode ? 'bg-[#004aad]' : 'bg-[#00A5FF]',
@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   return (    <section
-      className={`mt-16 relative w-full min-h-[90vh] md:min-h-screen flex flex-col lg:flex-row items-center ${styles.bg} px-4 sm:px-8 md:px-16 py-12 md:py-20 lg:py-32 overflow-hidden gap-8 lg:gap-0`}
+      className={`mt-16 max-w-screen-2xl mx-auto relative w-full min-h-[90vh] md:min-h-screen flex flex-col lg:flex-row items-center ${styles.bg} px-4 sm:px-8 md:px-16 py-12 md:py-20 lg:py-32 overflow-hidden gap-8 lg:gap-0`}
     >
       {/* Text Section */}
       <div className="flex-1 text-left z-10 w-full">

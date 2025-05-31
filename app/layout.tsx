@@ -1,7 +1,8 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { DarkModeProvider } from './context/DarkModeContext';
-import Head from 'next/head';
+import { Metadata } from 'next';
+import Head from "next/head";
 
 // Import the Poppins font with weight '500'
 const poppins = Poppins({

@@ -102,8 +102,7 @@ export default function Header() {
         </span>
       </Link>
 
-      {/* Navigation Links */}
-      <nav
+      {/* Navigation Links */}      <nav
         className={`${
           isOpen ? "flex" : "hidden"
         } flex-col lg:flex lg:flex-row lg:ml-auto lg:gap-6 absolute lg:static top-16 left-0 right-0 ${
@@ -122,6 +121,14 @@ export default function Header() {
             {item.replace(/([A-Z])/g, " $1").trim()}
           </a>
         ))}
+        <Link
+          href="/research"
+          className={`text-sm lg:text-lg font-medium ${
+            isDarkMode ? "text-white" : "text-[#0A0A0B]"
+          } hover:underline underline-offset-4 transition-colors p-4 lg:py-0`}
+        >
+          Research
+        </Link>
       </nav>
 
       {/* Dark Mode Toggle Icon */}
