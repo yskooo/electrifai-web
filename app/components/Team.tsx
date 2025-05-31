@@ -13,18 +13,8 @@ const Team = () => {
 
   const teamMembers = [
     {
-      name: 'Daniel Caparro',
-      role: 'CEO, Co-founder, AI Engineer',
-      description: 'Leads strategic vision and growth, and drives innovation to scale the company while fostering partnerships and investor relations.',
-      imgSrc: '/members/caparro.jpeg',
-      contacts: {
-        linkedIn: "daniel-caparro-805682224",
-        facebook: "nam.joo.7399",
-      },
-    },
-    {
-      name: 'Gerhard P. Tan',
-      role: 'COO, Co-founder, Consultant',
+      name: 'Engr. Gerhard P. Tan',
+      role: 'President',
       description: ' Oversees daily operations, streamlines processes, and advises on strategic decisions for growth.',
       imgSrc: '/members/hard.jpg',
       contacts: {
@@ -33,8 +23,18 @@ const Team = () => {
       },
     },
     {
+      name: 'Daniel Caparro',
+      role: 'Chief Executive Officer',
+      description: 'Leads strategic vision and growth, and drives innovation to scale the company while fostering partnerships and investor relations.',
+      imgSrc: '/members/caparro.jpeg',
+      contacts: {
+        linkedIn: "daniel-caparro-805682224",
+        facebook: "nam.joo.7399",
+      },
+    },
+    {
       name: 'Harold Patacsil',
-      role: 'CTO, Lead Developer',
+      role: 'Chief Technology Officer',
       description: 'Leads the development of the app infrastructure, ensuring that the platform is secure, scalable, and efficient.',
       imgSrc: '/members/harold.jpg',
       contacts: {
@@ -44,7 +44,7 @@ const Team = () => {
     },
     {
       name: 'Raeselyn Macorol',
-      role: 'Chief Research Officer, Marketing & Operations Manager',
+      role: 'Research Department Head',
       description: 'Drives marketing strategies and manages daily operations to ensure business growth and efficiency.',
       imgSrc: '/members/raeselyn.png',
       contacts: {
@@ -53,18 +53,8 @@ const Team = () => {
       },
     },
     {
-      name: 'Justine Rey Daquis',
-      role: 'Frontend Developer',
-      description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-      imgSrc: '/members/justine.jpg',
-      contacts: {
-        linkedIn: "justine-rey-daquis-855b07297",
-        facebook: "Justinedaquis28",
-      },
-    },
-    {
       name: 'Clarence Jay Fetalino',
-      role: 'Chief Network Technology Officer, IoT Device Developer',
+      role: 'Electronics Department Head',
       description: 'Specializes in IoT devices and research, ensuring that the hardware components are robust, efficient, and well-integrated with the software.',
       imgSrc: '/members/clarence.png',
       contacts: {
@@ -74,7 +64,7 @@ const Team = () => {
     },
     {
       name: 'Mcallen Fradejas',
-      role: 'Chief Business Development Officer, Layout Artist, 3D Model Designer',
+      role: 'Prototype Design Development Head',
       description: 'Creates engaging 3D models and layouts, visualizing complex concepts with clarity and creativity.',
       imgSrc: '/members/Mcallen.png',
       contacts: {
@@ -84,7 +74,7 @@ const Team = () => {
     },
     {
       name: 'Siegfred Lorelle Mina',
-      role: 'Machine Learning Engineer',
+      role: 'Lead AI Engineer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/sieg.jpg',
       contacts: {
@@ -93,18 +83,8 @@ const Team = () => {
       },
     },
     {
-      name: 'Gaeus Caskie Fabro',
-      role: 'Frontend Developer',
-      description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-      imgSrc: '/members/gaeus.jpg',
-      contacts: {
-        linkedIn: "gaeus-caskie-fabro-319981234",
-        facebook: "caskieee",
-      },
-    },
-    {
       name: 'David Bato-bato',
-      role: 'Full Stack Developer',
+      role: 'Lead Software Engineer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/david.jpg',
       contacts: {
@@ -112,9 +92,19 @@ const Team = () => {
         facebook: "dream.achiever46",
       },
     },
+     {
+      name: 'Arjay Rosel',
+      role: 'Marketing Department Head',
+      description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
+      imgSrc: '/members/arjay.jpg',
+      contacts: {
+        linkedIn: "arjay-rosel-5b4a0b252",
+        facebook: "roselarjayyy",
+      },
+    },
     {
       name: 'Dennesse Condat',
-      role: 'Market Research Analyst',
+      role: 'Research Specialist 1',
       description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
       imgSrc: '/members/dennesse.jpg',
       contacts: {
@@ -123,13 +113,23 @@ const Team = () => {
       },
     },
     {
-      name: 'Arjay Rosel',
-      role: 'Market Research Analyst',
-      description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
-      imgSrc: '/members/arjay.jpg',
+      name: 'Gaeus Caskie Fabro',
+      role: 'AI Engineer',
+      description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
+      imgSrc: '/members/gaeus.jpg',
       contacts: {
-        linkedIn: "arjay-rosel-5b4a0b252",
-        facebook: "roselarjayyy",
+        linkedIn: "gaeus-caskie-fabro-319981234",
+        facebook: "caskieee",
+      },
+    },
+      {
+      name: 'Justine Rey Daquis',
+      role: 'Software Engineer',
+      description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
+      imgSrc: '/members/justine.jpg',
+      contacts: {
+        linkedIn: "justine-rey-daquis-855b07297",
+        facebook: "Justinedaquis28",
       },
     },
     {
