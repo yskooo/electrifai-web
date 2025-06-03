@@ -1,41 +1,61 @@
 "use client";
-import { useState, useEffect } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { useDarkMode } from "../context/DarkModeContext"; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { useDarkMode } from "../context/DarkModeContext";
 
 const Footer = () => {
-  const { isDarkMode, toggleDarkMode } = useDarkMode();
+  const { isDarkMode } = useDarkMode();
+
+  const bgColor = isDarkMode
+    ? "bg-gradient-to-r from-[#000000] to-[#001027]"
+    : "bg-gray-900";
+  const textColor = "text-white";
+  const mutedText = "text-white/60";
+
+  const socialLinks = [
+    {
+      href: "https://www.facebook.com/profile.php?id=61567550636505",
+      icon: faFacebookF,
+      label: "Facebook",
+    },
+    {
+      href: "https://www.linkedin.com/company/electrifai-techsolutionsph/",
+      icon: faLinkedinIn,
+      label: "LinkedIn",
+    },
+  ];
 
   return (
     <footer
-      className={`gap-4 p-4 lg:p-6 w-full text-white transition-all duration-500 ease-in-out ${
-        isDarkMode ? "bg-gradient-to-r from-[#000000] to-[#001027]" : "bg-gray-800"
-      }`}
+      className={`w-full px-4 py-6 lg:px-8 lg:py-8 transition-all duration-500 ease-in-out ${bgColor} ${textColor}`}
     >
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-4">
-        <div className="mb-2 lg:mb-0 text-center lg:text-left">
-          <p className="text-sm font-semibold">&copy; 2024 ElectricAI Sol&#39;n PH. All rights reserved.</p>
-          <p className="text-xs text-white/60">Empowering energy solutions for a brighter tomorrow.</p>
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4">
+        {/* Text Section */}
+        <div className="text-center lg:text-left">
+          <p className="text-sm font-medium">
+            &copy; 2025 ElectrifAI Philippines Solutions Corps. All rights reserved.
+          </p>
+          <p className={`text-xs ${mutedText}`}>
+            Empowering energy solutions for a brighter tomorrow.
+          </p>
         </div>
 
-        <div className="flex text-center gap-2 sm:text-left text-white/70">
-          <a 
-            className="mt-2 flex justify-center items-center rounded-full transition-all duration-300 p-4"
-            href="https://www.facebook.com/profile.php?id=61567550636505"
-            target="__blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faFacebookF} size="lg" />
-          </a>
-          <a 
-            className="mt-2 flex justify-center items-center rounded-full transition-all duration-300 p-4"
-            href="https://www.linkedin.com/company/electrifai-techsolutionsph/"
-            target="__blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
-          </a>
+        {/* Social Icons */}
+        <div className="flex gap-3">
+          {socialLinks.map(({ href, icon, label }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Follow us on ${label}`}
+              className="group transition-transform transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/50"
+            >
+              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center transition-colors hover:bg-white/20">
+                <FontAwesomeIcon icon={icon} className="text-white" />
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </footer>

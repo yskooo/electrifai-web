@@ -1,95 +1,155 @@
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
-import { useDarkMode } from "../context/DarkModeContext"; 
+import { useDarkMode } from "../context/DarkModeContext";
+
+const cardVariants = {
+  hidden: (direction: number) => ({
+    opacity: 0,
+    x: direction > 0 ? 50 : -50,
+  }),
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+const values = [
+  {
+    title: "Innovation",
+    description:
+      "We continuously push boundaries using AI and IoT to redefine energy solutions.",
+  },
+  {
+    title: "Sustainability",
+    description:
+      "Our solutions are designed with environmental impact and long-term scalability in mind.",
+  },
+  {
+    title: "Integrity",
+    description:
+      "We uphold transparency, ethics, and trust in every partnership and product we build.",
+  },
+  {
+    title: "Excellence",
+    description:
+      "We strive for world-class quality and performance in all our systems and services.",
+  },
+];
 
 export default function AboutUs() {
-  const { isDarkMode } = useDarkMode(); 
+  const { isDarkMode } = useDarkMode();
+
+  const bgGradient = isDarkMode
+    ? "bg-gradient-to-b from-[#000000] to-[#001027]"
+    : "bg-gradient-to-b from-[#eef2f3] to-[#ffffff]";
+
+  const cardStyle = isDarkMode
+    ? "bg-[#1B1B1D] text-gray-300"
+    : "bg-white text-[#0A0A0B]";
+
+  const textColor = isDarkMode ? "text-white" : "text-[#0A0A0B]";
+  const subText = isDarkMode ? "text-gray-300" : "text-gray-600";
 
   return (
     <section
       id="AboutUs"
-      className={`w-full py-16 md:py-24 lg:py-32 ${
-        isDarkMode ? "bg-gradient-to-b from-[#000000] to-[#001027]" : "bg-gradient-to-b from-[#eef2f3] to-[#ffffff]"
-      } flex items-center justify-center relative overflow-hidden`}
+      className={`relative w-full py-20 md:py-28 ${bgGradient} overflow-hidden flex justify-center`}
     >
-      {/* Decorative Elements */}
+      {/* Blurred Circles */}
       <div
-        className={`absolute top-1/4 left-0 w-[250px] h-[250px] ${
-          isDarkMode ? "bg-[#001027] opacity-40" : "bg-[#00A5FF] opacity-20"
-        } rounded-full blur-lg animate-pulse`}
-      ></div>
+        className={`absolute top-1/4 left-[-80px] w-[250px] h-[250px] rounded-full blur-3xl animate-pulse ${
+          isDarkMode ? "bg-[#001027]/40" : "bg-[#00A5FF]/20"
+        }`}
+      />
       <div
-        className={`absolute bottom-1/4 right-0 w-[350px] h-[350px] ${
-          isDarkMode ? "bg-[#000000] opacity-40" : "bg-[#00A5FF] opacity-30"
-        } rounded-full blur-2xl animate-pulse`}
-      ></div>
+        className={`absolute bottom-1/4 right-[-80px] w-[350px] h-[350px] rounded-full blur-2xl animate-pulse ${
+          isDarkMode ? "bg-[#000000]/40" : "bg-[#00A5FF]/30"
+        }`}
+      />
 
-      <div className="container px-4 md:px-6 max-w-7xl z-10">
-        {/* Section Header */}
+      <div className="relative z-10 w-full max-w-6xl px-4 md:px-6">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-center mb-12 md:mb-16 lg:mb-24"
+          className="text-center mb-16"
         >
-          <h2 className={`text-3xl sm:text-4xl font-extrabold tracking-tighter ${
-            isDarkMode ? "text-white" : "text-[#0A0A0B]"
-          } mb-4`}>
+          <h2 className={`text-4xl font-extrabold ${textColor} mb-4`}>
             About Us
           </h2>
-          <p className={`text-base md:text-lg ${
-            isDarkMode ? "text-gray-300" : "text-gray-600"
-          } max-w-3xl mx-auto`}>
-            We are committed to providing innovative solutions that make energy management efficient, secure, and sustainable for a better future.
+          <p className={`max-w-2xl mx-auto ${subText} text-lg`}>
+            At Electrifai PH Solutions Corp, we power the future with precision. We deliver smart, sustainable energy solutions using AI and IoT for communities and industries.
           </p>
         </motion.div>
 
-        {/* Mission and Vision Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 px-4 md:px-0">
-          {/* Mission Card */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
-            whileHover={{ scale: 1.05, boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.1)" }}
-            className={`p-6 md:p-8 rounded-2xl md:rounded-3xl shadow-lg ${
-              isDarkMode ? "bg-[#1B1B1D] text-gray-300" : "bg-white text-[#0A0A0B]"
-            } hover:shadow-2xl transition-shadow duration-300 transform`}
-          >
-            <h3 className={`text-xl md:text-2xl font-bold ${
-              isDarkMode ? "text-white" : "text-[#0A0A0B]"
-            } mb-4`}>
-              Our Mission
-            </h3>
-            <p className={`text-sm md:text-base leading-relaxed ${
-              isDarkMode ? "text-gray-300" : "text-gray-600"
-            }`}>
-              To leverage cutting-edge AI and IoT technologies to enable precise, real-time energy consumption monitoring and foster a culture of sustainable energy use across communities and industries.
-            </p>
-          </motion.div>
+        {/* Mission & Vision */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
+          {[
+            {
+              title: "Our Mission",
+              description:
+                "To leverage cutting-edge AI and IoT technologies for real-time energy monitoring, fostering sustainable energy use across all sectors.",
+              direction: -1,
+            },
+            {
+              title: "Our Vision",
+              description:
+                "To lead energy innovation by creating intelligent systems that revolutionize energy management while promoting environmental and economic progress.",
+              direction: 1,
+            },
+          ].map((item, idx) => (
+            <motion.div
+              key={item.title}
+              custom={item.direction}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              variants={cardVariants}
+              whileHover={{ scale: 1.03 }}
+              className={`p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 ${cardStyle}`}
+            >
+              <h3 className={`text-2xl font-bold ${textColor} mb-4`}>
+                {item.title}
+              </h3>
+              <p className={`${subText} text-base leading-relaxed`}>
+                {item.description}
+              </p>
+            </motion.div>
+          ))}
+        </div>
 
-          {/* Vision Card */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
-            whileHover={{ scale: 1.05, boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.1)" }}
-            className={`p-6 md:p-8 rounded-2xl md:rounded-3xl shadow-lg ${
-              isDarkMode ? "bg-[#1B1B1D] text-gray-300" : "bg-white text-[#0A0A0B]"
-            } hover:shadow-2xl transition-shadow duration-300 transform`}
-          >
-            <h3 className={`text-xl md:text-2xl font-bold ${
-              isDarkMode ? "text-white" : "text-[#0A0A0B]"
-            } mb-4`}>
-              Our Vision
-            </h3>
-            <p className={`text-sm md:text-base leading-relaxed ${
-              isDarkMode ? "text-gray-300" : "text-gray-600"
-            }`}>
-              To be at the forefront of energy innovation, creating intelligent systems that revolutionize the way energy is managed and consumed, while promoting environmental stewardship and economic growth.
-            </p>
-          </motion.div>
+        {/* Core Values */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <h3 className={`text-3xl font-bold ${textColor} mb-6`}>
+            Our Core Values
+          </h3>
+        </motion.div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {values.map((val, index) => (
+            <motion.div
+              key={val.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className={`rounded-xl p-6 shadow-md hover:shadow-xl transition ${cardStyle}`}
+            >
+              <h4 className={`text-lg font-semibold ${textColor} mb-2`}>
+                {val.title}
+              </h4>
+              <p className={`text-sm ${subText}`}>{val.description}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

@@ -112,13 +112,13 @@ const Contact = () => {
                       <Phone className="text-white mr-4 h-6 w-6" />
                       <span>+63 905 964 8098</span>
                     </a>
-                    <a href="mailto:electrifaiphsolutionscorp@gmail.com" className="flex items-center text-lg">
+                    <a href="mailto:contact@electrifaiph.tech" className="flex items-center text-lg">
                       <Mail className="text-white mr-4 h-6 w-6" />
-                      <span>electrifaiphsolutionscorp@gmail.com</span>
+                      <span>contact@electrifaiph.tech</span>
                     </a>
                     <div className="flex items-center text-lg">
                       <MapPin className="text-white mr-4 h-6 w-6" />
-                      <span>Polytechnic University of the Philippines, Sta. Mesa, Philippines</span>
+                      <span>A. Mabini Campus, Anonas Street, Sta. Mesa, Manila, Philippines 1016</span>
                     </div>
                   </div>
                 </motion.div>

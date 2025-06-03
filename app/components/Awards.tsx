@@ -39,30 +39,31 @@ const awards = [
   },
   {
     title: 'Incubatee - REVV-EVODINE Venture Studio',
-    description: 'Selected as a pioneering incubatee at REVV-EVODINE Venture Studio, accelerating ElectrifAI to be launched and tested in the market in Q3 2025.',
+    description: 'Selected as a pioneering incubatee at REVV-EVODINE Venture Studio powered by Fast Logistics Group.',
   },
+  {
+    title: 'Finalist – Tech Planter PH by Leave a Nest',
+    description: 'Finalist in the Sustainable Smart Systems category. Presented at the demo day in UST.'
+  },
+  {
+    title: 'Cohort 6 – NEXStep Incubation by New Energy Nexus',
+    description: 'One of five startups selected for a 3-month clean energy and climate tech incubation.'
+  },
+  {
+    title: 'Grand Finalist – Founders Arena Hackathon, PBW 2025',
+    description: 'Top 6 team pitching our blockchain-AI supply chain solution at PBW 2025 Grand Finals on June 11 at SMX Pasay.'
+  }
 ];
 
 const AwardItem = ({ title, description, isDarkMode }: { title: string; description: string; isDarkMode: boolean }) => (
   <div
     className={clsx(
-      'p-5 rounded-lg shadow-md border transition-all hover:shadow-xl',
-      isDarkMode ? 'bg-[#1B1B1D] border-[#00A5FF] text-white' : 'bg-white border-gray-300 text-black'
+      'p-5 rounded-lg shadow-md border transition-all hover:shadow-xl backdrop-blur-md',
+      isDarkMode ? 'bg-[#1B1B1D]/80 border-[#00A5FF] text-white' : 'bg-white/80 border-gray-300 text-black'
     )}
   >
     <h4 className="font-semibold">{title}</h4>
     <p className={clsx('text-sm mt-1', isDarkMode ? 'text-gray-400' : 'text-gray-600')}>{description}</p>
-  </div>
-);
-
-const AwardImage = ({ src, alt, isDarkMode }: { src: string; alt: string; isDarkMode: boolean }) => (
-  <div
-    className={clsx(
-      'w-full rounded-lg overflow-hidden shadow-lg border transition-transform duration-300 hover:scale-105',
-      isDarkMode ? 'border-[#00A5FF]' : 'border-gray-200'
-    )}
-  >
-    <img src={src} alt={alt} className="w-full h-auto object-cover" />
   </div>
 );
 
@@ -74,19 +75,26 @@ const Awards = () => {
       id="Awards"
       className={clsx(
         'w-full py-20 relative overflow-hidden',
-        isDarkMode ? 'bg-[#000000] text-white' : 'bg-gradient-to-b from-[#eef2f3] to-[#ffffff] text-black'
+        isDarkMode ? 'bg-black text-white' : 'bg-white text-black'
       )}
     >
-      {/* Decorative Background Elements */}
-      <div className="absolute top-1/4 left-0 w-[200px] h-[200px] rounded-full blur-2xl bg-[#00A5FF] opacity-20"></div>
-      <div className="absolute bottom-1/4 right-0 w-[350px] h-[350px] rounded-full blur-[100px] bg-[#00A5FF] opacity-20"></div>
+      {/* Cinematic Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/theteam.png"
+          alt="Team background"
+          className="w-full h-full object-cover opacity-50 blur-sm"
+        />
+        <div className="absolute inset-0 bg-black opacity-40"></div>
+      </div>
 
-      <div className="container px-6 md:px-12 max-w-7xl mx-auto">
+      {/* Content */}
+      <div className="container px-6 md:px-12 max-w-7xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
           <h3 className="text-[#00A5FF] text-md uppercase tracking-wider">Continued Pursuit of Growth</h3>
           <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">Partnerships & Awards</h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className={clsx('mt-4 text-lg max-w-3xl mx-auto', isDarkMode ? 'text-gray-300' : 'text-gray-600')}>
             Looking to partner with over <span className="text-[#00A5FF]">120 electric cooperatives</span> across the Philippines, 
             targeting rural and semi-urban areas to reach even more people.
           </p>
@@ -97,13 +105,6 @@ const Awards = () => {
           {awards.map((award, index) => (
             <AwardItem key={index} title={award.title} description={award.description} isDarkMode={isDarkMode} />
           ))}
-        </div>
-
-        {/* Images Section */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <AwardImage src="awards-1.png" alt="Award Image 1" isDarkMode={isDarkMode} />
-          <AwardImage src="awards-2.png" alt="Award Image 2" isDarkMode={isDarkMode} />
-          <AwardImage src="awards-3.png" alt="Award Image 3" isDarkMode={isDarkMode} />
         </div>
       </div>
     </section>

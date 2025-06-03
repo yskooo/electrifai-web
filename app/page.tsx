@@ -5,7 +5,7 @@ import AboutUs from "./components/AboutUs";
 import Team from "./components/Team";
 import Awards from "./components/Awards";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         <Awards />
         <Contact />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
