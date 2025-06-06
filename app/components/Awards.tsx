@@ -55,15 +55,27 @@ const awards = [
   }
 ];
 
-const AwardItem = ({ title, description, isDarkMode }: { title: string; description: string; isDarkMode: boolean }) => (
+const AwardItem = ({
+  title,
+  description,
+  isDarkMode,
+}: {
+  title: string;
+  description: string;
+  isDarkMode: boolean;
+}) => (
   <div
     className={clsx(
       'p-5 rounded-lg shadow-md border transition-all hover:shadow-xl backdrop-blur-md',
-      isDarkMode ? 'bg-[#1B1B1D]/80 border-[#00A5FF] text-white' : 'bg-white/80 border-gray-300 text-black'
+      isDarkMode
+        ? 'bg-[#1B1B1D]/80 border-[#00A5FF] text-white'
+        : 'bg-white/30 border-white/50 text-white backdrop-blur-sm shadow-sm'
     )}
   >
     <h4 className="font-semibold">{title}</h4>
-    <p className={clsx('text-sm mt-1', isDarkMode ? 'text-gray-400' : 'text-gray-600')}>{description}</p>
+    <p className={clsx('text-sm mt-1', isDarkMode ? 'text-gray-400' : 'text-white/90')}>
+      {description}
+    </p>
   </div>
 );
 
@@ -79,13 +91,13 @@ const Awards = () => {
       )}
     >
       {/* Cinematic Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0">
         <img
           src="/theteam.png"
           alt="Team background"
           className="w-full h-full object-cover opacity-50 blur-sm"
         />
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
 
       {/* Content */}
@@ -93,8 +105,8 @@ const Awards = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h3 className="text-[#00A5FF] text-md uppercase tracking-wider">Continued Pursuit of Growth</h3>
-          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">Partnerships & Awards</h2>
-          <p className={clsx('mt-4 text-lg max-w-3xl mx-auto', isDarkMode ? 'text-gray-300' : 'text-gray-600')}>
+          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl text-white">Partnerships & Awards</h2>
+          <p className={clsx('mt-4 text-lg max-w-3xl mx-auto', isDarkMode ? 'text-gray-300' : 'text-gray-200')}>
             Looking to partner with over <span className="text-[#00A5FF]">120 electric cooperatives</span> across the Philippines, 
             targeting rural and semi-urban areas to reach even more people.
           </p>

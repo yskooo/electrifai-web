@@ -2,6 +2,14 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { useDarkMode } from "../context/DarkModeContext";
+import {
+  Target,
+  Eye,
+  Lightbulb,
+  Leaf,
+  ShieldCheck,
+  Star,
+} from "lucide-react";
 
 const cardVariants = {
   hidden: (direction: number) => ({
@@ -93,14 +101,16 @@ export default function AboutUs() {
               description:
                 "To leverage cutting-edge AI and IoT technologies for real-time energy monitoring, fostering sustainable energy use across all sectors.",
               direction: -1,
+              icon: <Target className="w-6 h-6 text-[#00A5FF]" />,
             },
             {
               title: "Our Vision",
               description:
                 "To lead energy innovation by creating intelligent systems that revolutionize energy management while promoting environmental and economic progress.",
               direction: 1,
+              icon: <Eye className="w-6 h-6 text-[#00A5FF]" />,
             },
-          ].map((item, idx) => (
+          ].map((item) => (
             <motion.div
               key={item.title}
               custom={item.direction}
@@ -111,9 +121,12 @@ export default function AboutUs() {
               whileHover={{ scale: 1.03 }}
               className={`p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 ${cardStyle}`}
             >
-              <h3 className={`text-2xl font-bold ${textColor} mb-4`}>
-                {item.title}
-              </h3>
+              <div className="flex items-center gap-3 mb-4">
+                {item.icon}
+                <h3 className={`text-2xl font-bold ${textColor}`}>
+                  {item.title}
+                </h3>
+              </div>
               <p className={`${subText} text-base leading-relaxed`}>
                 {item.description}
               </p>
@@ -135,21 +148,35 @@ export default function AboutUs() {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {values.map((val, index) => (
-            <motion.div
-              key={val.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`rounded-xl p-6 shadow-md hover:shadow-xl transition ${cardStyle}`}
-            >
-              <h4 className={`text-lg font-semibold ${textColor} mb-2`}>
-                {val.title}
-              </h4>
-              <p className={`text-sm ${subText}`}>{val.description}</p>
-            </motion.div>
-          ))}
+          {values.map((val, index) => {
+            const Icon =
+              val.title === "Innovation"
+                ? Lightbulb
+                : val.title === "Sustainability"
+                ? Leaf
+                : val.title === "Integrity"
+                ? ShieldCheck
+                : Star;
+
+            return (
+              <motion.div
+                key={val.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className={`rounded-xl p-6 shadow-md hover:shadow-xl transition ${cardStyle}`}
+              >
+                <div className="flex items-center gap-2 mb-2">
+                  <Icon className="w-5 h-5 text-[#00A5FF]" />
+                  <h4 className={`text-lg font-semibold ${textColor}`}>
+                    {val.title}
+                  </h4>
+                </div>
+                <p className={`text-sm ${subText}`}>{val.description}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

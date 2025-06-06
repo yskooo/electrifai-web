@@ -22,7 +22,7 @@ const Contact = () => {
     <section
       id="Contact"
       ref={sectionRef}
-      className={`relative w-full py-12 md:py-24 lg:py-32 ${
+      className={`relative w-full pb-12 md:pb-24 lg:pb-32 ${
         isDarkMode ? 'bg-gradient-to-b from-[#000000] to-[#001027]' : 'bg-gradient-to-b from-[#f7fafd] to-[#eaf1f8]'
       } overflow-hidden`}
     >

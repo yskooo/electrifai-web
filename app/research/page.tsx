@@ -13,23 +13,29 @@ const ResearchPage = () => {
 
   const researches = [
     {
-      title: 'Adapter',
-      description: 'Comprehensive energy monitoring system with real-time analytics and reporting.',
-      features: ['Real-time Dashboard', 'Mobile App Integration', 'Custom Reports'],
-      status: 'Available'
+      title: 'PowerSentry',
+      description:
+        'Smart system designed to reduce electricity costs by automatically detecting and cutting power to idle appliances and equipment.',
+      features: ['Idle Device Detection', 'Remote Power Cut-off', 'Cost Savings Analytics'],
+      status: 'Available',
     },
     {
-      title: 'kWhScan',
-      description: 'Advanced security system for detecting and preventing energy theft.',
-      features: ['AI Detection', 'Instant Alerts', 'Tamper Protection'],
-      status: 'Available'
+      title: 'GridTrace',
+      description:
+        'A blockchain-powered transparency platform for tracking electricity flow across the grid—from power plants to consumers. Think of it as an Etherscan for energy.',
+      features: ['Blockchain Ledger', 'Real-time Grid Visibility', 'Scalable Global Monitoring'],
+      status: 'In Development',
     },
   ];
 
   return (
-    <main className={`min-h-screen pt-20 ${
-      isDarkMode ? 'bg-gradient-to-r from-[#000000] to-[#001027] text-white' : 'bg-gradient-to-r from-[#eef2f3] to-[#ffffff] text-[#0A0A0B]'
-    }`}>
+    <main
+      className={`min-h-screen mt-28 ${
+        isDarkMode
+          ? 'bg-gradient-to-r from-[#000000] to-[#001027] text-white'
+          : 'bg-gradient-to-r from-[#eef2f3] to-[#ffffff] text-[#0A0A0B]'
+      }`}
+    >
       <div className="container mx-auto px-4 py-16 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,15 +43,26 @@ const ResearchPage = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className={`text-4xl md:text-5xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-[#0A0A0B]'}`}>
+          <h1
+            className={`text-4xl md:text-5xl font-bold mb-6 ${
+              isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
+            }`}
+          >
             Research and Development
           </h1>
-          <p className={`text-lg md:text-xl max-w-3xl mx-auto ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-            Industry-leading solutions for modern energy management
+          <p
+            className={`text-lg md:text-xl max-w-3xl mx-auto ${
+              isDarkMode ? 'text-gray-300' : 'text-gray-600'
+            }`}
+          >
+            Driving innovation in modern energy infrastructure
           </p>
         </motion.div>
 
-        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          ref={ref}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {researches.map((product, index) => (
             <motion.div
               key={product.title}
@@ -58,21 +75,33 @@ const ResearchPage = () => {
             >
               <div className="p-6">
                 <div className="flex justify-between items-center mb-4">
-                  <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-[#0A0A0B]'}`}>
+                  <h3
+                    className={`text-xl font-bold ${
+                      isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
+                    }`}
+                  >
                     {product.title}
                   </h3>
                   <span className="text-[#00A5FF] text-sm font-medium px-2 py-1 bg-[#00A5FF]/10 rounded">
                     {product.status}
                   </span>
                 </div>
-                <p className={`mb-6 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                <p
+                  className={`mb-6 ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}
+                >
                   {product.description}
                 </p>
                 <ul className="space-y-2">
                   {product.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center">
                       <span className="w-2 h-2 bg-[#00A5FF] rounded-full mr-2"></span>
-                      <span className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                      <span
+                        className={`${
+                          isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                        }`}
+                      >
                         {feature}
                       </span>
                     </li>

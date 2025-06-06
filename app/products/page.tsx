@@ -33,7 +33,7 @@ const ProductsPage = () => {
   ];
 
   return (
-    <main className={`min-h-screen pt-20 ${
+    <main className={`min-h-screen mt-28 ${
       isDarkMode ? 'bg-gradient-to-r from-[#000000] to-[#001027] text-white' : 'bg-gradient-to-r from-[#eef2f3] to-[#ffffff] text-[#0A0A0B]'
     }`}>
       <div className="container mx-auto px-4 py-16 max-w-7xl">

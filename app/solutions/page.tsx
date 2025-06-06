@@ -13,24 +13,24 @@ const SolutionsPage = () => {
 
   const solutions = [
     {
-      title: 'Real-time Monitoring',
-      description: 'Advanced IoT sensors and real-time data collection for comprehensive energy monitoring.',
-      features: ['Live Data Analytics', 'Custom Alerts', 'Performance Metrics']
+      title: 'AI Engineering Services',
+      description: 'End-to-end AI system development, from prototyping to scalable deployment across various industries.',
+      features: ['System Design', 'Model Deployment', 'AI Infrastructure']
     },
     {
-      title: 'Predictive Maintenance',
-      description: 'AI-powered predictive maintenance to prevent equipment failures and optimize performance.',
-      features: ['Failure Prevention', 'Maintenance Scheduling', 'Cost Reduction']
+      title: 'Machine Learning',
+      description: 'Custom machine learning solutions using statistical models to analyze and predict data trends.',
+      features: ['Data Preprocessing', 'Model Training', 'Real-time Inference']
     },
     {
-      title: 'Energy Optimization',
-      description: 'Smart algorithms for optimal energy distribution and consumption patterns.',
-      features: ['Load Balancing', 'Peak Management', 'Efficiency Analysis']
+      title: 'Deep Learning',
+      description: 'Advanced neural network solutions for image, audio, and language processing applications.',
+      features: ['Computer Vision', 'Natural Language Processing', 'Speech Recognition']
     }
   ];
 
   return (
-    <main className={`min-h-screen pt-20 ${
+    <main className={`min-h-screen mt-28 ${
       isDarkMode ? 'bg-gradient-to-r from-[#000000] to-[#001027] text-white' : 'bg-gradient-to-r from-[#eef2f3] to-[#ffffff] text-[#0A0A0B]'
     }`}>
       <div className="container mx-auto px-4 py-16 max-w-7xl">
@@ -44,7 +44,7 @@ const SolutionsPage = () => {
             Our Solutions
           </h1>
           <p className={`text-lg md:text-xl max-w-3xl mx-auto ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-            Innovative energy management solutions powered by artificial intelligence
+            Innovative artificial intelligence solutions to power your digital transformation
           </p>
         </motion.div>
 
