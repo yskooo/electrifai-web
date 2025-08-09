@@ -27,11 +27,11 @@ const Footer = () => {
 
   return (
     <footer
-      className={`w-full px-4 py-6 lg:px-8 lg:py-8 transition-all duration-500 ease-in-out ${bgColor} ${textColor}`}
+      className={`w-full px-4 py-8 lg:px-8 lg:py-10 transition-all duration-500 ease-in-out ${bgColor} ${textColor}`}
     >
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4">
-        {/* Text Section */}
-        <div className="text-center lg:text-left">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6">
+        {/* Left: Branding & Text */}
+        <div className="text-center lg:text-left space-y-1">
           <p className="text-sm font-medium">
             &copy; 2025 ElectrifAI Philippines Solutions Corps. All rights reserved.
           </p>
@@ -40,7 +40,19 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Social Icons */}
+        {/* Middle: Interest Form Button */}
+        {/* <div className="flex justify-center">
+          <a
+            href="https://tally.so/r/w5AolZ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 rounded-full bg-white/10 text-sm font-medium transition-all duration-300 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/50"
+          >
+            Apply for Early Access
+          </a>
+        </div> */}
+
+        {/* Right: Social Icons */}
         <div className="flex gap-3">
           {socialLinks.map(({ href, icon, label }) => (
             <a

@@ -50,8 +50,8 @@ const awards = [
     description: 'One of five startups selected for a 3-month clean energy and climate tech incubation.'
   },
   {
-    title: 'Grand Finalist – Founders Arena Hackathon, PBW 2025',
-    description: 'Top 6 team pitching our blockchain-AI supply chain solution at PBW 2025 Grand Finals on June 11 at SMX Pasay.'
+    title: 'Winner – Founders Arena Hackathon, Philippine Blockchain Week 2025',
+    description: 'Secured 1st Runner up in early-stage startup pitching ElectrifAI for their supply chain solution at PBW 2025 Grand Finals.'
   }
 ];
 

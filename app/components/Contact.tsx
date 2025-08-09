@@ -63,7 +63,7 @@ const Contact = () => {
             animate={controls}
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className={`relative rounded-xl ${
-              isDarkMode ? 'bg-gradient-to-r from-[#2A2A2E] to-[#1B1B1D]' : 'bg-gradient-to-r from-[#2F4BE5] to-[#00A5FF]'
+              isDarkMode ? 'bg-gradient-to-r from-[#2A2A2E] to-[#1B1B1D]' : 'bg-black'
             } px-6 py-12 shadow-lg md:py-16 md:px-12 backdrop-blur-md text-white`}
           >
             <div className="flex flex-wrap lg:flex-nowrap lg:space-x-12 items-start">

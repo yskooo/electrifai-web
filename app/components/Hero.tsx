@@ -1,9 +1,28 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useDarkMode } from '../context/DarkModeContext';
 
+// const logos = [
+//   // { src: "/logos/gcp.png", alt: "SIBOL Logo", height: "h-32 md:h-24" },
+//   // { src: "/logos/aws.webp", alt: "UPLB TBI Logo", height: "h-24 md:h-24" },
+//   { src: "/logos/fast.jpg", alt: "UPLB TTBDO Logo", height: "h-20 md:h-24" },
+//   { src: "/logos/nexus.png", alt: "SS Logo", height: "h-20 md:h-24" },
+
+//   { src: "/logos/tenconsg.png", alt: "IEEE TenCon SG Logo", height: "h-12 md:h-12" },
+//   { src: "/logos/phstartupweek.png", alt: "PH Startup Week Logo", height: "h-12 md:h-16" },
+
+//   { src: "/logos/leave-a-nest.webp", alt: " Logo", height: "h-18 md:h-32" },
+//   { src: "/logos/pbw.png", alt: " Logo", height: "h-20 md:h-24" },
+//   { src: "/logos/pupresearch.png", alt: " Logo", height: "h-18 md:h-32" },
+// ];
+
+const startups = [
+  { src: "/logos/gcp.png", alt: "SIBOL Logo", height: "h-16" },
+  { src: "/logos/aws.webp", alt: "UPLB TBI Logo", height: "h-20" },
+]
 const Hero = () => {
   const { isDarkMode } = useDarkMode();
 
@@ -17,7 +36,9 @@ const Hero = () => {
     button: isDarkMode ? 'bg-[#004aad]' : 'bg-[#00A5FF]',
     learnMore: isDarkMode ? 'text-white' : 'text-[#00A5FF]'
   };
-  return (    <section
+  return (    
+  <>
+  <section
       className={`mx-auto mt-16 relative w-full min-h-[90vh] md:min-h-screen flex flex-col lg:flex-row items-center ${styles.bg} px-4 sm:px-8 md:px-16 py-12 md:py-20 lg:py-32 overflow-hidden gap-8 lg:gap-0`}
     >
       {/* Text Section */}
@@ -28,7 +49,7 @@ const Hero = () => {
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className={`text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-semibold ${styles.text} leading-tight md:leading-tighter max-w-[600px] lg:max-w-none`}
         >
-          The Smart Choice for Energy Optimization
+          Make Each <br /> kWh Count
         </motion.h1>
 
         <motion.p
@@ -43,7 +64,7 @@ const Hero = () => {
         {/* Buttons */}
         <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
           {[{ href: '#Contact', text: 'Get Started', bg: styles.button, textColor: 'text-white' },
-            { href: '#Solutions', text: 'Learn More', bg: 'border-2 border-[#00A5FF]', textColor: styles.learnMore }].map((btn, index) => (
+            { href: 'https://tally.so/r/w5AolZ', text: 'Early Access', bg: 'border-2 border-[#00A5FF]', textColor: styles.learnMore }].map((btn, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
@@ -60,6 +81,18 @@ const Hero = () => {
             </motion.div>
           ))}
         </div>
+        <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
+          {startups.map((startup, index) => (
+            <div key={index} className="flex items-center">
+              <img
+                src={startup.src}
+                alt={startup.alt}
+                className={`block object-contain ${startup.height}`}
+              />
+            </div>
+          ))}
+        </div>
+
       </div>
 
       {/* Image Section */}      
@@ -74,6 +107,45 @@ const Hero = () => {
         />
       </div>
     </section>
+
+      <div className={`mx-auto w-full py-8 ${styles.bg}`}>
+        <div className="flex flex-col w-full mb-4 text-center">
+          {/* Optional Heading */}
+        </div>
+        <div className="relative overflow-hidden">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 lg:flex animate-logos gap-2">
+            {logos.map((logo, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-center"
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className={`block object-contain ${logo.height}`}
+                />
+              </div>
+            ))}
+          </div> */}
+        </div>
+      </div>
+      {/* <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .animate-logos {
+          display: flex;
+          width: 250%;
+          animation: scroll 20s linear infinite;
+        }
+      `}</style> */}
+      </>
   );
 };
 
