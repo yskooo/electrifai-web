@@ -227,7 +227,7 @@ const CareersPage = () => {
           </p>
           <div className="flex justify-center text-center">
             <a
-              href="https://tally.so/r/w5AolZ"
+              href="https://tally.so/r/1AP2Gg"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-4 bg-[#00A5FF] text-white font-medium rounded-lg hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"

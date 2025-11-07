@@ -20,24 +20,24 @@ const unbounded = Unbounded({
 
 
 export const metadata = {
-  title: 'ElectrifAI | The Smart Choice for Energy Optimization',
+  title: 'ElectrifAI PH | Making Each kWh Count',
   description: 'ElectrifAI is an AI-driven platform focused on enhancing electricity efficiency and security.',
   openGraph: {
     type: 'website',
-    title: 'ElectrifAI | The Smart Choice for Energy Optimization',
+    title: 'ElectrifAI PH | Making Each KWh Count',
     description: 'ElectrifAI is an AI-driven platform focused on enhancing electricity efficiency and security.',
     url: 'https://www.electrifai.tech',
     images: [
       {
-        url: 'https://www.electrifai.tech/svgs/metatag.png',
+        url: 'https://www.electrifaiph.tech/svgs/metatag.png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ElectrifAI | The Smart Choice for Energy Optimization',
+    title: 'ElectrifAI PH| Making Each KWh Count',
     description: 'ElectrifAI is an AI-driven platform focused on enhancing electricity efficiency and security.',
-    images: ['https://www.electrifai.tech/svgs/metatag.png'],
+    images: ['https://www.electrifaiph.tech/svgs/metatag.png'],
   },
 } satisfies Metadata;
 

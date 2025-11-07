@@ -2,6 +2,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { useDarkMode } from "../context/DarkModeContext";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+
+const CrunchbaseIcon = () => (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 32 32"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M23.707 16.68c0 0.017 0.001 0.037 0.001 0.057 0 1.452-1.177 2.629-2.629 2.629s-2.629-1.177-2.629-2.629c0-1.452 1.177-2.629 2.629-2.629 0.477 0 0.925 0.127 1.311 0.35l-0.013-0.007c0.784 0.451 1.309 1.277 1.331 2.226l0 0.003zM23.985 20.136c-0.376 0.325-0.815 0.592-1.294 0.777l-0.030 0.010c-0.494 0.197-1.066 0.312-1.664 0.312-0.96 0-1.851-0.294-2.588-0.797l0.016 0.010v0.475h-1.887v-13.209h1.874v5.136c0.634-0.434 1.403-0.719 2.233-0.786l0.017-0.001h0.337c0.002 0 0.005 0 0.007 0 2.533 0 4.586 2.053 4.586 4.586 0 1.393-0.621 2.64-1.601 3.481l-0.006 0.005zM9.808 19.080c0.321 0.15 0.697 0.237 1.093 0.237 1.060 0 1.974-0.625 2.393-1.527l0.007-0.016h2.074c-0.509 2.035-2.321 3.518-4.48 3.518-2.547 0-4.611-2.064-4.611-4.611s2.065-4.611 4.611-4.611c2.159 0 3.971 1.483 4.473 3.486l0.007 0.032h-2.074c-0.426-0.918-1.34-1.543-2.399-1.543-1.456 0-2.637 1.181-2.637 2.637 0 1.060 0.625 1.974 1.527 2.393l0.016 0.007zM27.997 1.004h-23.993c-1.654 0.007-2.992 1.346-2.999 2.998v23.994c0.007 1.654 1.346 2.992 2.998 2.999h23.994c1.654-0.007 2.992-1.346 2.999-2.998v-23.994c-0.007-1.654-1.346-2.992-2.998-2.999h-0.001z" />
+  </svg>
+);
 
 const Footer = () => {
   const { isDarkMode } = useDarkMode();
@@ -12,16 +25,30 @@ const Footer = () => {
   const textColor = "text-white";
   const mutedText = "text-white/60";
 
-  const socialLinks = [
+  const socialLinks: Array<{
+    href: string;
+    icon?: IconDefinition;
+    component?: React.ComponentType;
+    label: string;
+    isFontAwesome: boolean;
+  }> = [
     {
       href: "https://www.facebook.com/profile.php?id=61567550636505",
       icon: faFacebookF,
       label: "Facebook",
+      isFontAwesome: true,
     },
     {
       href: "https://www.linkedin.com/company/electrifai-techsolutionsph/",
       icon: faLinkedinIn,
       label: "LinkedIn",
+      isFontAwesome: true,
+    },
+    {
+      href: "https://www.crunchbase.com/organization/electrifai-5112",
+      component: CrunchbaseIcon,
+      label: "Crunchbase",
+      isFontAwesome: false,
     },
   ];
 
@@ -54,7 +81,7 @@ const Footer = () => {
 
         {/* Right: Social Icons */}
         <div className="flex gap-3">
-          {socialLinks.map(({ href, icon, label }) => (
+          {socialLinks.map(({ href, icon, component: Component, label, isFontAwesome }) => (
             <a
               key={label}
               href={href}
@@ -64,7 +91,11 @@ const Footer = () => {
               className="group transition-transform transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/50"
             >
               <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center transition-colors hover:bg-white/20">
-                <FontAwesomeIcon icon={icon} className="text-white" />
+                {isFontAwesome && icon ? (
+                  <FontAwesomeIcon icon={icon} className="text-white" />
+                ) : Component ? (
+                  <Component />
+                ) : null}
               </div>
             </a>
           ))}
