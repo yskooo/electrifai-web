@@ -143,52 +143,6 @@ const CareersPage = () => {
           </Link>
         </motion.div>
 
-        {/* Why Join Section */}
-        <div className="mb-20">
-          <h2
-            className={`text-3xl md:text-4xl font-bold mb-12 text-center ${
-              isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
-            }`}
-          >
-            Why Join ElectrifAI?
-          </h2>
-          <motion.div
-            ref={ref}
-            variants={containerVariants}
-            initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
-            {whyJoin.map((item, index) => {
-              const IconComponent = item.icon;
-              return (
-                <motion.div
-                  key={index}
-                  variants={itemVariants}
-                  className={`p-8 rounded-xl ${
-                    isDarkMode ? 'bg-[#1B1B1D]' : 'bg-white'
-                  } shadow-lg hover:shadow-xl transition-shadow duration-300`}
-                >
-                  <IconComponent className="w-12 h-12 text-[#00A5FF] mb-4" />
-                  <h3
-                    className={`text-xl font-bold mb-3 ${
-                      isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
-                    }`}
-                  >
-                    {item.title}
-                  </h3>
-                  <p
-                    className={`${
-                      isDarkMode ? 'text-gray-300' : 'text-gray-600'
-                    }`}
-                  >
-                    {item.description}
-                  </p>
-                </motion.div>
-              );
-            })}
-          </motion.div>
-        </div>
 
         {/* Open Positions */}
         <div className="mb-20">
@@ -280,29 +234,6 @@ const CareersPage = () => {
               Apply to Talent Pool
             </a>
           </div>
-        </motion.div>
-
-        {/* Culture Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="text-center"
-        >
-          <h2
-            className={`text-3xl md:text-4xl font-bold mb-6 ${
-              isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
-            }`}
-          >
-            Our Culture
-          </h2>
-          <p
-            className={`text-lg max-w-3xl mx-auto mb-8 ${
-              isDarkMode ? 'text-gray-300' : 'text-gray-600'
-            }`}
-          >
-            At ElectrifAI, we believe in innovation, collaboration, and making a real impact. We foster a culture of continuous learning, creative problem-solving, and mutual respect. Our team values diversity and inclusion, and we're committed to creating an environment where everyone can thrive.
-          </p>
         </motion.div>
       </div>
     </main>

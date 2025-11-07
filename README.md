@@ -47,6 +47,4 @@ git remote -v
 origin  https://github.com/electrifai-ph/electrifai-web.git (fetch)
 origin  https://github.com/electrifai-ph/electrifai-web.git (push)
 deploy  https://github.com/yskooo/electrifai-web.git (push)
-git remote -v
-git push deploy main
-git push deploy --mirror
+
