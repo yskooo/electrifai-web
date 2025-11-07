@@ -14,7 +14,7 @@ const Team = () => {
   const teamMembers = [
     {
       name: 'Engr. Gerhard P. Tan',
-      role: 'President',
+      role: 'Chairman',
       description: ' Oversees daily operations, streamlines processes, and advises on strategic decisions for growth.',
       imgSrc: '/members/hard.png',
       contacts: {
@@ -72,76 +72,76 @@ const Team = () => {
         facebook: "",
       },
     },
-    {
-      name: 'Clarence Jay Fetalino',
-      role: 'Electronics Department Head',
-      description: 'Specializes in IoT devices and research, ensuring that the hardware components are robust, efficient, and well-integrated with the software.',
-      imgSrc: '/members/clarence.png',
-      contacts: {
-        linkedIn: "clarence-fetalino-45b313223",
-        facebook: "clarencejay.fetalino",
-      },
-    },
-    {
-      name: 'Mcallen Fradejas',
-      role: 'Prototype Design Development Head',
-      description: 'Creates engaging 3D models and layouts, visualizing complex concepts with clarity and creativity.',
-      imgSrc: '/members/fmcallen.png',
-      contacts: {
-        linkedIn: "mcallen-fradejas",
-        facebook: "macalien.fradejas",
-      },
-    },
-    {
-      name: 'Siegfred Lorelle Mina',
-      role: 'Lead AI Engineer',
-      description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-      imgSrc: '/members/siegfred.png',
-      contacts: {
-        linkedIn: "siegfred-lorelle-mina",
-        facebook: "profile.php?id=1718881634",
-      },
-    },
-    {
-      name: 'David Bato-bato',
-      role: 'Lead Software Engineer',
-      description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-      imgSrc: '/members/david.png',
-      contacts: {
-        linkedIn: "david-bato-bato-1b6a8b288",
-        facebook: "dream.achiever46",
-      },
-    },
-    {
-      name: 'Dennesse Condat',
-      role: 'Research Specialist 1',
-      description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
-      imgSrc: '/members/denesse.png',
-      contacts: {
-        linkedIn: "dennesse-loura-condat-2747a1299",
-        facebook: "profile.php?id=100021986423905",
-      },
-    },
-    {
-      name: 'Gaeus Caskie Fabro',
-      role: 'AI Engineer',
-      description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-      imgSrc: '/members/gaeus.png',
-      contacts: {
-        linkedIn: "gaeus-caskie-fabro-319981234",
-        facebook: "caskieee",
-      },
-    },
-      {
-      name: 'Justine Rey Daquis',
-      role: 'Data Engineer',
-      description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-      imgSrc: '/members/justine.png',
-      contacts: {
-        linkedIn: "justine-rey-daquis-855b07297",
-        facebook: "Justinedaquis28",
-      },
-    },
+    // {
+    //   name: 'Clarence Jay Fetalino',
+    //   role: 'Electronics Department Head',
+    //   description: 'Specializes in IoT devices and research, ensuring that the hardware components are robust, efficient, and well-integrated with the software.',
+    //   imgSrc: '/members/clarence.png',
+    //   contacts: {
+    //     linkedIn: "clarence-fetalino-45b313223",
+    //     facebook: "clarencejay.fetalino",
+    //   },
+    // },
+    // {
+    //   name: 'Mcallen Fradejas',
+    //   role: 'Prototype Design Development Head',
+    //   description: 'Creates engaging 3D models and layouts, visualizing complex concepts with clarity and creativity.',
+    //   imgSrc: '/members/fmcallen.png',
+    //   contacts: {
+    //     linkedIn: "mcallen-fradejas",
+    //     facebook: "macalien.fradejas",
+    //   },
+    // },
+    // {
+    //   name: 'Siegfred Lorelle Mina',
+    //   role: 'Lead AI Engineer',
+    //   description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
+    //   imgSrc: '/members/siegfred.png',
+    //   contacts: {
+    //     linkedIn: "siegfred-lorelle-mina",
+    //     facebook: "profile.php?id=1718881634",
+    //   },
+    // },
+    // {
+    //   name: 'David Bato-bato',
+    //   role: 'Lead Software Engineer',
+    //   description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
+    //   imgSrc: '/members/david.png',
+    //   contacts: {
+    //     linkedIn: "david-bato-bato-1b6a8b288",
+    //     facebook: "dream.achiever46",
+    //   },
+    // },
+    // {
+    //   name: 'Dennesse Condat',
+    //   role: 'Research Specialist 1',
+    //   description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
+    //   imgSrc: '/members/denesse.png',
+    //   contacts: {
+    //     linkedIn: "dennesse-loura-condat-2747a1299",
+    //     facebook: "profile.php?id=100021986423905",
+    //   },
+    // },
+    // {
+    //   name: 'Gaeus Caskie Fabro',
+    //   role: 'AI Engineer',
+    //   description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
+    //   imgSrc: '/members/gaeus.png',
+    //   contacts: {
+    //     linkedIn: "gaeus-caskie-fabro-319981234",
+    //     facebook: "caskieee",
+    //   },
+    // },
+    //   {
+    //   name: 'Justine Rey Daquis',
+    //   role: 'Data Engineer',
+    //   description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
+    //   imgSrc: '/members/justine.png',
+    //   contacts: {
+    //     linkedIn: "justine-rey-daquis-855b07297",
+    //     facebook: "Justinedaquis28",
+    //   },
+    // },
   ];
 
   return (
@@ -151,7 +151,7 @@ const Team = () => {
         isDarkMode ? 'bg-gradient-to-b from-[#000000] to-[#001027]' : 'bg-gradient-to-b from-[#eef2f3] to-[#ffffff]'
       } flex items-center justify-center overflow-hidden`}
     >
-      <div className="container px-4 md:px-6 max-w-screen=2xl">
+      <div className="container px-4 md:px-6 max-w-screen-2xl">
         {/* Section Header */}
         <div className="text-center mb-8 md:mb-12 lg:mb-16">
           <h2 className={`text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tighter ${
@@ -162,12 +162,12 @@ const Team = () => {
           <p className={`text-sm md:text-md lg:text-lg ${
             isDarkMode ? 'text-gray-300' : 'text-gray-600'
           } max-w-2xl mx-auto`}>
-            The company is spearheaded by a team of passionate students from the Polytechnic University of the Philippines Manila.
+            {/* The company is spearheaded by a team of passionate students from the Polytechnic University of the Philippines Manila. */}
           </p>
         </div>
 
         {/* Team Members Grid */}
-        <div className="px-4 flex flex-wrap justify-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
@@ -175,13 +175,13 @@ const Team = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 + index * 0.1 }}
               whileHover={{ scale: 1.05, boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.1)' }}
-              className={`p-4 md:p-6 lg:p-4 md:w-1/3 w-full lg:w-1/5 rounded-xl md:rounded-2xl shadow-sm ${
+              className={`p-4 md:p-6 lg:p-8 rounded-xl md:rounded-2xl shadow-sm ${
                 isDarkMode ? 'bg-[#1B1B1D] text-gray-300' : 'bg-white text-[#0A0A0B]'
-              } hover:shadow-2xl transition-shadow duration-300 transform text-center flex flex-row max-[320px]:flex-col md:flex-col gap-5 md:gap-0 items-center`}
+              } hover:shadow-2xl transition-shadow duration-300 transform text-center flex flex-col gap-5 md:gap-0 items-center`}
             >
               {/* Profile Image with Decorative Elements */}
               <div className="relative mb-4">
-                <div className={`w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-2 md:border-4 ${
+                <div className={`w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 ${
                   isDarkMode ? 'border-[#00A5FF]' : 'border-[#00A5FF]'
                 } relative bg-[#eef2f3]`}>
                   <Image
@@ -203,13 +203,13 @@ const Team = () => {
               </div>
 
               {/* Member Info */}
-              <div className="w-full md:ms-0">
-                <h3 className={`text-start max-[320px]:text-center md:text-center w-text-sm md:text-lg lg:text-md font-bold ${
+              <div className="w-full">
+                <h3 className={`text-center text-lg md:text-xl lg:text-lg font-bold ${
                   isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
                 } mb-1`}>
                   {member.name}
                 </h3>
-                <h4 className={`text-start max-[320px]:text-center md:text-center text-xs md:text-sm lg:text-xs font-medium ${
+                <h4 className={`text-center text-sm md:text-base lg:text-sm font-medium ${
                   isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FFAd]'
                 } mb-2`}>
                   {member.role}
@@ -220,9 +220,9 @@ const Team = () => {
               }`}>
                 {member.description}
               </p> */}
-              <div className="mt-auto flex justify-end gap-1 w-1/12 max-[320px]:w-full md:w-full">
+              <div className="mt-auto flex justify-center gap-3 w-full">
                 <a 
-                  className={`mt-2 flex justify-center items-center rounded-full transition-all duration-300 w-3 h-3 p-4 ${
+                  className={`mt-2 flex justify-center items-center rounded-full transition-all duration-300 w-10 h-10 ${
                     isDarkMode ? " hover:bg-[#2e2e2e]": "hover:bg-[#eef2f3]"}`}
                   href={`https://linkedin.com/in/${member.contacts.linkedIn}`}
                   target="__blank"

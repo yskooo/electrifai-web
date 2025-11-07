@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 import { motion } from 'framer-motion';
@@ -114,7 +115,7 @@ const CareersPage = () => {
       }`}
     >
       {/* Hero Section */}
-      <div className="container mx-auto px-4 py-16 max-w-7xl">
+      <div className="container mx-auto px-4 py-20 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -224,7 +225,7 @@ const CareersPage = () => {
           >
             Don't see a position that matches your skills? Join our talent pool and be notified when new opportunities that align with your profile become available. We're always looking for exceptional talent to join our team.
           </p>
-          <div className="flex justify-center">
+          <div className="flex justify-center text-center">
             <a
               href="https://tally.so/r/w5AolZ"
               target="_blank"

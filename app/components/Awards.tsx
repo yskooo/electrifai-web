@@ -55,7 +55,7 @@ const awards = [
   },
   {
     title: 'Cohort 1, SCALE NCR',
-    description: ''
+    description: 'Ongoing.'
   },
   {
     title: 'IEEE International Future Energy Electronics Conference 2025',
@@ -63,7 +63,7 @@ const awards = [
   },  
   {
     title: 'Incubatee, Founders Institute',
-    description: ''
+    description: 'Ongoing.'
   }
 ];
 

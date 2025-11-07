@@ -73,7 +73,7 @@ const Contact = () => {
                   initial={{ opacity: 0, y: -20 }}
                   animate={controls}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-                  className="text-4xl font-extrabold mb-6 leading-tight"
+                  className="text-3xl sm:text-4xl font-extrabold mb-6 leading-tight"
                 >
                   Ready to take your electricity savings to the next level?
                 </motion.h2>
