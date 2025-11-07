@@ -92,7 +92,7 @@ const Features = () => {
             How We&apos;re Different
           </h2>
           <h2 className={`text-3xl sm:text-4xl font-extrabold tracking-tighter mb-4 ${isDarkMode ? 'text-white' : 'text-[#0A0A0B]'}`}>
-            Innovative Solutions for Real-time Energy Management
+            Innovative Solutions for Energy Management
           </h2>
           <p className={`text-base md:text-lg max-w-3xl mx-auto ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
             Our platform offers real-time monitoring of power consumption, AI-based anomaly detection to prevent energy theft, and intelligent insights for optimal energy management.

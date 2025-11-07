@@ -13,23 +13,35 @@ const ProductsPage = () => {
 
   const products = [
     {
-      title: 'ELI',
+      title: 'EAI',
       description: 'Comprehensive energy monitoring system with real-time analytics and reporting.',
       features: ['Real-time Dashboard', 'Mobile App Integration', 'Custom Reports'],
       status: 'Available'
     },
     {
+      title: 'ELI',
+      description: 'Comprehensive energy monitoring system with real-time analytics and reporting.',
+      features: ['Real-time Dashboard', 'Mobile App Integration', 'Custom Reports'],
+      status: 'Under Labs'
+    },
+    {
       title: 'EduGAIte',
       description: 'Advanced security system for detecting and preventing energy theft.',
       features: ['AI Detection', 'Instant Alerts', 'Tamper Protection'],
-      status: 'Available'
+      status: 'Custom'
     },
     {
       title: 'Serbisyow AI',
       description: 'Central management system for intelligent power distribution.',
       features: ['Grid Management', 'Load Balancing', 'Remote Control'],
       status: 'Available'
-    }
+    },
+    {
+      title: 'LeasifAI',
+      description: 'Advanced security system for detecting and preventing energy theft.',
+      features: ['AI Detection', 'Instant Alerts', 'Tamper Protection'],
+      status: 'Available'
+    },
   ];
 
   return (

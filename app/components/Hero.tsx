@@ -49,16 +49,20 @@ const Hero = () => {
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className={`text-4xl md:text-5xl lg:text-7xl font-semibold ${styles.text} leading-tight md:leading-tighter max-w-[600px] lg:max-w-none`}
         >
-          Make Each <br /> kWh Count
+          Make Each <br /> <span className="text-[#00A5FF]">kWh</span> Count!
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-          className={`mt-3 md:mt-4 text-base sm:text-lg md:text-xl ${styles.description} max-w-xl lg:max-w-2xl leading-relaxed`}
+          className={`mt-3 md:mt-4 text-base sm:text-lg md:text-xl ${styles.description} max-w-xl lg:max-w-xl leading-relaxed`}
         >
-          <span className="text-[#00A5FF]">ElectrifAI</span> utilizes AI algorithms for predictive maintenance, energy optimization, and anomaly detection, while IoT devices enable real-time monitoring and data collection across the grid.
+          The future of energy isn’t just about producing more, but consuming smarter. 
+          
+          We challenge the imbalance by revolutionizing how energy is managed, distributed, and consumed.
+
+          {/* <span className="text-[#00A5FF]">ElectrifAI</span> utilizes AI algorithms for predictive maintenance, energy optimization, and anomaly detection, while IoT devices enable real-time monitoring and data collection across the grid. */}
         </motion.p>
 
         {/* Buttons */}

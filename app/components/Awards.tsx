@@ -38,8 +38,8 @@ const awards = [
     description: 'Engaged in the SEC Roadshow on Capital Formation, exploring investment opportunities and funding strategies to scale ElectrifAI’s impact in the energy sector.',
   },
   {
-    title: 'Incubatee - REVV-EVODINE Venture Studio',
-    description: 'Selected as a pioneering incubatee at REVV-EVODINE Venture Studio powered by Fast Logistics Group.',
+    title: 'Exited - REVV-EVODINE Venture Studio',
+    description: 'Developing enterprise incubatee at REVV-EVODINE Venture Studio powered by Fast Logistics Group.',
   },
   {
     title: 'Finalist – Tech Planter PH by Leave a Nest',
@@ -52,6 +52,18 @@ const awards = [
   {
     title: 'Winner – Founders Arena Hackathon, Philippine Blockchain Week 2025',
     description: 'Secured 1st Runner up in early-stage startup pitching ElectrifAI for their supply chain solution at PBW 2025 Grand Finals.'
+  },
+  {
+    title: 'Cohort 1, SCALE NCR',
+    description: ''
+  },
+  {
+    title: 'IEEE International Future Energy Electronics Conference 2025',
+    description: ''
+  },  
+  {
+    title: 'Incubatee, Founders Institute',
+    description: ''
   }
 ];
 
