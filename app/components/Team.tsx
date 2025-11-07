@@ -44,12 +44,32 @@ const Team = () => {
     },
     {
       name: 'Raeselyn Macorol',
-      role: 'Research Department Head',
+      role: 'Chief Human Resource Officer',
       description: 'Drives marketing strategies and manages daily operations to ensure business growth and efficiency.',
       imgSrc: '/members/raeselyn.png',
       contacts: {
         linkedIn: "raeselynmacorol",
         facebook: "raeselynmacorol",
+      },
+    },
+    {
+      name: 'Arjay Rosel',
+      role: 'Chief Marketing Officer',
+      description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
+      imgSrc: '/members/arjay.png',
+      contacts: {
+        linkedIn: "arjay-rosel-5b4a0b252",
+        facebook: "roselarjayyy",
+      },
+    },
+    {
+      name: 'Christian Joel Lazo ',
+      role: 'Chief Operations Officer',
+      description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
+      imgSrc: '/members/christian.png',
+      contacts: {
+        linkedIn: "laxseuss",
+        facebook: "",
       },
     },
     {
@@ -92,16 +112,6 @@ const Team = () => {
         facebook: "dream.achiever46",
       },
     },
-     {
-      name: 'Arjay Rosel',
-      role: 'Marketing Department Head',
-      description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
-      imgSrc: '/members/arjay.png',
-      contacts: {
-        linkedIn: "arjay-rosel-5b4a0b252",
-        facebook: "roselarjayyy",
-      },
-    },
     {
       name: 'Dennesse Condat',
       role: 'Research Specialist 1',
@@ -124,22 +134,12 @@ const Team = () => {
     },
       {
       name: 'Justine Rey Daquis',
-      role: 'Software Engineer',
+      role: 'Data Engineer',
       description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
       imgSrc: '/members/justine.png',
       contacts: {
         linkedIn: "justine-rey-daquis-855b07297",
         facebook: "Justinedaquis28",
-      },
-    },
-    {
-      name: 'Christian Joel Lazo ',
-      role: 'Production Engineer',
-      description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
-      imgSrc: '/members/christian.png',
-      contacts: {
-        linkedIn: "laxseuss",
-        facebook: "",
       },
     },
   ];

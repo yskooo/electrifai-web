@@ -47,7 +47,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
-          className={`text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-semibold ${styles.text} leading-tight md:leading-tighter max-w-[600px] lg:max-w-none`}
+          className={`text-4xl md:text-5xl lg:text-7xl font-semibold ${styles.text} leading-tight md:leading-tighter max-w-[600px] lg:max-w-none`}
         >
           Make Each <br /> kWh Count
         </motion.h1>
