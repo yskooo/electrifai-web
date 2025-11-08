@@ -58,7 +58,7 @@ const Hero = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
           className={`mt-3 md:mt-4 text-base sm:text-lg md:text-xl ${styles.description} max-w-xl lg:max-w-xl leading-relaxed`}
         >
-          The future of energy isn’t just about producing more, but consuming smarter. <br/>
+          The future of energy isn’t just about producing more, but consuming smarter. <br/> <br />
           
           We challenge this imbalance by transforming how energy is managed, distributed, and consumed.
 

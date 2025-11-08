@@ -16,6 +16,18 @@ const CareersPage = () => {
 
   const positions = [
     {
+      title: 'Product Manager',
+      department: 'Product',
+      level: 'Senior',
+      description: 'Lead product vision and strategy for our energy management solutions.',
+    },
+    {
+      title: 'Business Development Executive',
+      department: 'Sales & Partnerships',
+      level: 'All Levels',
+      description: 'Identify market opportunities and build strategic partnerships in the energy sector.',
+    },
+    {
       title: 'AI/ML Engineer',
       department: 'Engineering',
       level: 'All Levels',
@@ -38,51 +50,6 @@ const CareersPage = () => {
       department: 'Data & Analytics',
       level: 'Mid-Senior',
       description: 'Analyze energy consumption patterns and create predictive models for optimization.',
-    },
-    {
-      title: 'Product Manager',
-      department: 'Product',
-      level: 'Senior',
-      description: 'Lead product vision and strategy for our energy management solutions.',
-    },
-    {
-      title: 'Business Development Executive',
-      department: 'Sales & Partnerships',
-      level: 'All Levels',
-      description: 'Identify market opportunities and build strategic partnerships in the energy sector.',
-    },
-  ];
-
-  const whyJoin = [
-    {
-      icon: Zap,
-      title: 'Cutting-Edge Technology',
-      description: 'Work with AI, IoT, and blockchain technologies shaping the future of energy.',
-    },
-    {
-      icon: Heart,
-      title: 'Impact-Driven Mission',
-      description: 'Contribute to sustainable energy solutions aligned with UN Sustainable Development Goals.',
-    },
-    {
-      icon: Users,
-      title: 'Collaborative Culture',
-      description: 'Join a diverse team of innovators passionate about solving real-world problems.',
-    },
-    {
-      icon: Award,
-      title: 'Growth & Learning',
-      description: 'Access to professional development, training, and mentorship opportunities.',
-    },
-    {
-      icon: TrendingUp,
-      title: 'Career Advancement',
-      description: 'Clear career paths and opportunities to grow with a rapidly expanding company.',
-    },
-    {
-      icon: Briefcase,
-      title: 'Competitive Benefits',
-      description: 'Competitive salary, flexible work arrangements, and comprehensive benefits.',
     },
   ];
 
