@@ -5,10 +5,10 @@ import { useDarkMode } from "../context/DarkModeContext";
 import {
   Target,
   Eye,
-  Lightbulb,
-  Leaf,
-  ShieldCheck,
-  Star,
+  BarChart3,
+  AlertCircle,
+  Zap,
+  TrendingUp,
 } from "lucide-react";
 
 const cardVariants = {
@@ -23,26 +23,26 @@ const cardVariants = {
   },
 };
 
-const values = [
+const coreStrengths = [
   {
-    title: "Innovation",
+    title: "Smart Insights",
     description:
-      "We continuously push boundaries using AI and IoT to redefine energy solutions.",
+      "Real-time intelligence that turns energy data into actionable decisions.",
   },
   {
-    title: "Sustainability",
+    title: "Pilferage Alert",
     description:
-      "Our solutions are designed with environmental impact and long-term scalability in mind.",
+      "Detect anomalies instantly and prevent energy theft and system failures.",
   },
   {
-    title: "Integrity",
+    title: "Infinite Scale",
     description:
-      "We uphold transparency, ethics, and trust in every partnership and product we build.",
+      "From startups to utilities, our platform grows with every organization.",
   },
   {
-    title: "Excellence",
+    title: "Maximum ROI",
     description:
-      "We strive for world-class quality and performance in all our systems and services.",
+      "Cut costs, optimize operations, and boost profitability.",
   },
 ];
 
@@ -89,7 +89,7 @@ export default function AboutUs() {
             About Us
           </h2>
           <p className={`max-w-2xl mx-auto ${subText} text-lg`}>
-            At Electrifai PH Solutions Corp, we power the future with precision. We deliver smart, sustainable energy solutions using AI and IoT for communities and industries.
+            ElectrifAI is transforming energy management with AI and IoT. We help businesses and utilities cut costs, prevent losses, and operate smarter through real-time intelligence.
           </p>
         </motion.div>
 
@@ -99,14 +99,14 @@ export default function AboutUs() {
             {
               title: "Our Mission",
               description:
-                "To leverage cutting-edge AI and IoT technologies for real-time energy monitoring, fostering sustainable energy use across all sectors.",
+                "Empower organizations to optimize energy efficiency, prevent revenue loss, and achieve financial success through AI-powered monitoring and predictive intelligence.",
               direction: -1,
               icon: <Target className="w-6 h-6 text-[#00A5FF]" />,
             },
             {
               title: "Our Vision",
               description:
-                "To lead energy innovation by creating intelligent systems that revolutionize energy management while promoting environmental and economic progress.",
+                "Build the world's most trusted energy intelligence platform where every organization has the visibility, control, and insights needed to thrive in a smarter, more efficient energy future.",
               direction: 1,
               icon: <Eye className="w-6 h-6 text-[#00A5FF]" />,
             },
@@ -134,7 +134,7 @@ export default function AboutUs() {
           ))}
         </div>
 
-        {/* Core Values */}
+        {/* Core Strengths */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -142,38 +142,41 @@ export default function AboutUs() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h3 className={`text-3xl font-bold ${textColor} mb-6`}>
-            Our Core Values
+          <h3 className={`text-3xl font-bold ${textColor} mb-2`}>
+            Our Core Strengths
           </h3>
+          <p className={`${subText} text-base`}>
+            What sets ElectrifAI apart in the energy intelligence space
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {values.map((val, index) => {
+          {coreStrengths.map((strength, index) => {
             const Icon =
-              val.title === "Innovation"
-                ? Lightbulb
-                : val.title === "Sustainability"
-                ? Leaf
-                : val.title === "Integrity"
-                ? ShieldCheck
-                : Star;
+              strength.title === "Smart Insights"
+                ? BarChart3
+                : strength.title === "Threat Prevention"
+                ? AlertCircle
+                : strength.title === "Infinite Scale"
+                ? Zap
+                : TrendingUp;
 
             return (
               <motion.div
-                key={val.title}
+                key={strength.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className={`rounded-xl p-6 shadow-md hover:shadow-xl transition ${cardStyle}`}
               >
-                <div className="flex items-center gap-2 mb-2">
-                  <Icon className="w-5 h-5 text-[#00A5FF]" />
+                <div className="flex items-start gap-3 mb-4">
+                  <Icon className="w-6 h-6 text-[#00A5FF] flex-shrink-0" />
                   <h4 className={`text-lg font-semibold ${textColor}`}>
-                    {val.title}
+                    {strength.title}
                   </h4>
                 </div>
-                <p className={`text-sm ${subText}`}>{val.description}</p>
+                <p className={`text-sm ${subText}`}>{strength.description}</p>
               </motion.div>
             );
           })}

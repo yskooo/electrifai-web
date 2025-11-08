@@ -30,7 +30,7 @@ const Clientele = () => {
       subtitle: 'B2B',
       description: 'Helping businesses scale energy efficiency across their operations with advanced monitoring, predictive maintenance, and real-time optimization.',
       icon: Building2,
-      color: '#FF6B35',
+      color: '#00A5FF',
       highlight: 'Profit & Loss, Automated ESG',
     },
     {
@@ -38,7 +38,7 @@ const Clientele = () => {
       subtitle: 'B2G',
       description: 'Transforming the nation\'s energy infrastructure through strategic partnerships that drive sustainable development and nation-building initiatives.',
       icon: Landmark,
-      color: '#00D084',
+      color: '#00A5FF',
       highlight: 'Nation Building, Strategic Impact',
     },
   ];
@@ -79,7 +79,7 @@ const Clientele = () => {
             <span className="text-[#00A5FF]">Clientele</span>
               
           </h2>
-          <p className={`mt-4 text-lg md:text-xl ${styles.description}`}>
+          <p className={`mt-4 text-lg md:text-xl max-w-2xl mx-auto ${styles.description}`}>
             Serving diverse markets with tailored energy solutions across three strategic segments
           </p>
         </motion.div>

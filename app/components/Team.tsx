@@ -15,7 +15,7 @@ const Team = () => {
     {
       name: 'Engr. Gerhard P. Tan',
       role: 'Chairman',
-      description: ' Oversees daily operations, streamlines processes, and advises on strategic decisions for growth.',
+      description: 'Strategic leader guiding ElectrifAI\'s vision and ensuring operational excellence.',
       imgSrc: '/members/hard.png',
       contacts: {
         linkedIn: "gerhard-tan-1a5160104",
@@ -25,7 +25,7 @@ const Team = () => {
     {
       name: 'Daniel Caparro',
       role: 'Chief Executive Officer',
-      description: 'Leads strategic vision and growth, and drives innovation to scale the company while fostering partnerships and investor relations.',
+      description: 'Drives innovation and growth, scaling the platform while building strategic partnerships.',
       imgSrc: '/members/daniel.png',
       contacts: {
         linkedIn: "daniel-caparro-805682224",
@@ -35,7 +35,7 @@ const Team = () => {
     {
       name: 'Harold Patacsil',
       role: 'Chief Technology Officer',
-      description: 'Leads the development of the app infrastructure, ensuring that the platform is secure, scalable, and efficient.',
+      description: 'Leads technical architecture, ensuring security, scalability, and performance.',
       imgSrc: '/members/harold.png',
       contacts: {
         linkedIn: "haroldmartinpatacsil",
@@ -45,7 +45,7 @@ const Team = () => {
     {
       name: 'Raeselyn Macorol',
       role: 'Chief Human Resource Officer',
-      description: 'Drives marketing strategies and manages daily operations to ensure business growth and efficiency.',
+      description: 'Builds our team and culture, fostering excellence and innovation across the organization.',
       imgSrc: '/members/raeselyn.png',
       contacts: {
         linkedIn: "raeselynmacorol",
@@ -55,7 +55,7 @@ const Team = () => {
     {
       name: 'Arjay Rosel',
       role: 'Chief Marketing Officer',
-      description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
+      description: 'Shapes brand narrative and market strategy to establish ElectrifAI as the energy intelligence leader.',
       imgSrc: '/members/arjay.png',
       contacts: {
         linkedIn: "arjay-rosel-5b4a0b252",
@@ -63,85 +63,15 @@ const Team = () => {
       },
     },
     {
-      name: 'Christian Joel Lazo ',
+      name: 'Christian Joel Lazo',
       role: 'Chief Operations Officer',
-      description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
+      description: 'Optimizes operations and delivery, ensuring seamless execution of our mission.',
       imgSrc: '/members/christian.png',
       contacts: {
         linkedIn: "laxseuss",
         facebook: "",
       },
     },
-    // {
-    //   name: 'Clarence Jay Fetalino',
-    //   role: 'Electronics Department Head',
-    //   description: 'Specializes in IoT devices and research, ensuring that the hardware components are robust, efficient, and well-integrated with the software.',
-    //   imgSrc: '/members/clarence.png',
-    //   contacts: {
-    //     linkedIn: "clarence-fetalino-45b313223",
-    //     facebook: "clarencejay.fetalino",
-    //   },
-    // },
-    // {
-    //   name: 'Mcallen Fradejas',
-    //   role: 'Prototype Design Development Head',
-    //   description: 'Creates engaging 3D models and layouts, visualizing complex concepts with clarity and creativity.',
-    //   imgSrc: '/members/fmcallen.png',
-    //   contacts: {
-    //     linkedIn: "mcallen-fradejas",
-    //     facebook: "macalien.fradejas",
-    //   },
-    // },
-    // {
-    //   name: 'Siegfred Lorelle Mina',
-    //   role: 'Lead AI Engineer',
-    //   description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-    //   imgSrc: '/members/siegfred.png',
-    //   contacts: {
-    //     linkedIn: "siegfred-lorelle-mina",
-    //     facebook: "profile.php?id=1718881634",
-    //   },
-    // },
-    // {
-    //   name: 'David Bato-bato',
-    //   role: 'Lead Software Engineer',
-    //   description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-    //   imgSrc: '/members/david.png',
-    //   contacts: {
-    //     linkedIn: "david-bato-bato-1b6a8b288",
-    //     facebook: "dream.achiever46",
-    //   },
-    // },
-    // {
-    //   name: 'Dennesse Condat',
-    //   role: 'Research Specialist 1',
-    //   description: 'Conducts research and analyzes market trends to provide insights that drive business strategy and decision-making.',
-    //   imgSrc: '/members/denesse.png',
-    //   contacts: {
-    //     linkedIn: "dennesse-loura-condat-2747a1299",
-    //     facebook: "profile.php?id=100021986423905",
-    //   },
-    // },
-    // {
-    //   name: 'Gaeus Caskie Fabro',
-    //   role: 'AI Engineer',
-    //   description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-    //   imgSrc: '/members/gaeus.png',
-    //   contacts: {
-    //     linkedIn: "gaeus-caskie-fabro-319981234",
-    //     facebook: "caskieee",
-    //   },
-    // },
-    //   {
-    //   name: 'Justine Rey Daquis',
-    //   role: 'Data Engineer',
-    //   description: 'Designs, builds, and maintains software solutions to meet user and business needs.',
-    //   imgSrc: '/members/justine.png',
-    //   contacts: {
-    //     linkedIn: "justine-rey-daquis-855b07297",
-    //     facebook: "Justinedaquis28",
-    //   },
-    // },
   ];
 
   return (
