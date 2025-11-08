@@ -58,9 +58,9 @@ const Hero = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
           className={`mt-3 md:mt-4 text-base sm:text-lg md:text-xl ${styles.description} max-w-xl lg:max-w-xl leading-relaxed`}
         >
-          The future of energy isn’t just about producing more, but consuming smarter. 
+          The future of energy isn’t just about producing more, but consuming smarter. <br/>
           
-          We challenge the imbalance by revolutionizing how energy is managed, distributed, and consumed.
+          We challenge this imbalance by transforming how energy is managed, distributed, and consumed.
 
           {/* <span className="text-[#00A5FF]">ElectrifAI</span> utilizes AI algorithms for predictive maintenance, energy optimization, and anomaly detection, while IoT devices enable real-time monitoring and data collection across the grid. */}
         </motion.p>
