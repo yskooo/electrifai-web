@@ -1,10 +1,11 @@
 import { Unbounded } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import type { Metadata } from 'next';
+
 import "./globals.css";
 import { DarkModeProvider } from './context/DarkModeContext';
-import type { Metadata } from 'next';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Analytics } from "@vercel/analytics/next";
 
 const unbounded = Unbounded({
   weight: ['400', '500', '700'], // Choose the weights you use
@@ -19,10 +20,10 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'ElectrifAI PH | Making Each kWh Count',
     description: 'ElectrifAI is an AI-driven platform focused on enhancing electricity efficiency and security.',
-    url: 'https://www.electrifai.tech',
+    url: 'https://www.electrifaiph.tech',
     images: [
       {
-        url: 'https://www.electrifai.tech/svgs/metatag.png',
+        url: 'https://www.electrifaiph.tech/svgs/metatag.png',
       },
     ],
   },
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'ElectrifAI | The Smart Choice for Energy Optimization',
     description: 'ElectrifAI is an AI-driven platform focused on enhancing electricity efficiency and security.',
-    images: ['https://www.electrifai.tech/svgs/metatag.png'],
+    images: ['https://www.electrifaiph.tech/svgs/metatag.png'],
   },
 };
 
