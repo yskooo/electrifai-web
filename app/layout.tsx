@@ -4,7 +4,7 @@ import { DarkModeProvider } from './context/DarkModeContext';
 import type { Metadata } from 'next';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 
 const unbounded = Unbounded({
   weight: ['400', '500', '700'], // Choose the weights you use
