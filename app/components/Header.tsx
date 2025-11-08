@@ -52,6 +52,7 @@ export default function Header() {
       },
       { name: 'Awards', href: '/#Awards', isDropdown: false },
       { name: 'Contact', href: '/#Contact', isDropdown: false },
+      { name: 'Careers', href: '/careers', isDropdown: false },
     ],
   };
 
