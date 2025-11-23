@@ -87,7 +87,7 @@ const Team = () => {
           <h2 className={`text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tighter ${
             isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
           } mb-4`}>
-            Meet Our Team
+            Our Team
           </h2>
           <p className={`text-sm md:text-md lg:text-lg ${
             isDarkMode ? 'text-gray-300' : 'text-gray-600'

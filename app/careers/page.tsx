@@ -34,22 +34,22 @@ const CareersPage = () => {
       description: 'Develop and optimize machine learning algorithms for energy prediction and anomaly detection.',
     },
     {
-      title: 'Full Stack Developer',
-      department: 'Engineering',
-      level: 'Mid-Senior',
-      description: 'Build scalable web applications and IoT integration platforms for our energy management system.',
-    },
-    {
       title: 'IoT Systems Specialist',
       department: 'Engineering',
       level: 'All Levels',
       description: 'Design and maintain IoT device networks for real-time energy monitoring across power grids.',
     },
     {
-      title: 'Data Scientist',
+      title: 'Data Engineer',
       department: 'Data & Analytics',
       level: 'Mid-Senior',
-      description: 'Analyze energy consumption patterns and create predictive models for optimization.',
+      description: 'Design and maintain robust data pipelines, analyze energy consumption trends, and build predictive models to optimize energy usage.',
+    },
+    {
+      title: 'Electrical Engineer',
+      department: 'Engineering',
+      level: 'Consultant',
+      description: 'Develop, test, and implement electrical systems for smart grids and renewable energy integration. Collaborate with cross-functional teams to enhance system reliability and efficiency.',
     },
   ];
 
