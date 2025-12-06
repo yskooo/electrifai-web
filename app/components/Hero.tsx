@@ -22,7 +22,19 @@ import { useDarkMode } from '../context/DarkModeContext';
 const startups = [
   { src: "/logos/gcp.png", alt: "SIBOL Logo", height: "h-16" },
   { src: "/logos/aws.webp", alt: "UPLB TBI Logo", height: "h-20" },
-]
+];
+
+const trustedByLogos = [
+   { name: "Backer 2", src: "/logos/gcp.webp" },
+  { name: "Backer 2", src: "/logos/aws.webp" },
+  { name: "Partner 1", src: "/logos/businessworld.webp" },
+  { name: "Partner 2", src: "/logos/leave-a-nest.webp" },
+  { name: "Partner 3", src: "/logos/nexus.webp" },
+  { name: "Backer 1", src: "/logos/pbw.webp" },
+  { name: "Backer 2", src: "/logos/phstartupweek.webp" },
+  { name: "Backer 2", src: "/logos/tenconsg.webp" },
+];
+
 const Hero = () => {
   const { isDarkMode } = useDarkMode();
 
@@ -85,7 +97,7 @@ const Hero = () => {
             </motion.div>
           ))}
         </div>
-        <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
+        {/* <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
           {startups.map((startup, index) => (
             <div key={index} className="flex items-center">
               <img
@@ -95,7 +107,7 @@ const Hero = () => {
               />
             </div>
           ))}
-        </div>
+        </div> */}
 
       </div>
 
@@ -114,23 +126,23 @@ const Hero = () => {
 
       <div className={`mx-auto w-full py-8 ${styles.bg}`}>
         <div className="flex flex-col w-full mb-4 text-center">
-          {/* Optional Heading */}
+          {/* <p className={`text-sm font-semibold ${styles.description} uppercase tracking-wider mb-6`}>
+            Supported by
+          </p> */}
         </div>
-        <div className="relative overflow-hidden">
-          {/* <div className="grid grid-cols-2 md:grid-cols-4 lg:flex animate-logos gap-2">
-            {logos.map((logo, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center"
-              >
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  className={`block object-contain ${logo.height}`}
-                />
-              </div>
-            ))}
-          </div> */}
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 px-4 md:px-8">
+          {trustedByLogos.map((logo, index) => (
+            <div
+              key={index}
+              className="h-12 w-28 md:w-32 relative opacity-70 hover:opacity-100 transition-opacity duration-300"
+            >
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                className="object-contain w-100 h-10 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+          ))}
         </div>
       </div>
       {/* <style jsx>{`
