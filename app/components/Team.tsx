@@ -24,16 +24,7 @@ const Team = () => {
         facebook: "gerhardian19",
       },
       bio: {
-        highlights: [
-          'Over 20 years of experience in energy management and automation',
-          'Led multiple infrastructure projects across Southeast Asia',
-          'Strategic advisor for renewable energy initiatives',
-        ],
-        accomplishments: [
-          'Pioneered IoT integration in Philippine power systems',
-          'Established key partnerships with major energy corporations',
-          'Mentored over 50 technology leaders in the industry',
-        ],
+        fullBio: 'Engr. Gerhard P. Tan leads ElectrifAI as Chairman while serving as Senior Director and Head of Technology Strategy & Innovations at Globe Telecom. A licensed electronics engineer and ASEAN Engineer designee, he brings over two decades of leadership in telecommunications and energy innovation. He graduated with a BS in Electronics Engineering from University of Saint Louis (Tuguegarao) and has been a faculty lecturer at PUP Manila. Gerhard Tan has spearheaded advanced network initiatives including Globe\'s fiber optics and 5G projects, and now guides ElectrifAI\'s vision for smart energy management. His industry contributions have earned him honors like the 2024 ASEAN Outstanding Engineering Achievement Award (Individual Category) and appointment to the PRC Board of Electronics Engineering.',
       },
     },
     {
@@ -46,60 +37,40 @@ const Team = () => {
         facebook: "nam.joo.7399",
       },
       bio: {
-        highlights: [
-          '15+ years in tech startups and enterprise software',
-          'Successfully scaled two SaaS companies to market leadership',
-          'Expert in energy tech market dynamics',
-        ],
-        accomplishments: [
-          'Grew previous venture from 10 to 150+ team members',
-          'Closed partnerships with Fortune 500 energy companies',
-          'Recognized as top innovator in cleantech sector',
-        ],
+        fullBio: 'Daniel S. Caparro is the Chief Executive Officer and co-founder of ElectrifAI. He holds a BS in Electronics Engineering from the Polytechnic University of the Philippines (PUP) and has extensive experience in software and AI-driven solutions. Daniel directs ElectrifAI\'s innovation strategy and growth, translating cutting-edge research into practical energy intelligence products. He co-authored ElectrifAI\'s core AI algorithms in peer-reviewed venues and has built software teams focused on smart grid and anti-tapping solutions. His leadership has secured partnerships with government and industry, including DOST and utility companies, to pilot ElectrifAI deployments at scale.',
       },
     },
     {
-      name: 'Harold Patacsil',
-      role: 'Chief Technology Officer',
-      description: 'Leads technical architecture, ensuring security, scalability, and performance.',
-      imgSrc: '/members/harold.png',
-      contacts: {
-        linkedIn: "haroldmartinpatacsil",
-        facebook: "harold.martinpatacsil.3",
+  name: 'Harold Martin Patacsil',
+  role: 'Chief Technology Officer',
+  description: 'Oversees the platform’s technical direction, leading engineering, architecture, and product development.',
+  imgSrc: '/members/harold.png',
+  contacts: {
+    linkedIn: "haroldmartinpatacsil",
+    facebook: "harold.martinpatacsil.3",
+  },
+  bio: {
+    fullBio: `Harold Martin Patacsil is ElectrifAI's Chief Technology Officer.
+      He leads the architecture and end-to-end development of the platform, ensuring performance, reliability, and security across web, mobile, and backend systems.
+
+      He specializes in full-stack engineering, cloud architectures, API design, and mobile development. He has built government applications, quant dashboards, backtesting engines and consumer mobile apps—delivering production-grade software both independently and alongside international engineering teams.
+
+      Harold is also a Devcon 7 SEA Delegate at the Ethereum Foundation and the Champion of the Startup Hackathon 2023 organized by the Development Academy of the Philippines, where his team received seed funding and was incubated by UPLB TTBDO.
+
+      Harold ensures ElectrifAI’s technology foundation remains scalable, secure, and innovation-driven.`,
+        },
       },
-      bio: {
-        highlights: [
-          'PhD in Computer Science with focus on distributed systems',
-          '12+ years building high-scale infrastructure',
-          'Published researcher in IoT and edge computing',
-        ],
-        accomplishments: [
-          'Architected systems serving 50M+ daily transactions',
-          'Reduced infrastructure costs by 60% through optimization',
-          'Led team of 30+ engineers across multiple continents',
-        ],
-      },
-    },
     {
       name: 'Engr. Raeselyn Macorol',
-      role: 'Chief Human Resource Officer',
-      description: 'Builds our team and culture, fostering excellence and innovation across the organization.',
+      role: 'Chief Research Officer',
+      description: 'Leads R&D and data science initiatives, driving innovation in energy efficiency.',
       imgSrc: '/members/raeselyn.png',
       contacts: {
         linkedIn: "raeselynmacorol",
         facebook: "raeselynmacorol",
       },
       bio: {
-        highlights: [
-          '10+ years in talent development and organizational strategy',
-          'Expertise in scaling teams from startup to enterprise',
-          'Certified executive coach and change management specialist',
-        ],
-        accomplishments: [
-          'Built high-performance teams with 95%+ retention rate',
-          'Implemented culture programs recognized by industry awards',
-          'Developed leadership pipeline for emerging markets',
-        ],
+        fullBio: 'Raeselyn Macorol serves as Chief Research Officer (CRO) at ElectrifAI. A PUP graduate with a BS in Electronics Engineering, she brings strong AI credentials and leads the company\'s R&D and data science initiatives. Raeselyn earned recognition as a DataCamp Artificial Intelligence Scholar (2024–present), reflecting her expertise in machine learning and analytics. In her role, she drives innovation by researching advanced algorithms for energy efficiency and training the research team in new technologies. She has designed novel machine learning models to detect power theft and improve load forecasting in utility grids, established ElectrifAI\'s research framework, and collaborated on academic studies while securing technical grants.',
       },
     },
     {
@@ -112,16 +83,7 @@ const Team = () => {
         facebook: "roselarjayyy",
       },
       bio: {
-        highlights: [
-          '8+ years in B2B tech marketing and brand strategy',
-          'Led go-to-market strategies for emerging energy solutions',
-          'Thought leader in sustainability communications',
-        ],
-        accomplishments: [
-          'Generated 300%+ growth in brand awareness',
-          'Established ElectrifAI as category leader in market',
-          'Built community of 50K+ engaged energy tech enthusiasts',
-        ],
+        fullBio: 'Arjay Rosel is the Chief Marketing Officer of ElectrifAI. He shapes the company\'s brand narrative and go-to-market strategy to establish ElectrifAI as a leader in energy intelligence. With a background in B2B technology marketing, Arjay drives the communication of ElectrifAI\'s solutions to industry stakeholders and the public. He is active in the startup and academic community, mentoring student innovators on cloud and digital marketing including the AWS Cloud Club at PUP. His leadership has boosted ElectrifAI\'s market presence across social media, press, and conferences, developed thought leadership content, and forged key partnerships with educational institutions and industry groups.',
       },
     },
     {
@@ -134,16 +96,7 @@ const Team = () => {
         facebook: "",
       },
       bio: {
-        highlights: [
-          '9+ years in operations management and process optimization',
-          'Expertise in supply chain and logistics automation',
-          'Certified Six Sigma Black Belt',
-        ],
-        accomplishments: [
-          'Improved operational efficiency by 45% across functions',
-          'Implemented ERP systems for multi-location operations',
-          'Led successful scaling from 50 to 300+ employees',
-        ],
+        fullBio: 'Christian Joel Lazo is the Chief Operations Officer of ElectrifAI. He oversees day-to-day operations, project delivery, and supply chain coordination to ensure seamless execution of the company\'s objectives. Christian\'s operational expertise lies in process optimization and logistics; he has led initiatives to implement enterprise systems (ERP/CRM) that scaled the company from a lean startup to a growing enterprise. A Six Sigma Black Belt certified professional, he applies data-driven methods to improve efficiency. At ElectrifAI, he ensures that technical deployments, customer support, and internal workflows run smoothly, having coordinated team scaling from 50 to 300+ staff while maintaining high service quality.',
       },
     },
   ];
@@ -316,39 +269,16 @@ const Team = () => {
                   <div className="flex items-center mb-4">
                     <div className="w-1 h-6 bg-[#00A5FF] rounded-full mr-3"></div>
                     <h3 className={`text-xl font-semibold ${isDarkMode ? 'text-white' : 'text-[#0A0A0B]'}`}>
-                      Professional Highlights
+                      Biography
                     </h3>
                   </div>
-                  <ul className={`space-y-3 ml-4 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                    {selectedMember.bio.highlights.map((highlight: string, idx: number) => (
-                      <li key={idx} className="flex items-start gap-3">
-                        <span className="text-[#00A5FF] font-bold text-lg mt-0.5">→</span>
-                        <span className="leading-relaxed">{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p className={`leading-relaxed ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                    {selectedMember.bio.fullBio}
+                  </p>
                 </div>
 
                 {/* Divider */}
                 <div className={`my-8 h-px ${isDarkMode ? 'bg-white/10' : 'bg-gray-200'}`}></div>
-
-                {/* Key Accomplishments */}
-                <div className="mb-8">
-                  <div className="flex items-center mb-4">
-                    <div className="w-1 h-6 bg-[#00A5FF] rounded-full mr-3"></div>
-                    <h3 className={`text-xl font-semibold ${isDarkMode ? 'text-white' : 'text-[#0A0A0B]'}`}>
-                      Key Accomplishments
-                    </h3>
-                  </div>
-                  <ul className={`space-y-3 ml-4 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                    {selectedMember.bio.accomplishments.map((accomplishment: string, idx: number) => (
-                      <li key={idx} className="flex items-start gap-3">
-                        <span className="text-[#00A5FF] font-bold text-lg mt-0.5">✓</span>
-                        <span className="leading-relaxed">{accomplishment}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
 
                 {/* Action Buttons */}
                 <div className="flex gap-3 pt-4">
