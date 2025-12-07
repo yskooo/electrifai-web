@@ -138,7 +138,7 @@ const Hero = () => {
             >
               <img
                 src={logo.src}
-                alt={logo.alt}
+                alt=""
                 className="object-contain w-100 h-10 grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
