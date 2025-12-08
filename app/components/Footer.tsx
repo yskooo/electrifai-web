@@ -34,7 +34,7 @@ const Footer = () => {
 
   
   const featuredLogos = [
-    { name: "Partner 1", src: "/logos/businessworld.png" },
+    { name: "Partner 1", src: "/logos/businessworld.webp" },
     { name: "Partner 2", src: "/logos/leave-a-nest.webp" },
     { name: "Partner 3", src: "/logos/nexus.webp" },
     { name: "Backer 1", src: "/logos/pbw.webp" },
