@@ -78,7 +78,7 @@ const Hero = () => {
         </motion.p>
 
         {/* Buttons */}
-        <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
+        <div className="my-6 md:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
           {[{ href: '#Contact', text: 'Get Started', bg: styles.button, textColor: 'text-white' },
             // { href: 'https://tally.so/r/w5AolZ', text: 'Early Access', bg: 'border-2 border-[#00A5FF]', textColor: styles.learnMore }].map((btn, index) => (
             { href: 'https://appelectrifai.vercel.app/', text: 'Early Access', bg: 'border-2 border-[#00A5FF]', textColor: styles.learnMore }].map((btn, index) => (
@@ -115,12 +115,12 @@ const Hero = () => {
       {/* Image Section */}      
       <div className="w-full lg:w-1/2 z-10 px-4 sm:px-0 order-last">
         <motion.img
-          src="/eli.png"
+          src="/eli.svg"
           alt="Energy Optimization Illustration"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="object-contain w-full h-auto max-h-[250px] md:max-h-[400px] lg:max-h-[600px] mx-auto"
+          className="object-contain w-full rounded-xl h-auto max-h-[4000px] md:max-h-[600px] lg:max-h-[2500px] mx-auto"
         />
       </div>
     </section>
