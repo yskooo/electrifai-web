@@ -101,7 +101,7 @@ const CareersPage = () => {
               isDarkMode ? 'text-gray-300' : 'text-gray-600'
             }`}
           >
-            Join ElectrifAI and help revolutionize energy management through innovative AI and IoT solutions. We're building a team of talented individuals passionate about sustainable energy.
+            Join ElectrifAI and help revolutionize energy management through innovative AI and IoT solutions. We&apos;re building a team of talented individuals passionate about sustainable energy.
           </p>
           <Link
             href="#talent-pool"
@@ -190,7 +190,7 @@ const CareersPage = () => {
               isDarkMode ? 'text-gray-300' : 'text-gray-600'
             }`}
           >
-            Don't see a position that matches your skills? Join our talent pool and be notified when new opportunities that align with your profile become available. We're always looking for exceptional talent to join our team.
+            Don&apos;t see a position that matches your skills? Join our talent pool and be notified when new opportunities that align with your profile become available. We&apos;re always looking for exceptional talent to join our team.
           </p>
           <div className="flex justify-center text-center">
             <a

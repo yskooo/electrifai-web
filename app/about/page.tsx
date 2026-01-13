@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import { useDarkMode } from "../context/DarkModeContext";
 import { motion } from "framer-motion";
