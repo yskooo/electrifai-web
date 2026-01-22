@@ -50,7 +50,7 @@ export default function Header() {
           { name: 'Meet Our Team', href: '/#OurTeam' },
         ],
       },
-      { name: 'Awards', href: '/#Awards', isDropdown: false },
+      { name: 'Awards', href: '/awards', isDropdown: false },
       { name: 'Contact', href: '/#Contact', isDropdown: false },
       { name: 'Careers', href: '/careers', isDropdown: false },
     ],

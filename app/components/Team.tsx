@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { X } from 'lucide-react';
+import { X, ArrowLeft, ArrowRight, Linkedin } from 'lucide-react';
 import { useDarkMode } from '../context/DarkModeContext'; 
 
 const defaultProfile = '/members/default-image.jpg';
@@ -41,7 +41,7 @@ const Team = () => {
       },
     },
     {
-  name: 'Harold Martin Patacsil',
+  name: 'Harold Patacsil',
   role: 'Chief Technology Officer',
   description: 'Oversees the platform’s technical direction, leading engineering, architecture, and product development.',
   imgSrc: '/members/harold.png',
@@ -104,99 +104,88 @@ const Team = () => {
   return (
     <section
       id="OurTeam"
-      className={`w-full py-12 md:py-20 lg:py-10 ${
-        isDarkMode ? 'bg-gradient-to-b from-[#000000] to-[#001027]' : 'bg-gradient-to-b from-[#eef2f3] to-[#ffffff]'
-      } flex items-center justify-center overflow-hidden`}
+      className={`w-full py-12 md:py-20 lg:py-24 ${
+        isDarkMode ? 'bg-[#000000]' : 'bg-[#eef2f3]'
+      } overflow-hidden`}
     >
-      <div className="container px-4 md:px-6 max-w-screen-2xl">
+      <div className="container px-4 md:px-6 mx-auto max-w-screen-2xl">
         {/* Section Header */}
-        <div className="text-center mb-8 md:mb-12 lg:mb-16">
-          <h2 className={`text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tighter ${
-            isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
-          } mb-4`}>
-            Our Team
-          </h2>
-          <p className={`text-sm md:text-md lg:text-lg ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-600'
-          } max-w-2xl mx-auto`}>
-            {/* The company is spearheaded by a team of passionate students from the Polytechnic University of the Philippines Manila. */}
-          </p>
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12 lg:mb-16 gap-6">
+          <div className="max-w-3xl text-left">
+            <span className={`text-xs md:text-sm font-bold tracking-widest uppercase mb-4 block ${
+              isDarkMode ? 'text-[#00A5FF]' : 'text-[#64748B]'
+            }`}>
+              EXECUTIVE TEAM
+            </span>
+            <h2 className={`text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight ${
+              isDarkMode ? 'text-white' : 'text-[#1e293b]'
+            }`}>
+              Meet Our Team
+            </h2>
+          </div>
+          
+          <div className="hidden md:flex gap-4">
+            <button className={`p-4 rounded-full border transition-all duration-300 ${
+              isDarkMode 
+                ? 'border-white/10 text-white hover:bg-white/10' 
+                : 'border-black/10 text-[#1e293b] hover:bg-black/5'
+            }`}>
+              <ArrowLeft className="w-5 h-5" />
+            </button>
+            <button className={`p-4 rounded-full border transition-all duration-300 ${
+              isDarkMode 
+                ? 'border-white/10 text-white hover:bg-white/10' 
+                : 'border-black/10 text-[#1e293b] hover:bg-black/5'
+            }`}>
+              <ArrowRight className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
-        {/* Team Members Grid */}
-        <div className="px-4 flex flex-wrap justify-center gap-4">
+        {/* Team Members List */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4">
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 + index * 0.1 }}
-              whileHover={{ scale: 1.05, boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.1)' }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               onClick={() => setSelectedMember(member)}
-              className={`p-4 md:p-6 lg:p-4 md:w-1/3 w-full lg:w-1/5 rounded-xl md:rounded-2xl shadow-sm cursor-pointer ${
-                isDarkMode ? 'bg-[#1B1B1D] text-gray-300' : 'bg-white text-[#0A0A0B]'
-              } hover:shadow-2xl transition-shadow duration-300 transform text-center flex flex-row max-[320px]:flex-col md:flex-col gap-5 md:gap-0 items-center`}
+              className="group cursor-pointer flex flex-col gap-4"
             >
-              {/* Profile Image with Decorative Elements */}
-              <div className="relative mb-4">
-                <div className={`w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-2 md:border-4 ${
-                  isDarkMode ? 'border-[#00A5FF]' : 'border-[#00A5FF]'
-                } relative bg-[#eef2f3]`}>
-                  <Image
-                    src={member.imgSrc || defaultProfile}
-                    alt={member.name}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-full"
-                  />
-                </div>
-
-                {/* Decorative Elements around the Image */}
-                <div className={`absolute -bottom-2 -right-2 h-4 w-4 ${
-                  isDarkMode ? 'bg-[#00A5FF]' : 'bg-[#00A5FF]'
-                } rounded-full`}></div>
-                <div className={`absolute -bottom-2 -left-2 h-4 w-4 ${
-                  isDarkMode ? 'bg-[#00A5FF]' : 'bg-[#00A5FF]'
-                } rounded-full`}></div>
-              </div>
-
-              {/* Member Info */}
-              <div className="w-full md:ms-0">
-                <h3 className={`text-start max-[320px]:text-center md:text-center w-text-sm md:text-lg lg:text-md font-bold ${
-                  isDarkMode ? 'text-white' : 'text-[#0A0A0B]'
-                } mb-1`}>
+              {/* Member Info (Top) */}
+              <div className="text-left px-1 min-h-[50px] flex flex-col justify-end">
+                <h3 className={`text-sm md:text-base font-bold mb-1 leading-tight whitespace-nowrap overflow-hidden text-ellipsis ${
+                  isDarkMode ? 'text-white' : 'text-[#1e293b]'
+                }`} title={member.name}>
                   {member.name}
                 </h3>
-                <h4 className={`text-start max-[320px]:text-center md:text-center text-xs md:text-sm lg:text-xs font-medium ${
-                  isDarkMode ? 'text-[#00A5FF]' : 'text-[#00A5FFAd]'
-                } mb-2`}>
+                <h4 className={`text-xs font-medium ${
+                  isDarkMode ? 'text-gray-400' : 'text-[#64748B]'
+                }`}>
                   {member.role}
                 </h4>
               </div>
-              {/* <p className={`text-xs md:text-sm ${
-                isDarkMode ? 'text-gray-300' : 'text-gray-600'
-              }`}>
-                {member.description}
-              </p> */}
-              <div className="mt-auto flex justify-end gap-1 w-1/12 max-[320px]:w-full md:w-full">
-                <a 
-                  className={`mt-2 flex justify-center items-center rounded-full transition-all duration-300 w-3 h-3 p-4 ${
-                    isDarkMode ? " hover:bg-[#2e2e2e]": "hover:bg-[#eef2f3]"}`}
-                  href={`https://linkedin.com/in/${member.contacts.linkedIn}`}
-                  target="__blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon icon={faLinkedinIn} />
-                </a>
-                {/* <a 
-                  className={`mt-2 flex justify-center items-center rounded-full transition-all duration-300 w-3 h-3 p-4 ${
-                    isDarkMode ? " hover:bg-[#2e2e2e]": "hover:bg-[#eef2f3]"}`}
-                  href={`https://www.facebook.com/${member.contacts.facebook}`}
-                  target="__blank"
-                  rel="noopener noreferrer"
-                > 
-                <FontAwesomeIcon icon={faFacebookF} size='sm'/>
-                </a> */}
+
+              {/* Image Container */}
+              <div className="relative aspect-[3.5/4.5] w-full rounded-2xl overflow-hidden shadow-md">
+                <Image
+                  src={member.imgSrc || defaultProfile}
+                  alt={member.name}
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                
+                {/* Overlay Share Button */}
+                <div className={`absolute bottom-4 right-4 p-3 rounded-xl backdrop-blur-md transition-all duration-300 ${
+                  isDarkMode 
+                    ? 'bg-black/30 text-white hover:bg-black/50' 
+                    : 'bg-white/30 text-white hover:bg-white/50'
+                }`}>
+                  <Linkedin className="w-5 h-5" />
+                </div>
               </div>
             </motion.div>
           ))}
