@@ -81,7 +81,7 @@ const Hero = () => {
         <div className="my-6 md:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
           {[{ href: '#Contact', text: 'Get Started', bg: styles.button, textColor: 'text-white' },
             // { href: 'https://tally.so/r/w5AolZ', text: 'Early Access', bg: 'border-2 border-[#00A5FF]', textColor: styles.learnMore }].map((btn, index) => (
-            { href: 'https://appelectrifai.vercel.app/', text: 'Early Access', bg: 'border-2 border-[#00A5FF]', textColor: styles.learnMore }].map((btn, index) => (
+            { href: 'https://app.electrifaiph.tech/', text: 'Early Access', bg: 'border-2 border-[#00A5FF]', textColor: styles.learnMore }].map((btn, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
