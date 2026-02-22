@@ -42,6 +42,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5513345518730456"
+     crossOrigin="anonymous"></script>
+      </head>
       <body className={`${unbounded.className}`}>
         <DarkModeProvider>
           <div className="min-h-screen bg-gradient-to-r from-[#eef2f3] to-[#ffffff] dark:bg-gradient-to-r dark:from-[#000000] dark:to-[#001027]">
